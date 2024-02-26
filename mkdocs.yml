@@ -2,7 +2,7 @@ site_name: MachInNav Engine
 repo_name: MachInNav Engine
 site_description: 'MachInNav Engine is a powerful and easy-to-use indoor navigation engine for Android.'
 site_author: Karam Mannai
-repo_url:
+repo_url: https://github.com/KvRae/docs-generation
 docs_dir: docs
 theme:
     name: material
