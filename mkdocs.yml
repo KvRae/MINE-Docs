@@ -1,7 +1,9 @@
 site_name: MachInNav Engine
 repo_name: MachInNav Engine
-docs_dir: docs
 site_description: 'MachInNav Engine is a powerful and easy-to-use indoor navigation engine for Android.'
+site_author: Karam Mannai
+repo_url:
+docs_dir: docs
 theme:
     name: material
     palette:
@@ -9,7 +11,7 @@ theme:
           toggle:
               icon: material/weather-sunny
               name: Switch to dark mode
-          primary: black
+          primary: white
           accent: light blue
         - scheme: slate
           toggle:
@@ -21,7 +23,6 @@ theme:
         text: 'Roboto'
         code: 'Roboto Mono'
     logo: images/location.png
-
     favicon: images/favicon.ico
     search: true
     features:
@@ -46,26 +47,31 @@ theme:
 nav:
     - Home: index.md
     - Getting Started:
-          - 'Introduction': getting-started/introduction.md
-          - 'Android Studio Setup': getting-started/android-studio-setup.md
-          - 'Gradle Setup': getting-started/gradle-setup.md
-
-    - 'API Reference': https://indoor-navigation-lib.bitbucket.io/
-    - 'User Guide':
-          - 'User Guide': user-guide/user-guide.md
-          - 'User Guide': user-guide/user-guide.md
-    - 'Contributing':
-          - 'Contributing': contributing/contributing.md
-          - 'Contributing': contributing/contributing.md
-    - 'About':
-          - 'About': about/about.md
-          - 'About': about/about.md
+        - Installation: getting_started/installation.md
+        - Quick Start: getting_started/quick_start.md
+        - Usage: getting_started/usage.md
+    - Features:
+        - Overview: features/overview.md
+        - Navigation: features/navigation.md
+        - Map Loading: features/map_loading.md
+        - Localization: features/localization.md
+        - Path Finding: features/path_finding.md
+        - Theme Customization: features/theme_customization.md
+    - API Reference :
+        - Overview: api_reference/overview.md
+        - Library: api_reference/library.md
+        - SceneView: api_reference/scene_view.md
+        - Filament: api_reference/filament.md
+    - Release Notes: release_notes.md
+    - Support:
+        - FAQ: support/faq.md
+        - Troubleshooting: support/troubleshooting.md
+        - Contact Us: support/contact_us.md
 copyright: |
   &copy; 2024 <a href="https://github.com/kvrae"  target="_blank" rel="opener">Karam Mannai</a>
 
 plugins:
   - search
-
 markdown_extensions:
   - admonition
   - pymdownx.superfences
