@@ -51,14 +51,14 @@ nav:
         - Quick Start: getting_started/quick_start.md
         - Usage: getting_started/usage.md
     - Features:
-        - Overview: features/overview.md
+        - Overview: features/api_overview.md
         - Navigation: features/navigation.md
         - Map Loading: features/map_loading.md
         - Localization: features/localization.md
         - Path Finding: features/path_finding.md
         - Theme Customization: features/theme_customization.md
     - API Reference :
-        - Overview: api_reference/overview.md
+        - Overview: api_reference/api_overview.md
         - Library: api_reference/library.md
         - SceneView: api_reference/scene_view.md
         - Filament: api_reference/filament.md
