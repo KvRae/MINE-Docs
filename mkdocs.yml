@@ -51,7 +51,7 @@ nav:
         - Quick Start: getting_started/quick_start.md
         - Usage: getting_started/usage.md
     - Features:
-        - Overview: features/api_overview.md
+        - Api Overview: features/api_overview.md
         - Navigation: features/navigation.md
         - Map Loading: features/map_loading.md
         - Localization: features/localization.md
