@@ -70,7 +70,7 @@ nav:
         - Troubleshooting: support/troubleshooting.md
         - Contact Us: support/contact_us.md
 copyright: |
-  &copy; 2024 <a href="https://github.com/kvrae"  target="_blank" rel="opener">Karam Mannai</a>
+  &copy; 2024 <a href="https://kvrae.github.io/"  target="_blank" rel="opener">Karam Mannai</a>
 
 plugins:
   - search
