@@ -34,7 +34,7 @@ Here's an example of how to add these components to the map scene:
 
 ```kotlin
 IndoorNavigationScene(
-     mapBuild = map,
+     mapBuild = mapData,
 )
 ```
 
