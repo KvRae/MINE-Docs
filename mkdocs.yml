@@ -2,7 +2,7 @@ site_name: MachInNav Engine
 repo_name: MachInNav Engine
 site_description: 'MachInNav Engine is a powerful and easy-to-use indoor navigation engine for Android.'
 site_author: Karam Mannai
-repo_url: https://github.com/KvRae/docs-generation
+repo_url: https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/
 docs_dir: docs
 theme:
     name: material
@@ -47,22 +47,20 @@ theme:
 nav:
     - Home: index.md
     - Getting Started:
-        - Installation: getting_started/installation.md
         - Quick Start: getting_started/quick_start.md
+        - Installation: getting_started/installation.md
         - Usage: getting_started/usage.md
         - Youtube Tutorials 🡕 : https://www.youtube.com/@kvrae8698/featured
     - Features:
         - Features Overview: features/features_overview.md
-        - Navigation: features/navigation.md
+        - Map Components: features/map_components.md
         - Map Loading: features/map_loading.md
+        - Navigation: features/navigation.md
         - Localization: features/localization.md
         - Path Finding: features/path_finding.md
         - Theme Customization: features/theme_customization.md
     - API Reference:
-        - API Overview: api_reference/api_overview.md
-        - Library: api_reference/library.md
-        - SceneView: api_reference/scene_view.md
-        - Filament: api_reference/filament.md
+        - Module Overview: api_reference/module_overview.md
 
     - Release Notes: release_notes.md
     - Support:

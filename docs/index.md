@@ -20,12 +20,12 @@ Our library aims to address this challenge by offering a robust solution for int
 
 ## Getting Started
 
-To get started with the Indoor Navigation Library, follow the [installation instructions](#installation) and refer to the [documentation](#usage) for usage examples and API reference.
+To get started with the Indoor Navigation Library, follow the [installation instructions 🡕](getting_started/installation.md) and refer to the [documentation](getting_started/usage.md) for usage examples.
 
 ## Resources
 
-- **Api Reference**: [Link to full documentation]
-- **BitBucket Repository**: [Link to Bitbucket repository]
+- **Api Reference**: [Module References](https://indoor-navigation-lib.bitbucket.io/)
+- **BitBucket Repository**: [Module Repository](https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/)
 
 ## Feedback and Contributions
 
