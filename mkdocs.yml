@@ -45,28 +45,28 @@ theme:
       - footer
     language: en
 nav:
-    - Home: index.md
+    - Home: en/index.md
     - Getting Started:
-        - Quick Start: getting_started/quick_start.md
-        - Installation: getting_started/installation.md
-        - Usage: getting_started/usage.md
+        - Quick Start: en/getting_started/quick_start.md
+        - Installation: en/getting_started/installation.md
+        - Usage: en/getting_started/usage.md
         - Youtube Tutorials 🡕 : https://www.youtube.com/@kvrae8698/featured
     - Features:
-        - Features Overview: features/features_overview.md
-        - Map Components: features/map_components.md
-        - Map Loading: features/map_loading.md
-        - Navigation: features/navigation.md
-        - Localization: features/localization.md
-        - Path Finding: features/path_finding.md
-        - Theme Customization: features/theme_customization.md
+        - Features Overview: en/features/features_overview.md
+        - Map Components: en/features/map_components.md
+        - Map Loading: en/features/map_loading.md
+        - Navigation: en/features/navigation.md
+        - Localization: en/features/localization.md
+        - Path Finding: en/features/path_finding.md
+        - Theme Customization: en/features/theme_customization.md
     - API Reference:
-        - Module Overview: api_reference/module_overview.md
+        - Module Overview: en/api_reference/module_overview.md
 
-    - Release Notes: release_notes.md
+    - Release Notes: en/release_notes.md
     - Support:
-        - FAQ: support/faq.md
-        - Troubleshooting: support/troubleshooting.md
-        - Contact Us: support/contact_us.md
+        - FAQ: en/support/faq.md
+        - Troubleshooting: en/support/troubleshooting.md
+        - Contact Us: en/support/contact_us.md
 copyright: |
   &copy; 2024 <a href="https://kvrae.github.io/"  target="_blank" rel="opener">Karam Mannai</a>
 
@@ -81,6 +81,13 @@ markdown_extensions:
   - toc:
       permalink: true
 extra:
+  alternate:
+    - name: English
+      link: /en/
+      language: en
+    - name: Arabic
+      link: /ar/
+      language: ar
   generator: false
   social:
     - icon: fontawesome/brands/github
