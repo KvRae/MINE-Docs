@@ -22,7 +22,9 @@ To achieve this result, you can leave the mapColorTheme parameter empty when ini
 The default theme will be applied automatically. Here is an example of how to initialize the MachInNav Engine with the default theme:
 
 ```kotlin
-// Initialize the MachInNav Engine with the default theme
+IndoorNavigationScene(
+// No need to pass the mapColorTheme parameter
+)
 ```
 
 ## Customizing the Theme
