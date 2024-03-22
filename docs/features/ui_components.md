@@ -8,7 +8,9 @@ the floor selector allows users to switch between different floors of a building
 making it easy to navigate multi-level indoor environments.
 In the demo below, you can see the floor selector in action:
 <br>
-![Floor Selector](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/1f05d680-3737-4983-bf73-d6d148389fbf)
+<p align="center">
+  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/1f05d680-3737-4983-bf73-d6d148389fbf" alt="Floor Selector"/>
+</p>
 
 Here is a code snippet that shows how to use the floor selector:
 
@@ -21,7 +23,9 @@ Here is a code snippet that shows how to use the floor selector:
 The Points of Interest (POI) selector allows users to view and select points of interest within the indoor environment, such as restrooms, exits, or other key locations.
 In the demo below, you can see the POI selector in action:
 <br>
-![Poi_Selector](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/24492e3e-8950-4959-ad7b-0536cfc27605)
+<p align="center">
+  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/24492e3e-8950-4959-ad7b-0536cfc27605" alt="POI Selector"/>
+</p>
 
 Here is a code snippet that shows how to use the POI selector:
 
@@ -35,8 +39,9 @@ The 3D/2D Map switcher button allows users to switch between 3D and 2D views of 
 In the demo below, you can see the 3D/2D Map switcher button in action:
 
 <br>
-
-![3D_2D_Button](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ed32b7b1-bd5d-4cf6-8341-5d5795eb9575)
+<p align="center">
+  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ed32b7b1-bd5d-4cf6-8341-5d5795eb9575" alt="3D/2D Map switcher button"/>
+</p>
 
 Here is a code snippet that shows how to use the 3D/2D Map switcher button:
 
