@@ -54,8 +54,8 @@ nav:
     - Features:
         - Features Overview: features/features_overview.md
         - UI Components: features/ui_components.md
-        - Map Loading: features/map_loading.md
         - Theme Customization: features/theme_customization.md
+        - Map Loading: features/map_loading.md
         - Navigation: features/navigation.md
         - Localization: features/localization.md
         - Path Finding: features/path_finding.md
