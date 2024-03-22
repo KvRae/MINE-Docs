@@ -61,8 +61,9 @@ The demo below shows the MachInNav Engine with a custom theme in action (Don't M
   <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/74e30214-c734-4712-97a4-ca1a560181f6" alt="custom_theme">
 </p>
 
-Hope this helps you to customize the theme of the MachInNav Engine to match your app, if you have any questions, feel free to 
-[contact us](mailto:) or [raise an issue]().
+Hope this helps you understand how important it is to customize the theme of the MachInNav Engine to match your app's design.
+Don't be like me, pick the right colors for your app's color schema , or you will end up with a mess like the one above.
+you can also hire a designer to help you with that. 
 
 []: # (END)
 
