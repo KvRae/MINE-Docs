@@ -33,7 +33,7 @@ The theme customization process involves defining the color palette for the map 
 Here is an example of how to customize the theme colors:
 
 ```kotlin
-// Use jetpack compose isDarkTheme to determine the current system theme 
+// Use jetpack compose isSystemInDarkTheme() function to determine the current system theme 
 val isDarkTheme = isSystemInDarkTheme()
 // Define the custom theme color palette
 val customTheme = MapColorTheme(
