@@ -13,6 +13,8 @@ here is the default theme color palette:
 The default theme colors are used to render the map components such as the ground, pathways, walls, points of interest (POI), and selected POI.
 The demo below shows the default theme of the MachInNav Engine in action:
 
+![Dark_Light_Theme](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/18a0fbef-ae91-4513-9903-81db8d1948a2)
+
 
 To achieve this result, you can leave the mapColorTheme parameter empty when initializing the MachInNav Engine
 The default theme will be applied automatically. Here is an example of how to initialize the MachInNav Engine with the default theme:
@@ -49,6 +51,9 @@ Finally, we pass the custom theme to the MachInNav Engine by setting the mapColo
 
 By customizing the theme colors, you can create a unique and branded navigation experience for your users.
 The demo below shows the MachInNav Engine with a custom theme in action (Don't Mind the colors, I am not a designer):
+
+![custom_theme](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/74e30214-c734-4712-97a4-ca1a560181f6)
+
 
 
 
