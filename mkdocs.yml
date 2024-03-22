@@ -53,12 +53,12 @@ nav:
         - Youtube Tutorials 🡕 : https://www.youtube.com/@kvrae8698/featured
     - Features:
         - Features Overview: features/features_overview.md
-        - Map Components: features/map_components.md
+        - UI Components: features/ui_components.md
         - Map Loading: features/map_loading.md
+        - Theme Customization: features/theme_customization.md
         - Navigation: features/navigation.md
         - Localization: features/localization.md
         - Path Finding: features/path_finding.md
-        - Theme Customization: features/theme_customization.md
     - API Reference:
         - Module Overview: api_reference/module_overview.md
 
