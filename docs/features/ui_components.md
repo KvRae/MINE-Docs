@@ -12,3 +12,6 @@ The Points of Interest (POI) selector allows users to view and select points of 
 
 ## 3D/2D Map switcher button
 The 3D/2D Map switcher button allows users to switch between 3D and 2D views of the map, providing a different perspective of the indoor environment.
+In the image below, you can see the 3D/2D Map switcher button in action:
+
+![3D_2D_Button](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ed32b7b1-bd5d-4cf6-8341-5d5795eb9575)
