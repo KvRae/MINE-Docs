@@ -1,12 +1,13 @@
 # UI Components
 
 The MachInNav Engine provides a variety of Ui components to enhance the user's navigation experience. These components are designed to be intuitive and easy to use, providing users with a seamless navigation experience.
-Here's an overview of the key ui components represented in the diagram:
+Here's an overview of the key ui components represented in the diagram below:
 
 ![Ui Comp Diagram](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ba88f01e-c4f5-4875-b120-ff748edbf22e)
 
 ## Map Scene Layout
-The map scene layout provides a visual representation of the indoor environment, allowing users to view the map and navigate through the space.
+The map scene layout is the main view of the indoor environment, providing users with a visual representation of the map and key features such as pathways, walls, points of interest (POI), and other elements.
+it is a combination of the indoor navigation scene, and the other UI components such as the bottom navigation bar, bottom sheet, search bar layout, and current location button.
 In the demo below, you can see the map scene layout in action:
 
 
@@ -44,8 +45,8 @@ Here is a code snippet that shows how to use the floor selector:
 
 
 ## Bottom Sheet
-The Points of Interest (POI) selector allows users to view and select points of interest within the indoor environment, such as restrooms, exits, or other key locations.
-In the demo below, you can see the POI selector in action:
+The bottom sheet provides additional information about the map within the indoor environment, allowing users to view details such as the building name, floor number, and other relevant information.
+In the demo below, you can see the bottom sheet in action:
 <br>
 <p align="center">
   <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/24492e3e-8950-4959-ad7b-0536cfc27605" alt="POI Selector"/>
@@ -57,6 +58,37 @@ Here is a code snippet that shows how to use the POI selector:
 // Code snippet for POI Selector
 ```
 
+### Building Sheet
+The building sheet provides additional information about the building within the indoor environment, allowing users to view details such as the building name, floor number, and points of interest (POI) within the floor.
+In the demo below, you can see the building sheet in action:
+
+Here is a code snippet that shows how to use the building sheet:
+
+```kotlin
+// Code snippet for Building Sheet
+```
+
+### POI Sheet
+The POI sheet provides additional information about the points of interest (POI) within the floor,
+allowing users to view details such as the POI name, description, opening hours, contacts and other relevant information.
+
+In the demo below, you can see the POI sheet in action:
+
+Here is a code snippet that shows how to use the POI sheet:
+
+```kotlin
+// Code snippet for POI Sheet
+```
+
+### Saved Locations Sheet
+The saved locations sheet allows users to view and manage their saved locations within the indoor environment, making it easy to access frequently visited places or points of interest.
+In the demo below, you can see the saved locations sheet in action:
+
+Here is a code snippet that shows how to use the saved locations sheet:
+
+```kotlin
+// Code snippet for Saved Locations Sheet
+```
 
 ## Search Bar Layout
 The 3D/2D Map switcher button allows users to switch between 3D and 2D views of the map, providing a different perspective of the indoor environment.
@@ -93,5 +125,6 @@ Here is a code snippet that shows how to use the current location button:
 // Code snippet for Current Location Button
 ```
 
-[]: # (END)
+Each of these UI components plays a crucial role in enhancing the user's navigation experience within the indoor environment,
+providing intuitive and easy-to-use features that make it easy to navigate and explore the space.
 
