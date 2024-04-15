@@ -7,7 +7,9 @@ Here's an overview of the key ui components represented in the diagram below:
 <p align="center">
 <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ba88f01e-c4f5-4875-b120-ff748edbf22e" alt="Component diagram" width="90%" height="90%"/>
 </p>
-## Map Scene Layout [🡕](https://your-api-reference-link)
+
+## Map Scene Layout [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-layout.html)
+
 The map scene layout is the main view of the indoor environment, providing users with a visual representation of the map and key features such as pathways, walls, points of interest (POI), and other elements.
 it is a combination of the indoor navigation scene, and the other UI components such as the bottom navigation bar, bottom sheet, search bar layout, and current location button.
 In the demo below, you can see the map scene layout in action:
@@ -19,7 +21,7 @@ Here is a code snippet that shows how to use the map scene layout:
 // Code snippet for Map Scene Layout
 ```
 
-## Indoor Navigation Scene [🡕](https://your-api-reference-link)
+## Indoor Navigation Scene [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-indoor-navigation-scene.html)
 The indoor navigation scene provides a detailed view of the indoor environment, including pathways, walls, points of interest (POI), and other key features.
 In the demo below, you can see the indoor navigation scene in action:
 
@@ -30,7 +32,7 @@ Here is a code snippet that shows how to use the indoor navigation scene:
 // Code snippet for Indoor Navigation Scene
 ```
 
-## Bottom Navigation Bar [🡕](https://your-api-reference-link)
+## Bottom Navigation Bar [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-bottom-navigation-bar.html)
 the floor selector allows users to switch between different floors of a building,
 making it easy to navigate multi-level indoor environments.
 In the demo below, you can see the floor selector in action:
@@ -46,8 +48,8 @@ Here is a code snippet that shows how to use the floor selector:
 ```
 
 
-## Bottom Sheet [🡕](https://your-api-reference-link)
-The bottom sheet provides additional information about the map within the indoor environment, allowing users to view details such as the building name, floor number, and other relevant information.
+## Map Scene Bottom Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)
+This bottom sheet provides additional information about the map within the indoor environment, allowing users to view details such as the building name, floor number, and other relevant information.
 In the demo below, you can see the bottom sheet in action:
 <br>
 <p align="center">
@@ -60,7 +62,7 @@ Here is a code snippet that shows how to use the POI selector:
 // Code snippet for POI Selector
 ```
 
-### Building Sheet [🡕](https://your-api-reference-link)
+### Building Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)
 The building sheet provides additional information about the building within the indoor environment, allowing users to view details such as the building name, floor number, and points of interest (POI) within the floor.
 In the demo below, you can see the building sheet in action:
 
@@ -70,7 +72,7 @@ Here is a code snippet that shows how to use the building sheet:
 // Code snippet for Building Sheet
 ```
 
-### POI Sheet [🡕](https://your-api-reference-link)
+### POI Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-poi-details-sheet-content.html)
 The POI sheet provides additional information about the points of interest (POI) within the floor,
 allowing users to view details such as the POI name, description, opening hours, contacts and other relevant information.
 
@@ -82,7 +84,7 @@ Here is a code snippet that shows how to use the POI sheet:
 // Code snippet for POI Sheet
 ```
 
-### Saved Locations Sheet [🡕](https://your-api-reference-link)
+### Saved Locations Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-saved-loc-sheet-content.html)
 The saved locations sheet allows users to view and manage their saved locations within the indoor environment, making it easy to access frequently visited places or points of interest.
 In the demo below, you can see the saved locations sheet in action:
 
@@ -92,7 +94,7 @@ Here is a code snippet that shows how to use the saved locations sheet:
 // Code snippet for Saved Locations Sheet
 ```
 
-## Search Bar Layout [🡕](https://your-api-reference-link)
+## Search Bar Layout [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-search-bar-layout.html)
 The 3D/2D Map switcher button allows users to switch between 3D and 2D views of the map, providing a different perspective of the indoor environment.
 In the demo below, you can see the 3D/2D Map switcher button in action:
 
@@ -107,9 +109,9 @@ Here is a code snippet that shows how to use the 3D/2D Map switcher button:
 // Code snippet for 3D/2D Map switcher button
 ```
 
-## Search Bar with Dropdown [🡕](https://your-api-reference-link)
-The search bar layout allows users to search for specific locations within the indoor environment, making it easy to find points of interest or navigate to a specific destination.
-In the demo below, you can see the search bar layout in action:
+## Search Bar with Dropdown [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-top-search-bar.html)
+The search bar with dropdown allows users to search for specific locations or points of interest (POI) within the indoor environment, providing a quick and easy way to find their desired destination.
+In the demo below, you can see the search bar with dropdown in action:
 
 Here is a code snippet that shows how to use the search bar layout:
 
@@ -117,7 +119,7 @@ Here is a code snippet that shows how to use the search bar layout:
 // Code snippet for 3D/2D Map switcher button
 ```
 
-## Current Location Button [🡕](https://your-api-reference-link)
+## Current Location Button [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-localisation-button.html)
 The current location button allows users to view their current location within the indoor environment, providing real-time information on their position.
 In the demo below, you can see the current location button in action:
 
@@ -127,7 +129,7 @@ Here is a code snippet that shows how to use the current location button:
 // Code snippet for Current Location Button
 ```
 
-## Map Mode Switch Button [🡕](https://your-api-reference-link)
+## Map Mode Switch Button [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-mode-switch-button.html)
 
 The map mode switch button allows users to switch between different map modes such as 3D and 2D views, providing a different perspective of the indoor environment.
 In the demo below, you can see the map mode switch button in action:
