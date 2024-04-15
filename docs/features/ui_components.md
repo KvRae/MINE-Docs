@@ -18,7 +18,31 @@ In the demo below, you can see the map scene layout in action:
 Here is a code snippet that shows how to use the map scene layout:
 
 ```kotlin
-// Code snippet for Map Scene Layout
+@Composable
+fun MapScreen(
+    context: Context = LocalContext.current,
+) {
+    val map = MapLoader.loadMapFromAsset(
+        context = context,
+        fileName = "map.json"
+    ) // Load the map from the asset folder
+
+    val databaseHandler by lazy {
+        DatabaseHandler(
+            PoiRepository(InNavEngineDb.getInstance(context))
+        )
+    } // Initialize the database handler
+
+    val uiLayoutHandler: UiLayoutHandler = viewModel {
+        UiLayoutHandler(mapBuild = map)
+    } // Initialize the UI layout handler
+
+    MapSceneLayout(
+        mapBuild = map,
+        databaseHandler = databaseHandler,
+        uiLayoutHandler = uiLayoutHandler,
+    )  // Display the map scene layout
+}
 ```
 
 ## Indoor Navigation Scene [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-indoor-navigation-scene.html)
@@ -29,7 +53,11 @@ In the demo below, you can see the indoor navigation scene in action:
 Here is a code snippet that shows how to use the indoor navigation scene:
 
 ```kotlin
-// Code snippet for Indoor Navigation Scene
+IndoorNavigationScene(
+ uiHandler = uiLayoutHandler,
+ mapBuild = mapBuild,
+ mapTheme = mapThemeColors,
+)
 ```
 
 ## Bottom Navigation Bar [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-bottom-navigation-bar.html)
@@ -38,13 +66,26 @@ making it easy to navigate multi-level indoor environments.
 In the demo below, you can see the floor selector in action:
 <br>
 <p align="center">
-  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/1f05d680-3737-4983-bf73-d6d148389fbf" alt="Floor Selector"/>
+  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/282d63e2-2379-4400-bf54-bf3805554295" alt="Floor Selector"/>
 </p>
 
-Here is a code snippet that shows how to use the floor selector:
+Here is a code snippet that shows how to use the bottom navigation bar
 
 ```kotlin
-// Code snippet for Floor Selector
+BottomNavigationBar(
+                        selectedItem = uiLayoutHandler?.navItem?.intValue ?: 0,
+                        onItemSelected = {
+                            uiLayoutHandler?.setNavItem(it)
+                            uiLayoutHandler?.setDropdownVisibility(true)
+                        },
+                        onToggleSheet = {
+                            uiLayoutHandler?.setNavItem(it)
+                            uiLayoutHandler?.setDropdownVisibility(!uiLayoutHandler.isDropdownVisible.value)
+                        },
+                        iconColor = materialTheme.colorScheme.onSurface,
+                        selectedIconColor = materialTheme.colorScheme.primary,
+                        containerColor = materialTheme.colorScheme.surfaceContainer,
+                    )
 ```
 
 
@@ -59,15 +100,38 @@ In the demo below, you can see the bottom sheet in action:
 Here is a code snippet that shows how to use the POI selector:
 
 ```kotlin
-// Code snippet for POI Selector
+if (uiLayoutHandler?.isDropdownVisible?.value == true)
+                    MapSceneBottomSheet(
+                        isVisible = uiLayoutHandler.isDropdownVisible.value,
+                        databaseHandler = databaseHandler,
+                        onFloorChange = {
+                            uiLayoutHandler.setFloor(it)
+                            uiLayoutHandler.setDropdownVisibility(true)
+                        },
+                        onPoiChange = {
+                            uiLayoutHandler.setDropdownVisibility(true)
+                            uiLayoutHandler.setNavItem(1)
+                            uiLayoutHandler.setPoi(it)
+                        },
+                        onDismissRequest = { uiLayoutHandler.setDropdownVisibility(false) },
+                        poi = uiLayoutHandler.poi.value,
+                        floor = uiLayoutHandler.floor.value,
+                        contentIndex = uiLayoutHandler.navItem.intValue ,
+                        mapBuild = mapBuild,
+                    )
 ```
 
 ### Building Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)
 The building sheet provides additional information about the building within the indoor environment, allowing users to view details such as the building name, floor number, and points of interest (POI) within the floor.
 In the demo below, you can see the building sheet in action:
 
-Here is a code snippet that shows how to use the building sheet:
+<br>
+<p align="center">
+  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/37bca2d0-2bdd-4b69-a549-d7296f38ccfd" alt="POI Selector"/>
+</p>
 
+
+Here is a code snippet that shows how to use the building sheet:
 ```kotlin
 // Code snippet for Building Sheet
 ```
