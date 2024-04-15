@@ -1,7 +1,9 @@
 # UI Components
 
 The MachInNav Engine provides a variety of Ui components to enhance the user's navigation experience. These components are designed to be intuitive and easy to use, providing users with a seamless navigation experience.
-Here's an overview of the key ui components:
+Here's an overview of the key ui components represented in the diagram:
+
+![Ui Comp Diagram](https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ba88f01e-c4f5-4875-b120-ff748edbf22e)
 
 ## Map Scene Layout
 The map scene layout provides a visual representation of the indoor environment, allowing users to view the map and navigate through the space.
