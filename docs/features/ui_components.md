@@ -98,9 +98,10 @@ Here is a code snippet that shows how to use the saved locations sheet:
 The 3D/2D Map switcher button allows users to switch between 3D and 2D views of the map, providing a different perspective of the indoor environment.
 In the demo below, you can see the 3D/2D Map switcher button in action:
 
+
 <br>
 <p align="center">
-  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ed32b7b1-bd5d-4cf6-8341-5d5795eb9575" alt="3D/2D Map switcher button"/>
+  <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/cfc06d87-c2e9-4183-b1e8-ca2ab43a0e18" alt="3D/2D Map switcher button"/>
 </p>
 
 Here is a code snippet that shows how to use the 3D/2D Map switcher button:
@@ -111,7 +112,12 @@ Here is a code snippet that shows how to use the 3D/2D Map switcher button:
 
 ## Search Bar with Dropdown [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-top-search-bar.html)
 The search bar with dropdown allows users to search for specific locations or points of interest (POI) within the indoor environment, providing a quick and easy way to find their desired destination.
-In the demo below, you can see the search bar with dropdown in action:
+In the demo below, you can see the search bar with a dropdown in action:
+
+<br>
+<p align="center">
+  <img src=https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/7cb8dd28-372b-4899-8946-c4f1e5ec3590" alt="3D/2D Map switcher button"/>
+</p>
 
 Here is a code snippet that shows how to use the search bar layout:
 
