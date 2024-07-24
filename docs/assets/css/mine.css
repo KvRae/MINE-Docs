@@ -1,6 +1,14 @@
-
+/* Apply a green to blue gradient to all headers */
 h1, h2, h3, h4, h5, h6 {
-    background: linear-gradient(to right, #e0f7fa, #80deea);
+    background: linear-gradient(to right, #106cf6, #56ab2f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
 }

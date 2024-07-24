@@ -70,7 +70,7 @@ nav:
 copyright: |
   &copy; 2024 <a href="https://kvrae.github.io/"  target="_blank" rel="opener">Karam Mannai</a>
 extra_css:
-  - docs/assets/css/mine.css
+  - assets/css/mine.css
 plugins:
   - search
   - tags
