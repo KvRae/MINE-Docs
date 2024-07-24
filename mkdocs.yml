@@ -2,7 +2,7 @@ site_name: MINE
 repo_name: MachInNav Engine
 site_description: 'MINE is a powerful and easy-to-use indoor navigation engine for Android.'
 site_author: Karam Mannai
-repo_url: https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/
+repo_url: https://github.com/KvRae/MachInNav-Engine-Docs
 docs_dir: docs
 theme:
     name: material
