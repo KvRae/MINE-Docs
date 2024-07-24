@@ -2,41 +2,42 @@
 
 MachInNav Engine, comes with a wide range of features designed to provide a powerful and easy-to-use navigation experience. Here's an overview of the key features:
 
-## UI Components
 
-MachInNav Engine provides a variety of Ui components to enhance the user's navigation experience.
-These components are designed to be intuitive and easy to use, providing users with a seamless navigation experience. 
-Here's an overview of the key ui components:
+<div class="grid cards" markdown>
+
+-   [:octicons-arrow-right-24: Dynamic 3D/2D Environment](#)
+
+    ---
+
+    MachInNav Engine provides a dynamic 3D/2D environment that allows users to navigate indoor spaces with ease. The engine supports both 3D and 2D maps, 
+    providing users with a seamless navigation experience.
 
 
-- [Map Scene Layout](./ui_components.md#map-scene-layout)
-- [Indoor Navigation Scene](./ui_components.md#indoor-navigation-scene)
-- [Bottom Navigation Bar](./ui_components.md#bottom-navigation-bar)
-- [Bottom Sheet](./ui_components.md#bottom-sheet)
-- [3D/2D Map switcher button](./ui_components.md#3d2d-map-switcher-button)
-- [Search Bar Layout](./ui_components.md#search-bar-layout)
-- [Search Bar with Dropdown](./ui_components.md#search-bar-with-dropdown)
-- [Current Location Button](./ui_components.md#current-location-button)
+-   [:octicons-arrow-right-24: UI Components Utils](#)
 
-## Map Loading
+    ---
 
-Our engine supports efficient map loading, ensuring a smooth and seamless user experience.
+    MachInNav Engine provides a variety of Ui components to enhance the user's navigation experience.
+    These components are designed to be intuitive and easy to use, providing users with a seamless navigation experience.
 
-## Theme Customization
 
-With MachInNav Engine, you can customize the theme of your navigation interface to match your application's look and feel.
+-   [Path Finding](#)
 
-## Navigation
+    ---
 
-Our engine provides robust navigation features, guiding users accurately within indoor environments.
+    MachInNav Engine provides a robust path finding feature that allows users to find the most efficient 
+    route to their destination within an indoor environment.
 
-## Localization
 
-MachInNav Engine supports localization, allowing you to provide a navigation experience tailored to the user's language and region.
 
-## Path Finding
+-   [RealTime Navigation](#)
 
-Our path finding feature ensures users can find the most efficient route to their destination within an indoor environment.
+    ---
 
+     MachInNav Engine provides real-time navigation features, guiding users accurately within indoor environments. users can see their current
+    location and the path to their destination in real-time. 
+    The engine also provides turn-by-turn directions to guide users along the way using bluetooth beacons or IPS.
+
+</div>
 
 Stay tuned for more detailed information about each feature in the upcoming sections.

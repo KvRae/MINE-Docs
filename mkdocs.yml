@@ -1,6 +1,6 @@
-site_name: MachInNav Engine
+site_name: MINE
 repo_name: MachInNav Engine
-site_description: 'MachInNav Engine is a powerful and easy-to-use indoor navigation engine for Android.'
+site_description: 'MINE is a powerful and easy-to-use indoor navigation engine for Android.'
 site_author: Karam Mannai
 repo_url: https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/
 docs_dir: docs
@@ -22,7 +22,7 @@ theme:
     font:
         text: 'Roboto'
         code: 'Roboto Mono'
-    logo: images/location.png
+    logo: images/logo.svg
     favicon: images/favicon.ico
     search: true
     features:
@@ -55,12 +55,12 @@ nav:
         - Features Overview: features/features_overview.md
         - UI Components: features/ui_components.md
         - Theme Customization: features/theme_customization.md
-        - Map Loading: features/map_loading.md
         - Navigation: features/navigation.md
-        - Localization: features/localization.md
         - Path Finding: features/path_finding.md
     - API Reference:
         - Module Overview: api_reference/module_overview.md
+        - SceneView: api_reference/scene_view.md
+        - Filament Engine: api_reference/filament.md
 
     - Release Notes: release_notes.md
     - Support:
@@ -69,15 +69,30 @@ nav:
         - Contact Us: support/contact_us.md
 copyright: |
   &copy; 2024 <a href="https://kvrae.github.io/"  target="_blank" rel="opener">Karam Mannai</a>
-
+extra_css:
+  - docs/assets/css/mine.css
 plugins:
   - search
+  - tags
 markdown_extensions:
+  - attr_list
+  - md_in_html
   - admonition
   - pymdownx.superfences
   - pymdownx.details
   - attr_list
+  - tables
   - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
 extra:

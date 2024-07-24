@@ -16,18 +16,21 @@ To integrate the Indoor Navigation Engine library into your Android project, fol
 1. Open your project's `build.gradle` file.
 2. Add the following dependency in the `dependencies` block:
 
-Groovy DSL
-```groovy
-    dependencies {
-        implementation 'com.machinestalk:indoornavigationengine:1.0.0'
-    }
-```
-Kotlin DSL
-```kotlin
-    dependencies {
-        implementation("com.machinestalk:indoornavigationengine:1.0.0")
-    }
-```
+=== "Groovy DSL"
+      ```groovy
+          dependencies {
+            implementation 'com.machinestalk:indoornavigationengine:1.0.0'
+          }
+      ```
+=== "Kotlin DSL"
+      ```kotlin
+          dependencies {
+            implementation("com.machinestalk:indoornavigationengine:1.0.0")
+          }
+      ```
+
+
+
 
 ### Maven
 
@@ -43,18 +46,18 @@ Kotlin DSL
     </dependency>
     ```
 
+!!! warning end "Java 17 Required"
 
-## Important Note
-> **NOTE**: This library uses [Filament](https://github.com/google/filament),
-> a native library written in C++ for rendering 3D graphics, which requires Java version 17. 
-> Ensure your `build.gradle` file is configured accordingly:
+    this library uses [Filament]() a native library written in C++ for rendering 3D graphics, its api is exposed to Java using JNI,
+    and the JNI api is compiled with Java 17, so you need to compile your project with Java 17. 
+    Ensure your `build.gradle` file is configured accordingly:
 
-```groovy
-compileOptions {
-    sourceCompatibility JavaVersion.VERSION_17
-    targetCompatibility JavaVersion.VERSION_17
-}
-kotlinOptions {
-    jvmTarget = '17'
-}
-```
+    ```groovy
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    } 
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    ```

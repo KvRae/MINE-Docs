@@ -14,13 +14,15 @@ Our library aims to address this challenge by offering a robust solution for int
 
 - **Seamless Integration**: Easily integrate indoor navigation into your Android projects.
 - **Customizable Maps**: Display detailed indoor maps with custom styling and overlays.
-- **Step-by-Step Navigation**: Provide users with turn-by-turn instructions to guide them to their destinations.
+- **Dark/Light Mode**: Support for both dark, light and custom map themes .
 - **Location Awareness**: Utilize indoor positioning systems (IPS) or Bluetooth beacons for accurate location detection.
 - **Offline Support**: Cache maps and navigation data for offline use, ensuring uninterrupted navigation even without an internet connection.
 
 ## Getting Started
 
 To get started with the Indoor Navigation Library, follow the [installation instructions 🡕](getting_started/installation.md) and refer to the [documentation](getting_started/usage.md) for usage examples.
+
+
 
 ## Resources
 
