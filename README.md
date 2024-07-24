@@ -2,7 +2,7 @@
 
 # MINE - Machinestalk Indoor Navigation Engine
 
-[![Build Status](https://github.com/KvRae/docs-generation/actions/workflows/main.yml/badge.svg)](https://github.com/KvRae/docs-generation/actions)
+[![Deployment](https://github.com/KvRae/MachInNav-Engine-Docs/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/KvRae/MachInNav-Engine-Docs/actions/workflows/ci.yml)
 [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9-blue)](https://www.python.org/downloads/)
 [![MkDocs Version](https://img.shields.io/badge/mkdocs-1.2.2-blue)](https://www.mkdocs.org/)
 [![Material Version](https://img.shields.io/badge/material-7.0.0-blue)](https://squidfunk.github.io/mkdocs-material/)
