@@ -22,7 +22,7 @@ theme:
     font:
         text: 'Roboto'
         code: 'Roboto Mono'
-    logo: images/logo.svg
+    logo: images/logo.png
     favicon: images/favicon.ico
     search: true
     features:
