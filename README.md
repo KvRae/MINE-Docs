@@ -7,7 +7,7 @@
 [![MkDocs Version](https://img.shields.io/badge/mkdocs-1.2.2-blue)](https://www.mkdocs.org/)
 [![Material Version](https://img.shields.io/badge/material-7.0.0-blue)](https://squidfunk.github.io/mkdocs-material/)
 ## Introduction
-this is the documentation made using material for Mk docs a powerful static site generator that's geared towards building project documentation.
+this is a step-by-step guide documentation made using the material for Mk docs a powerful static site generator geared towards building project documentation.
 Documentation source files are written in Markdown, and configured with a single YAML configuration file.
 
 ## Pre-requisites
