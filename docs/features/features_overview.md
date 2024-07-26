@@ -1,11 +1,11 @@
-# Features Overview
+# <span class= "emoji">:fontawesome-solid-list:</span> Features Overview
 
 MachInNav Engine, comes with a wide range of features designed to provide a powerful and easy-to-use navigation experience. Here's an overview of the key features:
 
 
 <div class="grid cards" markdown>
 
--   [:octicons-arrow-right-24: Dynamic 3D/2D Environment](#)
+-   [:material-cube: Dynamic 3D/2D Environment](#)
 
     ---
 
@@ -13,7 +13,7 @@ MachInNav Engine, comes with a wide range of features designed to provide a powe
     providing users with a seamless navigation experience.
 
 
--   [:octicons-arrow-right-24: UI Components Utils](#)
+-   [:simple-jetpackcompose: UI Components Utils](#)
 
     ---
 
@@ -21,7 +21,7 @@ MachInNav Engine, comes with a wide range of features designed to provide a powe
     These components are designed to be intuitive and easy to use, providing users with a seamless navigation experience.
 
 
--   [Path Finding](#)
+-   [ :material-map-marker-path: Path Finding](#)
 
     ---
 
@@ -30,7 +30,7 @@ MachInNav Engine, comes with a wide range of features designed to provide a powe
 
 
 
--   [RealTime Navigation](#)
+-   [ :material-navigation-variant: Realtime Navigation](#)
 
     ---
 
@@ -39,5 +39,5 @@ MachInNav Engine, comes with a wide range of features designed to provide a powe
     The engine also provides turn-by-turn directions to guide users along the way using bluetooth beacons or IPS.
 
 </div>
-
+<br>
 Stay tuned for more detailed information about each feature in the upcoming sections.
