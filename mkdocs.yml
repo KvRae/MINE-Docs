@@ -25,6 +25,8 @@ theme:
     favicon: images/favicon.ico
     search: true
     features:
+      - navigation.instant
+      - navigation.instant.progress
       - toc.integrate
       - header.title
       - header.autohide
