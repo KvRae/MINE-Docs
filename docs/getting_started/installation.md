@@ -2,7 +2,7 @@
 
 This guide explains how to install the Indoor Navigation Engine library in your Android project.
 
-## Prerequisites
+## <span class="emoji"> :material-wrench-cog: </span> Prerequisites
 
 Before you begin, ensure you have the following prerequisites installed:
 
@@ -11,11 +11,11 @@ Before you begin, ensure you have the following prerequisites installed:
 - Android SDK with minimum SDK version 24 and target SDK version 34
 - Gradle 8.2
 
-## Installation
+## <span class="emoji"> :octicons-diff-added-16: </span> Dependency Installation
 
 To integrate the Indoor Navigation Engine library into your Android project, follow these steps:
 
-### Gradle
+### <span class="emoji"> :simple-gradle: </span> Gradle
 
 1. Open your project's `build.gradle` file.
 2. Add the following dependency in the `dependencies` block:
@@ -36,7 +36,7 @@ To integrate the Indoor Navigation Engine library into your Android project, fol
 
 
 
-### Maven
+### <span class="emoji"> :simple-apachemaven: </span> Maven
 
 1. Open your project's `pom.xml` file.
 2. Add the following dependency:

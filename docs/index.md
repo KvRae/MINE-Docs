@@ -1,4 +1,4 @@
-# <span class="emoji"> :simple-nintendogamecube: </span> Indoor Navigation Library for Android
+# <span class="emoji"> :simple-android: </span> Indoor Navigation Library for Android
 
 Welcome to the Indoor Navigation Library for Android! 
 This library provides developers with the tools they need to implement indoor navigation functionality in their 

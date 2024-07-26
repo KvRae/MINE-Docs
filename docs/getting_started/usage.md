@@ -1,9 +1,9 @@
 
-# Using the Indoor Navigation Engine Library
+# <span class="emoji"> :material-cube-scan: </span> Using MINE Library
 
 This guide will walk you through the process of integrating and utilizing the Indoor Navigation Engine library in your Android projects.
 
-## Basic Usage
+## <span class="emoji"> :octicons-check-circle-16: </span> Prerequisites
 
 Now that you've added the library to your project, let's explore how to use it:
 
