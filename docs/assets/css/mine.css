@@ -11,3 +11,9 @@ p {
     line-height: 1.6;
     margin-bottom: 1.5em;
 }
+
+.emoji {
+    font-size: 0.8em;
+    margin-right: 0.2em;
+    color: #106cf6;
+}

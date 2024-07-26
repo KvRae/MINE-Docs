@@ -2,7 +2,7 @@
 
 Welcome to the Indoor Navigation Library for Android! This library is designed to simplify the process of implementing indoor navigation functionality in Android applications. Whether you're building a mapping application for a shopping mall, museum, or any indoor space, our library provides the tools you need to create a seamless navigation experience for your users.
 
-## Key Features
+## <span class="emoji"> :fontawesome-solid-table-list: </span> Key Features
 
 - **Easy Integration**: Seamless integration into your existing Android projects with minimal setup required.
 - **Customizable Maps**: Display detailed indoor maps with support for custom styling and overlays.
@@ -10,7 +10,7 @@ Welcome to the Indoor Navigation Library for Android! This library is designed t
 - **Location Awareness**: Utilize indoor positioning systems (IPS) or Bluetooth beacons to accurately determine the user's location.
 - **Offline Support**: Cache maps and navigation data for offline use, ensuring uninterrupted navigation even without an internet connection.
 
-## Prerequisites
+## <span class="emoji"> :material-order-bool-ascending: </span> Prerequisites
 
 Before getting started with the Indoor Navigation Library, ensure that you have the following:
 
