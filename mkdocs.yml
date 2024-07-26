@@ -20,10 +20,10 @@ theme:
           primary: black
           accent:  cyan
     font:
-        text: 'Roboto'
-        code: 'Roboto Mono'
-    logo: images/logo.png
+        text: 'Montserrat'
+        code: 'Fira Code'
     favicon: images/favicon.ico
+    logo: ./images/logo.png
     search: true
     features:
       - toc.integrate
