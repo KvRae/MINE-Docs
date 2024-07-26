@@ -1,4 +1,4 @@
-# Indoor Navigation Library for Android
+# <span class="emoji"> :simple-nintendogamecube: </span> Quick Start
 
 Welcome to the Indoor Navigation Library for Android! This library is designed to simplify the process of implementing indoor navigation functionality in Android applications. Whether you're building a mapping application for a shopping mall, museum, or any indoor space, our library provides the tools you need to create a seamless navigation experience for your users.
 

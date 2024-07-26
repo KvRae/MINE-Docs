@@ -1,3 +1,7 @@
+# <span class="emoji"> :material-download: </span> Installation
+
+This guide explains how to install the Indoor Navigation Engine library in your Android project.
+
 ## Prerequisites
 
 Before you begin, ensure you have the following prerequisites installed:
