@@ -24,7 +24,7 @@ To get started with the Indoor Navigation Library, follow the [installation inst
 
 
 
-## <span class="emoji"> :material-api: </span> Documentation
+## <span class="emoji"> :material-assistant:</span> Resources
 
 - **Api Reference**: [Module References](https://indoor-navigation-lib.bitbucket.io/)
 - **BitBucket Repository**: [Module Repository](https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/)
