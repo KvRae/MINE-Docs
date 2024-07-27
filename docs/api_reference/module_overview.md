@@ -4,12 +4,18 @@ It also provides a way to customize the map and the navigation components.
 
 a clear overview about the architecture of the module and how it's built on top of Sceneview and filament:
 
-``` mermaid
-graph LR
-  F[Filament] -->|Renderer| A[Sceneview]
-  A -->|Viewer| B[MINE]
-```
 
+
+<div style="text-align: center;">
+  <figure style="width: 80%; margin: auto;">
+    ```mermaid
+    flowchart BT
+      F[Filament] -->|Renderer| A[Sceneview]
+      A -->|Viewer| B[MINE]
+    ```
+    <figcaption>Module Architecture Overview</figcaption>
+  </figure>
+</div>
 The module is built on top of Sceneview and Filament. Sceneview is a 3D and AR View for Android, 
 Flutter and React Native working with ARCore and Google Filament Engine. Filament is a physically based rendering engine for Android,
 Windows, Linux, and macOS. It is designed to be as small as possible and as efficient as possible, and is written in C++.

@@ -3,10 +3,30 @@
 The MachInNav Engine provides a variety of Ui components to enhance the user's navigation experience. These components are designed to be intuitive and easy to use, providing users with a seamless navigation experience.
 Here's an overview of the key ui components represented in the diagram below:
 <br>
-<br>
-<p align="center">
-<img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/ba88f01e-c4f5-4875-b120-ff748edbf22e" alt="Component diagram" width="90%" height="90%"/>
-</p>
+
+<div style="text-align: center;">
+  <figure style="width: 100%; margin: auto;">
+``` mermaid
+graph TB
+    A[Map Scene Layout] --> B[Indoor Navigation Scene]
+    A ---> D[UI Utils]
+    D --> E[Top Search Bars]
+    E --> F[SearchBarDropdown]
+    E --> G[SearchBarLayout]
+    D --> H[Navigation Bar]
+    H --> I[Bottom Navigation Bar]
+    D --> J[Bottom Sheets]
+    J --> K[Map Info Bottom Sheet]
+    J --> L[POI Bottom Sheet]
+    J --> M[Saved Locations Bottom Sheet]
+    D --> N[Floating Buttons]
+    N --> O[Current Location Button]
+    N --> P[Map Mode Switch Button]
+    
+```
+<figcaption>UI Components Overview</figcaption>
+  </figure>
+</div>
 
 ## Map Scene Layout [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-layout.html)
 
