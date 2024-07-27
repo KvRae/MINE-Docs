@@ -18,3 +18,9 @@
 5. **Is the Indoor Navigation Library free to use?**
     - Not at the moment. The Indoor Navigation Library is currently available as a paid service, and you will need to purchase a license to use the library in your Android applications. For more information about pricing and licensing options, please contact us directly.
     - We are also working on a free version of the library that will be available for open-source projects and non-commercial use. Stay tuned for updates on the release of the free version.
+6. ** Are there any plans to add support for Kotlin Multiplatform?**
+    - Unfortunately, we do not have any immediate plans to add support for Kotlin Multiplatform. However, we are constantly evaluating new technologies and frameworks to enhance the library's capabilities. If there is sufficient demand for Kotlin Multiplatform support, we may consider adding it in future releases.
+    - If you have any specific requirements or feature requests, please feel free to reach out to us with your suggestions. We value feedback from the community and are always looking for ways to improve the library.
+7. ** Does the library support K2?**
+    - Yes, the Indoor Navigation Library fully supports Kotlin 2 (K2) and is compatible with the latest version of the Kotlin programming language. You can use the library with K2 to build modern Android applications with ease.
+    - If you encounter any issues while using the library with K2, please let us know so that we can address them promptly. Your feedback is important to us, and we strive to provide a seamless development experience for all users.
