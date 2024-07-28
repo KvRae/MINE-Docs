@@ -1,5 +1,5 @@
 # <span class="emoji"> :octicons-mail-16: </span> Contact Us
-MINE is developed as an internship project at [Machinestalk]() by Karam Mannai, Wissal Zammouri, and Nassim Boussami. 
+MINE is developed as an internship project at [Machinestalk]() by Karam Mannai and Mohamed Kalech. 
 For the moment, the project is internal and not available for public use, the development process is still ongoing and the project is not yet ready for production.
 For more information about the project, you can contact our maintainers.
 
