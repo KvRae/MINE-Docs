@@ -51,6 +51,12 @@ We would like to thank the rest of the mobile team at Machinestalk for their sup
         <h6><b>Mobile Engineer</b></h6>
         </div>
     </div>
+    <div class="card">
+        <div class="container">
+        <h4><b>Nerimene Brahim</b></h4>
+        <h6><b>IOS Engineer</b></h6>
+        </div>
+    </div>
 </div>
 
 ## In the end
