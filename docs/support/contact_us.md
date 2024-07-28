@@ -9,21 +9,21 @@ who are responsible for the development and maintenance of the project. The team
 
 <div class="team-members">
   <div class="card">
-    <img src="/assets/images/team/karam.png" alt="Team Member 1">
+    <img src="../assets/images/team/karam.png" alt="Team Member 1">
     <div class="container">
       <h4><b>Karam Mannai</b></h4>
       <h6><b>Android Engineer</b></h6>
     </div>
   </div>
   <div class="card">
-    <img src="/assets/images/team/wissal.jpg" alt="Team Member 2">
+    <img src="../assets/images/team/wissal.jpg" alt="Team Member 2">
     <div class="container">
       <h4><b>Wissal Zammouri</b></h4>
       <h6><b>Android Developer</b></h6>
     </div>
   </div>
     <div class="card">
-        <img src="/assets/images/team/nassim.jpg" alt="Team Member 3">
+        <img src="../assets/images/team/nassim.jpg" alt="Team Member 3">
         <div class="container">
         <h4><b>Nassim Boussami</b></h4>
         <h6><b>Android Engineer</b></h6>
@@ -37,21 +37,21 @@ We would like to thank the rest of the mobile team at Machinestalk for their sup
 
 <div class="team-members">
   <div class="card">
-    <img src="/assets/images/team/kalech.png" alt="Team Member 1">
+    <img src="../assets/images/team/kalech.png" alt="Team Member 1">
     <div class="container">
       <h4><b>Mohamed Kalech</b></h4>
       <h6><b>IOS Engineer</b></h6>
     </div>
   </div>
   <div class="card">
-    <img src="/assets/images/team/elmoez.jpg" alt="Team Member 2">
+    <img src="../assets/images/team/elmoez.jpg" alt="Team Member 2">
     <div class="container">
       <h4><b>El Moez Amira</b></h4>
       <h6><b>IOS Engineer</b></h6>
     </div>
   </div>
     <div class="card">
-        <img src="/assets/images/team/ahmed.png" alt="Team Member 3">
+        <img src="../assets/images/team/ahmed.png" alt="Team Member 3">
         <div class="container">
         <h4><b>Ahmed Mahouachi</b></h4>
         <h6><b>Mobile Engineer</b></h6>
