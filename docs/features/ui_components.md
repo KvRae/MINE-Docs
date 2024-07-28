@@ -92,20 +92,7 @@ In the demo below, you can see the floor selector in action:
 Here is a code snippet that shows how to use the bottom navigation bar
 
 ```kotlin
-BottomNavigationBar(
-                        selectedItem = uiLayoutHandler?.navItem?.intValue ?: 0,
-                        onItemSelected = {
-                            uiLayoutHandler?.setNavItem(it)
-                            uiLayoutHandler?.setDropdownVisibility(true)
-                        },
-                        onToggleSheet = {
-                            uiLayoutHandler?.setNavItem(it)
-                            uiLayoutHandler?.setDropdownVisibility(!uiLayoutHandler.isDropdownVisible.value)
-                        },
-                        iconColor = materialTheme.colorScheme.onSurface,
-                        selectedIconColor = materialTheme.colorScheme.primary,
-                        containerColor = materialTheme.colorScheme.surfaceContainer,
-                    )
+// Code snippet for Bottom Navigation Bar
 ```
 
 
@@ -120,25 +107,7 @@ In the demo below, you can see the bottom sheet in action:
 Here is a code snippet that shows how to use the POI selector:
 
 ```kotlin
-if (uiLayoutHandler?.isDropdownVisible?.value == true)
-                    MapSceneBottomSheet(
-                        isVisible = uiLayoutHandler.isDropdownVisible.value,
-                        databaseHandler = databaseHandler,
-                        onFloorChange = {
-                            uiLayoutHandler.setFloor(it)
-                            uiLayoutHandler.setDropdownVisibility(true)
-                        },
-                        onPoiChange = {
-                            uiLayoutHandler.setDropdownVisibility(true)
-                            uiLayoutHandler.setNavItem(1)
-                            uiLayoutHandler.setPoi(it)
-                        },
-                        onDismissRequest = { uiLayoutHandler.setDropdownVisibility(false) },
-                        poi = uiLayoutHandler.poi.value,
-                        floor = uiLayoutHandler.floor.value,
-                        contentIndex = uiLayoutHandler.navItem.intValue ,
-                        mapBuild = mapBuild,
-                    )
+// Code snippet for POI Selector
 ```
 
 ### Building Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)

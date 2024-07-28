@@ -54,6 +54,7 @@ nav:
         - Youtube Tutorials 🡕 : https://www.youtube.com/@kvrae8698/featured
     - Features:
         - Features Overview: features/features_overview.md
+        - Map Loading: features/map_loading.md
         - UI Components: features/ui_components.md
         - Theme Customization: features/theme_customization.md
         - Navigation: features/navigation.md
