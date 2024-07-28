@@ -1,11 +1,11 @@
-# Navigation
+# <span class="emoji"> :material-navigation: </span> Navigation
 
 The navigation is a feature that allows the user to navigate through the 3D map,
 a user marker is placed on the map and the user can move it to any location on the map using bluetooth beacons.
 Along with beacons, other sensors like accelerometer, gyroscope, and magnetometer are used to provide a better navigation experience to the user.
 for more accurate navigation, we are adding the steps to the navigation path, so the user can follow the path to reach the destination easily.
 
-## Beacons Setup
+## <span class="emoji"> :material-list-status: </span> Requirements
 
 The beacons are used to provide the user's location on the map. Configuring the beacons is a simple process:
 

@@ -1,7 +1,8 @@
+# <span class="emoji"> :octicons-paintbrush-16: </span> Theme Customization
 MachInNav Engine supports by default the Light and Dark themes. However, you can customize the theme to match your app's design and branding.
 This section will guide you through the process of customizing the theme of the MachInNav Engine.
 
-## Default Theme Colors
+## <span class="emoji"> :material-format-color-fill: </span> Default Theme Colors 
 The default theme of the MachInNav Engine is a combination of Light and Dark themes.
 here is the default theme color palette:
 
@@ -22,31 +23,16 @@ To achieve this result, you can leave the mapColorTheme parameter empty when ini
 The default theme will be applied automatically. Here is an example of how to initialize the MachInNav Engine with the default theme:
 
 ```kotlin
-IndoorNavigationScene(
-// No need to pass the mapColorTheme parameter
-)
+// Code Implementation for default theme
 ```
 
-## Customizing the Theme
+## <span class="emoji"> :material-wrench: </span>  Customizing the Theme
 MachInNav Engine allows you to customize the theme colors to match your app's design and branding.
 The theme customization process involves defining the color palette for the map components such as the ground, pathways, walls, points of interest (POI), and selected POI.
 Here is an example of how to customize the theme colors:
 
 ```kotlin
-// Use jetpack compose isSystemInDarkTheme() function to determine the current system theme 
-val isDarkTheme = isSystemInDarkTheme()
-// Define the custom theme color palette
-val customTheme = MapColorTheme(
-    groundColor = if (isDarkTheme) Color(0xFF282828) else Color(0xFFFDE4E4),
-    pathWaysColor = if (isDarkTheme) Color(0xFF575757) else Color(0xFFFDE4E4),
-    wallColor = if (isDarkTheme) Color(0xFF282828) else Color(0xFF888383),
-    poiColor = if (isDarkTheme) Color(0xFF3F3F3F) else Color(0xFFB9B2B2),
-    selectedPoiColor = if (isDarkTheme) Color(0xFF2D7C32) else Color(0xFF779CB7)
-)
-// Pass the custom theme to the MachInNav Engine
-IndoorNavigationScene(
-       mapColorTheme = customTheme
-     )
+// Code Implementation for custom theme
 ```
 
 In the code snippet above, we use the isSystemInDarkTheme() function to determine the current system theme.

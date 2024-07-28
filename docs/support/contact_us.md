@@ -59,7 +59,7 @@ We hope that you find this project interesting and useful. If you have any quest
 Always remember: 
 
 !!! quote
-    "Life is not fair, make use of it " - Karam Mannai
+    "Life is not fair, make use of it :" - Karam Mannai
 
 
 

@@ -1,4 +1,4 @@
-# UI Components
+# <span class="emoji"> :material-material-design: </span> UI Components
 
 The MachInNav Engine provides a variety of Ui components to enhance the user's navigation experience. These components are designed to be intuitive and easy to use, providing users with a seamless navigation experience.
 Here's an overview of the key ui components represented in the diagram below:
@@ -28,7 +28,7 @@ graph TB
   </figure>
 </div>
 
-## Map Scene Layout [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-layout.html)
+## <span class="emoji"> :material-page-layout-body: </span> Map Scene Layout [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-layout.html)
 
 The map scene layout is the main view of the indoor environment, providing users with a visual representation of the map and key features such as pathways, walls, points of interest (POI), and other elements.
 it is a combination of the indoor navigation scene, and the other UI components such as the bottom navigation bar, bottom sheet, search bar layout, and current location button.
@@ -38,34 +38,10 @@ In the demo below, you can see the map scene layout in action:
 Here is a code snippet that shows how to use the map scene layout:
 
 ```kotlin
-@Composable
-fun MapScreen(
-    context: Context = LocalContext.current,
-) {
-    val map = MapLoader.loadMapFromAsset(
-        context = context,
-        fileName = "map.json"
-    ) // Load the map from the asset folder
-
-    val databaseHandler by lazy {
-        DatabaseHandler(
-            PoiRepository(InNavEngineDb.getInstance(context))
-        )
-    } // Initialize the database handler
-
-    val uiLayoutHandler: UiLayoutHandler = viewModel {
-        UiLayoutHandler(mapBuild = map)
-    } // Initialize the UI layout handler
-
-    MapSceneLayout(
-        mapBuild = map,
-        databaseHandler = databaseHandler,
-        uiLayoutHandler = uiLayoutHandler,
-    )  // Display the map scene layout
-}
+// Code snippet for Map Scene Layout
 ```
 
-## Indoor Navigation Scene [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-indoor-navigation-scene.html)
+## <span class="emoji"> :material-page-layout-body: </span> Indoor Navigation Scene [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-indoor-navigation-scene.html)
 The indoor navigation scene provides a detailed view of the indoor environment, including pathways, walls, points of interest (POI), and other key features.
 In the demo below, you can see the indoor navigation scene in action:
 
@@ -73,14 +49,10 @@ In the demo below, you can see the indoor navigation scene in action:
 Here is a code snippet that shows how to use the indoor navigation scene:
 
 ```kotlin
-IndoorNavigationScene(
- uiHandler = uiLayoutHandler,
- mapBuild = mapBuild,
- mapTheme = mapThemeColors,
-)
+// Code snippet for Indoor Navigation Scene
 ```
 
-## Bottom Navigation Bar [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-bottom-navigation-bar.html)
+## <span class="emoji"> :material-page-layout-footer: </span> Bottom Navigation Bar [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-bottom-navigation-bar.html)
 the floor selector allows users to switch between different floors of a building,
 making it easy to navigate multi-level indoor environments.
 In the demo below, you can see the floor selector in action:
@@ -96,7 +68,7 @@ Here is a code snippet that shows how to use the bottom navigation bar
 ```
 
 
-## Map Scene Bottom Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)
+## <span class="emoji"> :material-page-layout-footer:</span> Map Scene Bottom Sheet [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)
 This bottom sheet provides additional information about the map within the indoor environment, allowing users to view details such as the building name, floor number, and other relevant information.
 In the demo below, you can see the bottom sheet in action:
 <br>
@@ -110,7 +82,7 @@ Here is a code snippet that shows how to use the POI selector:
 // Code snippet for POI Selector
 ```
 
-### Building Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)
+### <span class="emoji"> :material-page-layout-footer: </span> Building Sheet [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-scene-bottom-sheet.html)
 The building sheet provides additional information about the building within the indoor environment, allowing users to view details such as the building name, floor number, and points of interest (POI) within the floor.
 In the demo below, you can see the building sheet in action:
 
@@ -125,7 +97,7 @@ Here is a code snippet that shows how to use the building sheet:
 // Code snippet for Building Sheet
 ```
 
-### POI Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-poi-details-sheet-content.html)
+### <span class="emoji"> :material-page-layout-footer: </span> POI Sheet [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-poi-details-sheet-content.html)
 The POI sheet provides additional information about the points of interest (POI) within the floor,
 allowing users to view details such as the POI name, description, opening hours, contacts and other relevant information.
 
@@ -137,7 +109,7 @@ Here is a code snippet that shows how to use the POI sheet:
 // Code snippet for POI Sheet
 ```
 
-### Saved Locations Sheet [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-saved-loc-sheet-content.html)
+### <span class="emoji"> :material-page-layout-footer:</span> Saved Locations Sheet [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-saved-loc-sheet-content.html)
 The saved locations sheet allows users to view and manage their saved locations within the indoor environment, making it easy to access frequently visited places or points of interest.
 In the demo below, you can see the saved locations sheet in action:
 
@@ -147,7 +119,7 @@ Here is a code snippet that shows how to use the saved locations sheet:
 // Code snippet for Saved Locations Sheet
 ```
 
-## Search Bar Layout [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-search-bar-layout.html)
+## <span class="emoji"> :material-page-layout-header: </span> Search Bar Layout [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-search-bar-layout.html)
 The 3D/2D Map switcher button allows users to switch between 3D and 2D views of the map, providing a different perspective of the indoor environment.
 In the demo below, you can see the 3D/2D Map switcher button in action:
 
@@ -163,7 +135,7 @@ Here is a code snippet that shows how to use the 3D/2D Map switcher button:
 // Code snippet for 3D/2D Map switcher button
 ```
 
-## Search Bar with Dropdown [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-top-search-bar.html)
+## <span class="emoji"> :material-page-layout-header: </span> Search Bar with Dropdown [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-top-search-bar.html)
 The search bar with dropdown allows users to search for specific locations or points of interest (POI) within the indoor environment, providing a quick and easy way to find their desired destination.
 In the demo below, you can see the search bar with a dropdown in action:
 
@@ -178,7 +150,7 @@ Here is a code snippet that shows how to use the search bar layout:
 // Code snippet for 3D/2D Map switcher button
 ```
 
-## Current Location Button [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-localisation-button.html)
+## <span class="emoji"> :material-page-layout-sidebar-right: </span> Current Location Button [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-localisation-button.html)
 The current location button allows users to view their current location within the indoor environment, providing real-time information on their position.
 In the demo below, you can see the current location button in action:
 
@@ -188,7 +160,7 @@ Here is a code snippet that shows how to use the current location button:
 // Code snippet for Current Location Button
 ```
 
-## Map Mode Switch Button [🡕](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-mode-switch-button.html)
+## <span class="emoji"> :material-page-layout-sidebar-right: </span> Map Mode Switch Button [:octicons-arrow-up-right-24:](https://indoor-navigation-lib.bitbucket.io/indoornavigationengine/com.machinestalk.indoornavigationengine.ui/-map-mode-switch-button.html)
 
 The map mode switch button allows users to switch between different map modes such as 3D and 2D views, providing a different perspective of the indoor environment.
 In the demo below, you can see the map mode switch button in action:
