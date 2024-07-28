@@ -1,4 +1,4 @@
-#FAQ
+# <span class="emoji"> :material-chat-question: </span> Frequently Asked Questions (FAQ)
 
 1. **How do I get started with the project?**
     - You can get started with the project by following the steps mentioned in the [Getting Started](../getting_started/quick_start.md) section of the documentation.

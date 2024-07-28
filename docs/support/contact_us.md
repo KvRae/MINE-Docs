@@ -1,8 +1,9 @@
+# <span class="emoji"> :octicons-mail-16: </span> Contact Us
 MINE is developed as an internship project at [Machinestalk]() by Karam Mannai, Wissal Zammouri, and Nassim Boussami. 
 For the moment, the project is internal and not available for public use, the development process is still ongoing and the project is not yet ready for production.
 For more information about the project, you can contact our maintainers.
 
-## Maintainers 
+## <span class="emoji"> :octicons-organization-16: </span> Maintainers
 
 the project is maintained by a team of software engineers,
 who are responsible for the development and maintenance of the project. The team is composed of the following members:
@@ -28,7 +29,7 @@ who are responsible for the development and maintenance of the project. The team
     </div>
 </div>
 
-## Acknowledgements
+## <span class="emoji"> :fontawesome-solid-hands-clapping: </span> Acknowledgements
 
 We would like to thank the rest of the mobile team at Machinestalk for their support and guidance throughout the development process.
 
@@ -59,13 +60,13 @@ We would like to thank the rest of the mobile team at Machinestalk for their sup
     </div>
 </div>
 
-## In the end
+## <span class="emoji"> :octicons-move-to-end-16: </span> In The End
 
 We hope that you find this project interesting and useful. If you have any questions or feedback, please feel free to contact us. We are always happy to hear from you.
 Always remember: 
 
 !!! quote
-    "Life is not fair, make use of it :" - Karam Mannai
+    "Life is not fair, make use of it :eyes: " - Karam Mannai
 
 
 

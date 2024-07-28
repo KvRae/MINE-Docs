@@ -1,7 +1,8 @@
-# Troubleshooting
+# <span class="emoji"> :material-help-rhombus: </span> Troubleshooting
 This page contains a list of common issues and their solutions.
 
-## Issue 1: Map is not loading
+## <span class="emoji"> :octicons-bug-16: </span> Issue 1: Map file not found
+When loading a map,
 you may encounter this issue if the map file is not found or the path is incorrect. 
 To resolve this issue, make sure that the map file is located in the correct directory 
 and that the path is specified correctly in the code.
@@ -11,7 +12,7 @@ val mapPath = "path/to/map/file"
 val map = MapLoader.loadMap(mapPath)
 ```
 
-## Issue 2: Navigation is not working
+## <span class="emoji"> :octicons-bug-16: </span> Issue 2: Navigation is not working
 If navigation is not working, check the following:
 
 - Ensure that you set up the beacons correctly.
