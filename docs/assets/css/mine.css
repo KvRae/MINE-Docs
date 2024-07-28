@@ -1,4 +1,4 @@
-h1, h2, h3, h5 {
+h1, h2, h3, h5, h6 {
     background: linear-gradient(to right, #106cf6, #56ab2f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
