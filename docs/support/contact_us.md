@@ -9,23 +9,26 @@ the project is maintained by a team of software engineers,
 who are responsible for the development and maintenance of the project. The team is composed of the following members:
 
 <div class="team-members">
-  <div class="card">
+    <div class="card">
+    <img src="https://github.com/user-attachments/assets/378fda6e-5e4f-4691-b358-36fa3d3997b1" alt="Team Member 1">
     <div class="container">
       <h4><b>Karam Mannai</b></h4>
       <h6><b>Android Engineer</b></h6>
     </div>
   </div>
   <div class="card">
+    <img src="https://github.com/user-attachments/assets/82ee2109-0e17-4c51-aae6-6d206d63d7f8" alt="Team Member 2">
     <div class="container">
       <h4><b>Wissal Zammouri</b></h4>
       <h6><b>Android Developer</b></h6>
     </div>
   </div>
     <div class="card">
-        <div class="container">
+      <img src="https://github.com/user-attachments/assets/59335488-207f-414b-ad12-bd43c592d9e4" alt="Team Member 3">
+      <div class="container">
         <h4><b>Nassim Boussami</b></h4>
         <h6><b>Android Engineer</b></h6>
-        </div>
+      </div>
     </div>
 </div>
 
