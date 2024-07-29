@@ -10,7 +10,7 @@ who are responsible for the development and maintenance of the project. The team
 
 <div class="team-members">
     <div class="card">
-    <img src="https://github.com/user-attachments/assets/378fda6e-5e4f-4691-b358-36fa3d3997b1" alt="Team Member 1">
+    <img src="https://github.com/user-attachments/assets/1750a3f0-3564-44e4-a950-140a850fd78d" alt="Team Member 1">
     <div class="container">
       <h4><b>Karam Mannai</b></h4>
       <h6><b>Android Engineer</b></h6>
