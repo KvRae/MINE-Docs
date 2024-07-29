@@ -38,24 +38,28 @@ We would like to thank the rest of the mobile team at Machinestalk for their sup
 
 <div class="team-members">
   <div class="card">
+    <img src="https://github.com/user-attachments/assets/89e221da-2e91-4813-b886-eabaf8d39845" alt="Team Member 4">
     <div class="container">
       <h4><b>Mohamed Kalech</b></h4>
       <h6><b>IOS Engineer</b></h6>
     </div>
   </div>
   <div class="card">
+    <img src="https://github.com/user-attachments/assets/26ac7fc4-69ac-4665-b2c3-c3d3fc29b102" alt="Team Member 5">
     <div class="container">
       <h4><b>El Moez Amira</b></h4>
       <h6><b>IOS Engineer</b></h6>
     </div>
   </div>
     <div class="card">
+        <img src="https://github.com/user-attachments/assets/916b7c6a-89c4-4b72-8910-c7b8a82f16ad" alt="Team Member 6">
         <div class="container">
         <h4><b>Ahmed Mahouachi</b></h4>
         <h6><b>Mobile Engineer</b></h6>
         </div>
     </div>
     <div class="card">
+        <img src="https://github.com/user-attachments/assets/1f6a1bed-5798-40a8-85bb-df500b0eff83" alt="Team Member 7">
         <div class="container">
         <h4><b>Nerimene Brahim</b></h4>
         <h6><b>IOS Engineer</b></h6>
