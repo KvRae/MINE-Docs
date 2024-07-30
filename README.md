@@ -17,7 +17,6 @@ Documentation source files are written in Markdown, and configured with a single
 
 ## Installation
 - Using pip:
-- 
 ```bash
 pip install mkdocs-material
 ```
