@@ -64,7 +64,13 @@ nav:
         - SceneView: api_reference/scene_view.md
         - Filament Engine: api_reference/filament.md
 
-    - Release Notes: release_notes.md
+    - Release Notes:
+        - Overview: release_notes/release_notes.md
+        - v0.1.0: release_notes/0.1.0_alpha.md
+        - v0.2.1: release_notes/0.2.1_alpha.md
+        - v0.3.2: release_notes/0.3.2_alpha.md
+        - v0.4.0: release_notes/0.4.0_alpha.md
+
     - Support:
         - FAQ: support/faq.md
         - Troubleshooting: support/troubleshooting.md
