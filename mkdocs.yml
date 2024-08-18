@@ -22,7 +22,8 @@ theme:
     font:
         text: 'Montserrat'
         code: 'Fira Code'
-    favicon: images/favicon.ico
+    favicon: assets/images/favicon.ico
+    logo: assets/images/logo.png
     search: true
     features:
       - navigation.instant
