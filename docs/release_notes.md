@@ -3,8 +3,8 @@
 | Release | Version | Date       | Description                                |
 |---------|---------|------------|--------------------------------------------|
 | Alpha 1 | 0.1.0   | 2024-02-16 | Added 3D/2D environment generation feature |
-| Alpha 2 | 0.2.1   | 2024-07-15 | Added UI components utilities feature      |
-| Alpha 3 | 0.3.2   | 2024-07-30 | Added Path finding utilities feature       |
+| Alpha 2 | 0.2.1   | 2024-04-15 | Added UI components utilities feature      |
+| Alpha 3 | 0.3.2   | 2024-06-09 | Added Path finding utilities feature       |
 | Alpha 4 | 0.4.0   | 2024-07-11 | Added support user navigation feature      |
 
 # <span class="emoji"> :material-invoice-text-fast: </span> Release Notes for Alpha 1 (build 0.1.0)
