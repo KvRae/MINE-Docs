@@ -28,6 +28,10 @@ Here is an example of how to use the `AStar` class to find the shortest path bet
 // Code snippet implementing the path finding feature
 ```
 
+
+![Path Finding Demo](https://github.com/user-attachments/assets/667184e6-6037-468a-ba53-22e97c3217f2){ loading=lazy }
+
+
 ## <span class="emoji"> :material-check-all: </span> Conclusion
 Path finding is an important feature in many applications, including games and robotics. The A* algorithm is a popular path finding algorithm that is used to find the shortest path between two points. The A* algorithm is efficient and can find the shortest path in a reasonable amount of time. In this project, we are using the A* algorithm to find the shortest path between two points on the map. The A* algorithm requires a set of path points and a function that returns the neighbors of a given path point. The A* algorithm guarantees that it will find the shortest path if the heuristic function is admissible.
 
