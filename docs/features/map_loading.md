@@ -31,6 +31,9 @@ Here is an example of how to load a map from a remote server:
 // Code snippet to load a map from a remote server
 
 ```
+![Ins](https://github.com/user-attachments/assets/76e47113-955f-4e63-bb8b-76914be73f9a)
+
+
 
 ## <span class="emoji"> :material-book: </span> Conclusion
 The map loading feature allows you to load a map from a file and display it in the simulator. The map file is a JSON file that contains a grid of characters, where each character represents a different type of cell.
