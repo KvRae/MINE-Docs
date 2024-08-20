@@ -12,13 +12,13 @@ theme:
               icon: material/weather-sunny
               name: Switch to dark mode
           primary: white
-          accent: light blue
+          accent: light-blue
         - scheme: slate
           toggle:
               icon: material/weather-night
               name: Switch to light mode
           primary: black
-          accent:  cyan
+          accent:  light-blue
     font:
         text: 'Montserrat'
         code: 'Fira Code'
