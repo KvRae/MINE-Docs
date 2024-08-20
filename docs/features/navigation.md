@@ -20,6 +20,9 @@ The beacons are used to provide the user's location on the map. Configuring the 
 
  Now you are ready to use the beacons for navigation.
 
+ ![Ins](https://github.com/user-attachments/assets/cd83f011-8e9d-4475-bfb7-645283c5bd7d){loading=lazy}
+
+
 !!! Note
     The Positioning of the beacons is important for the accuracy of the navigation. We are following the trilateration method to calculate the user's position on the map.
     Here is a simple explanation of the trilateration method [Trilateration](https://en.wikipedia.org/wiki/Trilateration)
