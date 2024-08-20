@@ -31,7 +31,7 @@ Here is an example of how to load a map from a remote server:
 // Code snippet to load a map from a remote server
 
 ```
-![Ins](https://github.com/user-attachments/assets/76e47113-955f-4e63-bb8b-76914be73f9a)
+![Map Loading Demo](https://github.com/user-attachments/assets/76e47113-955f-4e63-bb8b-76914be73f9a){ loading=lazy }
 
 
 
