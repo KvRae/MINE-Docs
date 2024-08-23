@@ -58,6 +58,14 @@ Congratulations! you have successfully run the server, now you can access the do
 this project contains a github action that will automatically deploy the documentation to github pages when a new commit is pushed to the main branch.
 you can find the github action file in the .github/workflows directory.
 
+## ⭐️ Support Us by Starring the Repository!
+
+If you find this project helpful or interesting, please consider giving it a ⭐️. It really helps us out by:
+
+- Increasing visibility and letting more people know about the project.
+- Encouraging continued development and improvements.
+- Showing your support and appreciation for the work put into the project.
+
 Happy coding!
 
 
