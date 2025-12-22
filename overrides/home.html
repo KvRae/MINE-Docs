@@ -1,0 +1,330 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/css/home.css' | url }}">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer">
+  <style>
+    /* Transparent header with blur effect */
+    .md-header {
+      background: rgba(11, 18, 33, 0.7) !important;
+      box-shadow: none !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: background 0.3s ease;
+    }
+
+    .md-header--shadow {
+      background: rgba(11, 18, 33, 0.95) !important;
+    }
+
+    /* Make navigation tabs transparent */
+    .md-tabs {
+      background: transparent !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .md-tabs__list { background: transparent !important; }
+    .md-tabs__item { background: transparent !important; }
+
+    /* Force white text color for tabs in both themes */
+    .md-tabs__link { color: rgba(255, 255, 255, 0.85) !important; opacity: 1; transition: color 0.3s ease; }
+    .md-tabs__link:hover { color: rgba(255, 255, 255, 1) !important; }
+    .md-tabs__link--active { color: #60a5fa !important; }
+
+    /* Header title and icons should also be white */
+    .md-header__title, .md-header__button { color: rgba(255, 255, 255, 0.9) !important; }
+    .md-header__button:hover { color: rgba(255, 255, 255, 1) !important; }
+
+    /* Search and other header elements */
+    .md-search__input { color: rgba(255, 255, 255, 0.9) !important; background-color: rgba(255, 255, 255, 0.1) !important; }
+    .md-search__input::placeholder { color: rgba(255, 255, 255, 0.5) !important; }
+    .md-search__input:focus { background-color: rgba(255, 255, 255, 0.15) !important; }
+
+    /* Search icon */
+    .md-search__icon { color: rgba(255, 255, 255, 0.7) !important; }
+
+    /* Repository/source link */
+    .md-source, .md-source__repository, .md-source__icon { color: rgba(255, 255, 255, 0.9) !important; }
+    .md-source:hover { color: rgba(255, 255, 255, 1) !important; }
+
+    /* Theme toggle icon */
+    .md-header__button.md-icon svg { fill: rgba(255, 255, 255, 0.9) !important; }
+    .md-header__button.md-icon:hover svg { fill: rgba(255, 255, 255, 1) !important; }
+
+    /* Fix copy-to-clipboard button */
+    .md-clipboard, button.md-clipboard {
+      background: rgba(59, 130, 246, 0.15) !important; border: 1px solid rgba(96, 165, 250, 0.3) !important;
+      color: #60a5fa !important; border-radius: 6px !important; transition: all 0.3s ease !important;
+    }
+    .md-clipboard:hover, button.md-clipboard:hover { background: rgba(59, 130, 246, 0.25) !important; border-color: rgba(96, 165, 250, 0.5) !important; color: #93c5fd !important; }
+    .md-clipboard svg { fill: #60a5fa !important; }
+    .md-clipboard:hover svg { fill: #93c5fd !important; }
+
+    /* Fix back-to-top button */
+    .md-top {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(139, 92, 246, 0.9)) !important;
+      border: 1px solid rgba(96, 165, 250, 0.4) !important; box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3) !important;
+      transition: all 0.3s ease !important; transform: translate(0, 0) !important;
+    }
+    .md-top:hover {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 1), rgba(139, 92, 246, 1)) !important;
+      box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4) !important; transform: translate(0, -4px) !important;
+    }
+    .md-top svg { fill: rgba(255, 255, 255, 0.95) !important; }
+    .md-top:hover svg { fill: rgba(255, 255, 255, 1) !important; }
+
+    /* Footer (home page only) - transparent with blur */
+    .md-footer {
+      background: transparent !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border-top: 1px solid rgba(255,255,255,0.08) !important;
+    }
+    .md-footer__inner,
+    .md-footer-meta,
+    .md-footer-nav,
+    .md-footer__link {
+      background: rgba(11, 18, 33, 0.70) !important;
+      box-shadow: none !important;
+    }
+    .md-footer__link--prev,
+    .md-footer__link--next,
+    .md-footer__link a { background: transparent !important; }
+    .md-footer,
+    .md-footer a,
+    .md-footer__title,
+    .md-footer__link { color: rgba(255,255,255,0.9) !important; }
+    .md-footer a:hover { color: #ffffff !important; }
+    .md-footer svg,
+    .md-footer .md-icon { fill: rgba(255,255,255,0.9) !important; color: rgba(255,255,255,0.9) !important; }
+    .md-footer__inner,
+    .md-footer-meta { padding-top: 12px !important; padding-bottom: 12px !important; }
+
+    /* New styles for brand strip */
+    .brand {
+      background: rgba(11, 18, 33, 0.85) !important;
+      padding: 16px 0 !important;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    .brand__logo {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 8px;
+    }
+    .brand__tagline {
+      color: rgba(255, 255, 255, 0.7) !important;
+      font-size: 14px;
+      margin: 0;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="page-shell">
+  <div class="parallax">
+    <div class="parallax__layer parallax__layer--back"></div>
+    <div class="parallax__layer parallax__layer--mid"></div>
+    <div class="parallax__layer parallax__layer--front"></div>
+  </div>
+
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">Indoor Navigation Engine for Android</p>
+      <h1>Build reliable indoor positioning, routing, and 3D map experiences</h1>
+      <p class="lede">Production-ready SDK backed by Filament rendering, offline-first caching, and composable UI for maps, search, and turn-by-turn guidance.</p>
+      <div class="hero__cta">
+        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">Get started</a>
+        <a class="md-button" href="{{ 'getting_started/installation/' | url }}">Install the SDK</a>
+        <a class="ghost-link" href="https://indoor-navigation-lib.bitbucket.io/" target="_blank" rel="noreferrer">View API reference →</a>
+      </div>
+      <div class="hero__meta">
+        <span class="chip">Android SDK 24+</span>
+        <span class="chip">JDK 17</span>
+        <span class="chip">Gradle 8.2+</span>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="phone-mock">
+        <div class="phone-mock__notch"></div>
+        <div class="phone-mock__screen">
+          <!-- Replace map mock with brand logo inside the phone screen -->
+          <div class="phone-mock__logo-wrap">
+            <img src="{{ 'assets/images/Logo.svg' | url }}" alt="MINE Logo" class="phone-mock__logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="metrics">
+    <div class="metric-card">
+      <div class="metric__icon"><i class="fa-solid fa-bolt"></i></div>
+      <p class="metric__label">Deploy faster</p>
+      <p class="metric__value">&lt;15 min</p>
+      <p class="metric__desc">From SDK install to first rendered map.</p>
+    </div>
+    <div class="metric-card">
+      <div class="metric__icon"><i class="fa-solid fa-box-archive"></i></div>
+      <p class="metric__label">Offline ready</p>
+      <p class="metric__value">100%</p>
+      <p class="metric__desc">Maps and routes cached for spotty venues.</p>
+    </div>
+    <div class="metric-card">
+      <div class="metric__icon"><i class="fa-solid fa-building"></i></div>
+      <p class="metric__label">Multi-floor</p>
+      <p class="metric__value">10+</p>
+      <p class="metric__desc">Floor-aware navigation with camera controls.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <header>
+      <p class="eyebrow">Why teams ship with MINE</p>
+      <h2>Product-grade building blocks</h2>
+    </header>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-palette"></i></div>
+        <h3>Filament 3D rendering</h3>
+        <p>Smooth indoor maps with light/dark/custom themes and floor-aware camera controls.</p>
+        <a href="{{ 'api_reference/scene_view/' | url }}">SceneView API</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-compass"></i></div>
+        <h3>Navigation & path finding</h3>
+        <p>Turn-by-turn guidance, obstacle avoidance, and offline routes for reliability.</p>
+        <a href="{{ 'features/navigation/' | url }}">Navigation</a>
+        <a href="{{ 'features/path_finding/' | url }}">Path finding</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-map"></i></div>
+        <h3>Map loading flexibility</h3>
+        <p>Load JSON map builds from assets or CDN; push venue updates without app releases.</p>
+        <a href="{{ 'features/map_loading/' | url }}">Map loading</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Theming & UI components</h3>
+        <p>Composable widgets for search, floor picker, overlays, and brand-aligned themes.</p>
+        <a href="{{ 'features/theme_customization/' | url }}">Themes</a>
+        <a href="{{ 'features/ui_components/' | url }}">UI components</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="demo">
+    <div class="demo__copy">
+      <p class="eyebrow">Live demo</p>
+      <h2>See navigation in action</h2>
+      <p>Simulate a visitor experience with multi-floor routing, IPS/beacon positioning, and branded UI — directly in your app shell.</p>
+      <div class="demo__cta">
+        <a class="md-button md-button--primary" href="{{ 'getting_started/usage/' | url }}">Embed the scene</a>
+        <a class="md-button" href="{{ 'release_notes/release_notes/' | url }}">Check latest release</a>
+      </div>
+    </div>
+    <div class="demo__visual" aria-hidden="true">
+      <div class="glow-card">
+        <div class="glow-card__header">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="caption">IndoorNavigationScene()</span>
+        </div>
+        <div class="glow-card__body">
+          <pre><code class="language-kotlin"><span style="color: #c678dd;">@Composable</span>
+<span style="color: #c678dd;">fun</span> <span style="color: #61afef;">VenueMap</span>() {
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">context</span> = <span style="color: #61afef;">LocalContext</span>.current
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">mapData</span> = <span style="color: #61afef;">remember</span> { <span style="color: #61afef;">JsonUtil</span>.<span style="color: #61afef;">LoadJsonFromAsset</span>(context, <span style="color: #98c379;">"map.json"</span>) }
+
+    <span style="color: #61afef;">IndoorNavigationScene</span>(
+        mapBuild = mapData,
+        theme = <span style="color: #e5c07b;">MapTheme</span>.<span style="color: #d19a66;">Dark</span>,
+        cameraConfig = <span style="color: #e5c07b;">CameraConfig</span>.<span style="color: #d19a66;">Default</span>
+    )
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quickstart">
+    <header>
+      <p class="eyebrow">Quickstart</p>
+      <h2>Install and render your first map</h2>
+    </header>
+    <div class="code-grid">
+      <div>
+        <p class="code-label">Add the SDK</p>
+        <pre><code class="language-kotlin"><span style="color: #5c6370; font-style: italic;">// build.gradle.kts</span>
+<span style="color: #e06c75;">dependencies</span> {
+    <span style="color: #61afef;">implementation</span>(<span style="color: #98c379;">"com.machinestalk:indoornavigationengine:1.0.0"</span>)
+}
+
+<span style="color: #5c6370; font-style: italic;">// Ensure Java 17</span>
+<span style="color: #e06c75;">compileOptions</span> {
+    <span style="color: #e06c75;">sourceCompatibility</span> = <span style="color: #e5c07b;">JavaVersion</span>.<span style="color: #d19a66;">VERSION_17</span>
+    <span style="color: #e06c75;">targetCompatibility</span> = <span style="color: #e5c07b;">JavaVersion</span>.<span style="color: #d19a66;">VERSION_17</span>
+}
+<span style="color: #e06c75;">kotlinOptions</span> {
+    <span style="color: #e06c75;">jvmTarget</span> = <span style="color: #98c379;">"17"</span>
+}
+</code></pre>
+      </div>
+      <div>
+        <p class="code-label">Render a map (Compose)</p>
+        <pre><code class="language-kotlin"><span style="color: #c678dd;">@Composable</span>
+<span style="color: #c678dd;">fun</span> <span style="color: #61afef;">VenueMap</span>() {
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">context</span> = <span style="color: #61afef;">LocalContext</span>.current
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">mapData</span> = <span style="color: #61afef;">remember</span> { <span style="color: #61afef;">JsonUtil</span>.<span style="color: #61afef;">LoadJsonFromAsset</span>(context, <span style="color: #98c379;">"map.json"</span>) }
+
+    <span style="color: #61afef;">IndoorNavigationScene</span>(
+        mapBuild = mapData,
+        theme = <span style="color: #e5c07b;">MapTheme</span>.<span style="color: #d19a66;">Dark</span>,           <span style="color: #5c6370; font-style: italic;">// or Light/Custom</span>
+        cameraConfig = <span style="color: #e5c07b;">CameraConfig</span>.<span style="color: #d19a66;">Default</span>
+    )
+}
+</code></pre>
+      </div>
+      <div>
+        <p class="code-label">Load maps remotely</p>
+        <pre><code class="language-kotlin"><span style="color: #c678dd;">suspend</span> <span style="color: #c678dd;">fun</span> <span style="color: #61afef;">fetchMap</span>(): <span style="color: #e5c07b;">MapBuild</span> {
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">loader</span> = <span style="color: #61afef;">MapLoader</span>()
+    <span style="color: #c678dd;">return</span> loader.<span style="color: #61afef;">loadMapFromUrl</span>(<span style="color: #98c379;">"https://cdn.example.com/maps/venue-map.json"</span>)
+}
+</code></pre>
+      </div>
+    </div>
+    <div class="quick-links">
+      <a href="{{ 'getting_started/usage/' | url }}">Usage guide</a>
+      <a href="{{ 'features/features_overview/' | url }}">Feature overview</a>
+      <a href="{{ 'release_notes/release_notes/' | url }}">Release notes</a>
+      <a href="{{ 'support/faq/' | url }}">Support & FAQ</a>
+      <a href="https://indoor-navigation-lib.bitbucket.io/" target="_blank" rel="noreferrer">API reference</a>
+      <a href="https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/" target="_blank" rel="noreferrer">Source</a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__body">
+      <div>
+        <p class="eyebrow">Ready to ship</p>
+        <h2>Launch branded indoor navigation faster</h2>
+        <p>Start with the SDK, tailor the theme, and deliver turn-by-turn guidance your users can trust.</p>
+      </div>
+      <div class="cta__actions">
+        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">Build now</a>
+        <a class="md-button" href="{{ 'support/contact_us/' | url }}">Talk to us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="brand">
+    <div class="brand__inner">
+      <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/0c18324c-3cbd-4453-a7a3-84948052b778" alt="MINE Logo" class="brand__logo" />
+      <p class="brand__tagline">MINE — Machinestalk Indoor Navigation Engine</p>
+    </div>
+  </section>
+</div>
+{% endblock %}

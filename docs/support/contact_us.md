@@ -1,12 +1,39 @@
 # <span class="emoji"> :octicons-mail-16: </span> Contact Us
-MINE is developed as an internship project at [Machinestalk]() by Karam Mannai and Mohamed Kalech. 
-For the moment, the project is internal and not available for public use, the development process is still ongoing and the project is not yet ready for production.
-For more information about the project, you can contact our maintainers.
+
+Welcome to the MINE indoor navigation support desk. This page explains how to reach us, what to expect when you do, and who maintains the project.
+
+!!! info "Project status"
+    MINE is currently an internal internship project at [Machinestalk](), built by **Karam Mannai** and **Mohamed Kalech**. It is not yet publicly available and is still under active development.
+
+---
+
+## <span class="emoji"> :material-chat-processing: </span> How to Reach Us
+
+- **Email**: support@machinestalk.com (fastest for detailed questions)
+- **Issue report**: Describe the problem, steps to reproduce, logs, and screenshots
+- **Feature requests**: Tell us your use case and impact
+- **General inquiries**: Clarifications about roadmap, licensing, or pilots
+
+!!! tip "What to include"
+    - MINE version, Android version, device model
+    - Steps to reproduce or expected vs actual behavior
+    - Logs (filtered for `MINE` tag) and screenshots
+
+---
+
+## <span class="emoji"> :material-timeline-clock: </span> Response Targets
+
+| Request type | First reply | Resolution target | Availability |
+|--------------|-------------|-------------------|--------------|
+| Production blocker | Same business day | 1-2 business days | Sun-Thu, 9:00-18:00 GMT+3 |
+| General support | 1 business day | 3-5 business days | Sun-Thu, 9:00-18:00 GMT+3 |
+| Feature inquiry | 2 business days | Scoped with you | Sun-Thu, 9:00-18:00 GMT+3 |
+
+---
 
 ## <span class="emoji"> :octicons-organization-16: </span> Maintainers
 
-the project is maintained by a team of software engineers,
-who are responsible for the development and maintenance of the project. The team is composed of the following members:
+The project is maintained by our mobile engineering team.
 
 <div class="team-members">
     <div class="card">
@@ -25,9 +52,11 @@ who are responsible for the development and maintenance of the project. The team
   </div>
 </div>
 
+---
+
 ## <span class="emoji"> :fontawesome-solid-hands-clapping: </span> Acknowledgements
 
-We would like to thank the rest of the mobile team at Machinestalk for their support and guidance throughout the development process.
+We appreciate the wider mobile team at Machinestalk for their support and guidance.
 
 <div class="team-members">
     <div class="card">
@@ -67,15 +96,11 @@ We would like to thank the rest of the mobile team at Machinestalk for their sup
     </div>
 </div>
 
+---
+
 ## <span class="emoji"> :octicons-move-to-end-16: </span> In The End
 
-We hope that you find this project interesting and useful. If you have any questions or feedback, please feel free to contact us. We are always happy to hear from you.
-Always remember: 
+We hope you find MINE useful. If you have questions or feedback, reach out—your input helps shape the roadmap.
 
 !!! quote
-    "Life is not fair, make use of it :eyes: " - Karam Mannai
-
-
-
-
-
+    "Life is not fair, make use of it :eyes:" — Karam Mannai
