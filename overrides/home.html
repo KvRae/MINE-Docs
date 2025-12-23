@@ -138,7 +138,8 @@
       <div class="hero__cta">
         <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">Get started</a>
         <a class="md-button" href="{{ 'getting_started/installation/' | url }}">Install the SDK</a>
-        <a class="ghost-link" href="https://indoor-navigation-lib.bitbucket.io/" target="_blank" rel="noreferrer">View API reference →</a>
+        {# Update API reference to local Dokka docs #}
+        <a class="ghost-link" href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">View API reference →</a>
       </div>
       <div class="hero__meta">
         <span class="chip">Android SDK 24+</span>
@@ -301,7 +302,8 @@
       <a href="{{ 'features/features_overview/' | url }}">Feature overview</a>
       <a href="{{ 'release_notes/release_notes/' | url }}">Release notes</a>
       <a href="{{ 'support/faq/' | url }}">Support & FAQ</a>
-      <a href="https://indoor-navigation-lib.bitbucket.io/" target="_blank" rel="noreferrer">API reference</a>
+      {# Update API reference quick link to local Dokka docs #}
+      <a href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">API reference</a>
       <a href="https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/" target="_blank" rel="noreferrer">Source</a>
     </div>
   </section>
