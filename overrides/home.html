@@ -333,7 +333,8 @@
 
   <section class="brand">
     <div class="brand__inner">
-      <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/0c18324c-3cbd-4453-a7a3-84948052b778" alt="MINE Logo" class="brand__logo" />
+      <!-- Use local logo asset with base-aware URL so it works under /MINE-Docs/ -->
+      <img src="{{ 'assets/images/Logo.svg' | url }}" alt="MINE Logo" class="brand__logo" />
       <p class="brand__tagline">MINE — Machinestalk Indoor Navigation Engine</p>
     </div>
   </section>

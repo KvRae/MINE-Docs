@@ -17,7 +17,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material
       - run: pip install pillow cairosvg
-      - run: pip install mkdocs-static-i18n
+      - run: pip install mkdocs-material mkdocs-static-i18n mkdocs-tags
+
       - run: mkdocs gh-deploy --force
