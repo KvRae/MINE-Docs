@@ -144,10 +144,10 @@ extra:
   generator: false
   alternate:
     - name: English
-      link: /minedocs/
+      link: /MINE-Docs/
       lang: en
     - name: Français
-      link: /minedocs/fr/
+      link: /MINE-Docs/fr/
       lang: fr
   social:
     - icon: fontawesome/brands/github
