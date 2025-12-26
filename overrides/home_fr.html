@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/css/home.css' | url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer">
+{% endblock %}
+
+{% block content %}
+<div class="page-shell">
+  <div class="parallax">
+    <div class="parallax__layer parallax__layer--back"></div>
+    <div class="parallax__layer parallax__layer--mid"></div>
+    <div class="parallax__layer parallax__layer--front"></div>
+  </div>
+
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">Moteur de navigation intérieure pour Android</p>
+      <h1>Créez des expériences fiables de positionnement intérieur, d’itinéraires et de cartes 3D</h1>
+      <p class="lede">SDK prêt pour la production, basé sur Filament, avec cache hors-ligne et UI composable pour cartes, recherche et guidage étape par étape.</p>
+      <div class="hero__cta">
+        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">Bien démarrer</a>
+        <a class="md-button" href="{{ 'getting_started/installation/' | url }}">Installer le SDK</a>
+        <a class="ghost-link" href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">Voir la référence API →</a>
+      </div>
+      <div class="hero__meta">
+        <span class="chip">SDK Android 24+</span>
+        <span class="chip">JDK 17</span>
+        <span class="chip">Gradle 8.2+</span>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="phone-mock">
+        <div class="phone-mock__notch"></div>
+        <div class="phone-mock__screen">
+          <div class="phone-mock__logo-wrap">
+            <img src="{{ 'assets/images/Logo.svg' | url }}" alt="Logo MINE" class="phone-mock__logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="metrics">
+    <div class="metric-card">
+      <div class="metric__icon"><i class="fa-solid fa-bolt"></i></div>
+      <p class="metric__label">Déployez plus vite</p>
+      <p class="metric__value">&lt;15 min</p>
+      <p class="metric__desc">De l’installation du SDK à la première carte rendue.</p>
+    </div>
+    <div class="metric-card">
+      <div class="metric__icon"><i class="fa-solid fa-box-archive"></i></div>
+      <p class="metric__label">Prêt pour le hors-ligne</p>
+      <p class="metric__value">100%</p>
+      <p class="metric__desc">Cartes et itinéraires mis en cache pour les lieux à faible connectivité.</p>
+    </div>
+    <div class="metric-card">
+      <div class="metric__icon"><i class="fa-solid fa-building"></i></div>
+      <p class="metric__label">Multi-niveaux</p>
+      <p class="metric__value">10+</p>
+      <p class="metric__desc">Navigation sensible aux étages avec contrôles caméra.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <header>
+      <p class="eyebrow">Pourquoi les équipes choisissent MINE</p>
+      <h2>Des briques produit de niveau industriel</h2>
+    </header>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-palette"></i></div>
+        <h3>Rendu 3D Filament</h3>
+        <p>Cartes intérieures fluides avec thèmes clair/sombre/personnalisés et caméra sensible aux étages.</p>
+        <a href="{{ 'api_reference/scene_view/' | url }}">API SceneView</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-compass"></i></div>
+        <h3>Navigation et recherche de chemin</h3>
+        <p>Guidage étape par étape, évitement d’obstacles et itinéraires hors-ligne pour une fiabilité maximale.</p>
+        <a href="{{ 'features/navigation/' | url }}">Navigation</a>
+        <a href="{{ 'features/path_finding/' | url }}">Recherche de chemin</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-map"></i></div>
+        <h3>Chargement de cartes flexible</h3>
+        <p>Chargez des cartes JSON depuis les ressources ou un CDN ; publiez des mises à jour de lieux sans nouvelle version d’app.</p>
+        <a href="{{ 'features/map_loading/' | url }}">Chargement de la carte</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-card__icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Thèmes et composants UI</h3>
+        <p>Widgets composables pour la recherche, le sélecteur d’étage, les overlays et des thèmes alignés à votre marque.</p>
+        <a href="{{ 'features/theme_customization/' | url }}">Thèmes</a>
+        <a href="{{ 'features/ui_components/' | url }}">Composants UI</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="demo">
+    <div class="demo__copy">
+      <p class="eyebrow">Démo en direct</p>
+      <h2>Voyez la navigation en action</h2>
+      <p>Simulez l’expérience d’un visiteur avec itinéraires multi-étages, positionnement IPS/balises et UI brandée — directement dans votre application.</p>
+      <div class="demo__cta">
+        <a class="md-button md-button--primary" href="{{ 'getting_started/usage/' | url }}">Intégrer la scène</a>
+        <a class="md-button" href="{{ 'release_notes/release_notes/' | url }}">Consulter la dernière version</a>
+      </div>
+    </div>
+    <div class="demo__visual" aria-hidden="true">
+      <div class="glow-card">
+        <div class="glow-card__header">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="caption">IndoorNavigationScene()</span>
+        </div>
+        <div class="glow-card__body">
+          <pre><code class="language-kotlin"><span style="color: #c678dd;">@Composable</span>
+<span style="color: #c678dd;">fun</span> <span style="color: #61afef;">VenueMap</span>() {
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">context</span> = <span style="color: #61afef;">LocalContext</span>.current
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">mapData</span> = <span style="color: #61afef;">remember</span> { <span style="color: #61afef;">JsonUtil</span>.<span style="color: #61afef;">LoadJsonFromAsset</span>(context, <span style="color: #98c379;">"map.json"</span>) }
+
+    <span style="color: #61afef;">IndoorNavigationScene</span>(
+        mapBuild = mapData,
+        theme = <span style="color: #e5c07b;">MapTheme</span>.<span style="color: #d19a66;">Dark</span>,
+        cameraConfig = <span style="color: #e5c07b;">CameraConfig</span>.<span style="color: #d19a66;">Default</span>
+    )
+}
+</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quickstart">
+    <header>
+      <p class="eyebrow">Démarrage rapide</p>
+      <h2>Installez et affichez votre première carte</h2>
+    </header>
+    <div class="code-grid">
+      <div>
+        <p class="code-label">Ajouter le SDK</p>
+        <pre><code class="language-kotlin"><span style="color: #5c6370; font-style: italic;">// build.gradle.kts</span>
+<span style="color: #e06c75;">dependencies</span> {
+    <span style="color: #61afef;">implementation</span>(<span style="color: #98c379;">"com.machinestalk:indoornavigationengine:1.0.0"</span>)
+}
+
+<span style="color: #5c6370; font-style: italic;">// Ensure Java 17</span>
+<span style="color: #e06c75;">compileOptions</span> {
+    <span style="color: #e06c75;">sourceCompatibility</span> = <span style="color: #e5c07b;">JavaVersion</span>.<span style="color: #d19a66;">VERSION_17</span>
+    <span style="color: #e06c75;">targetCompatibility</span> = <span style="color: #e5c07b;">JavaVersion</span>.<span style="color: #d19a66;">VERSION_17</span>
+}
+<span style="color: #e06c75;">kotlinOptions</span> {
+    <span style="color: #e06c75;">jvmTarget</span> = <span style="color: #98c379;">"17"</span>
+}
+</code></pre>
+      </div>
+      <div>
+        <p class="code-label">Afficher une carte (Compose)</p>
+        <pre><code class="language-kotlin"><span style="color: #c678dd;">@Composable</span>
+<span style="color: #c678dd;">fun</span> <span style="color: #61afef;">VenueMap</span>() {
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">context</span> = <span style="color: #61afef;">LocalContext</span>.current
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">mapData</span> = <span style="color: #61afef;">remember</span> { <span style="color: #61afef;">JsonUtil</span>.<span style="color: #61afef;">LoadJsonFromAsset</span>(context, <span style="color: #98c379;">"map.json"</span>) }
+
+    <span style="color: #61afef;">IndoorNavigationScene</span>(
+        mapBuild = mapData,
+        theme = <span style="color: #e5c07b;">MapTheme</span>.<span style="color: #d19a66;">Dark</span>,           <span style="color: #5c6370; font-style: italic;">// or Light/Custom</span>
+        cameraConfig = <span style="color: #e5c07b;">CameraConfig</span>.<span style="color: #d19a66;">Default</span>
+    )
+}
+</code></pre>
+      </div>
+      <div>
+        <p class="code-label">Charger des cartes à distance</p>
+        <pre><code class="language-kotlin"><span style="color: #c678dd;">suspend</span> <span style="color: #c678dd;">fun</span> <span style="color: #61afef;">fetchMap</span>(): <span style="color: #e5c07b;">MapBuild</span> {
+    <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">loader</span> = <span style="color: #61afef;">MapLoader</span>()
+    <span style="color: #c678dd;">return</span> loader.<span style="color: #61afef;">loadMapFromUrl</span>(<span style="color: #98c379;">"https://cdn.example.com/maps/venue-map.json"</span>)
+}
+</code></pre>
+      </div>
+    </div>
+    <div class="quick-links">
+      <a href="{{ 'getting_started/usage/' | url }}">Guide d’utilisation</a>
+      <a href="{{ 'features/features_overview/' | url }}">Aperçu des fonctionnalités</a>
+      <a href="{{ 'release_notes/release_notes/' | url }}">Notes de version</a>
+      <a href="{{ 'support/faq/' | url }}">Support & FAQ</a>
+      <a href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">Référence API</a>
+      <a href="https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/" target="_blank" rel="noreferrer">Source</a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__body">
+      <div>
+        <p class="eyebrow">Prêt à déployer</p>
+        <h2>Lancez plus vite une navigation intérieure à votre image</h2>
+        <p>Commencez avec le SDK, adaptez le thème et livrez un guidage fiable étape par étape.</p>
+      </div>
+      <div class="cta__actions">
+        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">Construire maintenant</a>
+        <a class="md-button" href="{{ 'support/contact_us/' | url }}">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="brand">
+    <div class="brand__inner">
+      <img src="https://github.com/KvRae/MachInNav-Engine-Docs/assets/58667227/0c18324c-3cbd-4453-a7a3-84948052b778" alt="Logo MINE" class="brand__logo" />
+      <p class="brand__tagline">MINE — Machinestalk Indoor Navigation Engine</p>
+    </div>
+  </section>
+</div>
+{% endblock %}
+

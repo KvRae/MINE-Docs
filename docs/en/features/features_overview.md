@@ -19,7 +19,7 @@ The **MINE (MachInNav Engine)** is a comprehensive indoor navigation solution de
 
     Seamlessly switch between immersive 3D and efficient 2D map views based on user preferences and device capabilities.
 
-    [:octicons-arrow-right-24: Learn more](./map_loading.md)
+    [:octicons-arrow-right-24: Learn more](map_loading.md)
 
 -   :material-palette-outline: **Theme Customization**
 
@@ -27,7 +27,7 @@ The **MINE (MachInNav Engine)** is a comprehensive indoor navigation solution de
 
     Fully customizable themes and branding options to match your application's design language and corporate identity.
 
-    [:octicons-arrow-right-24: Customize themes](./theme_customization.md)
+    [:octicons-arrow-right-24: Customize themes](theme_customization.md)
 
 -   :material-compass-outline: **Advanced Path Finding**
 
@@ -35,7 +35,7 @@ The **MINE (MachInNav Engine)** is a comprehensive indoor navigation solution de
 
     Multi-criteria route optimization considering accessibility, distance, congestion, and user preferences.
 
-    [:octicons-arrow-right-24: Explore pathfinding](./path_finding.md)
+    [:octicons-arrow-right-24: Explore pathfinding](path_finding.md)
 
 -   :material-navigation-variant-outline: **Real-time Navigation**
 
@@ -43,7 +43,7 @@ The **MINE (MachInNav Engine)** is a comprehensive indoor navigation solution de
 
     Turn-by-turn guidance with visual and audio cues, supporting Bluetooth beacons, Wi-Fi, and sensor fusion.
 
-    [:octicons-arrow-right-24: Navigation features](./navigation.md)
+    [:octicons-arrow-right-24: Navigation features](navigation.md)
 
 -   :material-view-dashboard-outline: **Rich UI Components**
 
@@ -51,7 +51,7 @@ The **MINE (MachInNav Engine)** is a comprehensive indoor navigation solution de
 
     Pre-built, customizable UI components including search, floor selection, POI markers, and route preview.
 
-    [:octicons-arrow-right-24: UI components](./ui_components.md)
+    [:octicons-arrow-right-24: UI components](ui_components.md)
 
 -   :material-layers-outline: **Multi-floor Support**
 
@@ -59,7 +59,7 @@ The **MINE (MachInNav Engine)** is a comprehensive indoor navigation solution de
 
     Intelligent navigation across multiple building floors with automatic floor detection and transitions.
 
-    [:octicons-arrow-right-24: Map loading](./map_loading.md)
+    [:octicons-arrow-right-24: Map loading](map_loading.md)
 
 </div>
 
@@ -535,8 +535,8 @@ Ready to implement MINE features in your application?
 
 Explore detailed documentation for each feature:
 
-- [Map Loading & Visualization](./map_loading.md) - Learn about 3D/2D map integration
-- [Path Finding Algorithms](./path_finding.md) - Deep dive into routing engine
-- [Navigation Features](./navigation.md) - Real-time navigation implementation
-- [UI Components](./ui_components.md) - Pre-built UI component library
-- [Theme Customization](./theme_customization.md) - Branding and styling guide
+- [Map Loading & Visualization](map_loading.md) - Learn about 3D/2D map integration
+- [Path Finding Algorithms](path_finding.md) - Deep dive into routing engine
+- [Navigation Features](navigation.md) - Real-time navigation implementation
+- [UI Components](ui_components.md) - Pre-built UI component library
+- [Theme Customization](theme_customization.md) - Branding and styling guide

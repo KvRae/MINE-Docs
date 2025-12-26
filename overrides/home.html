@@ -123,6 +123,9 @@
 {% endblock %}
 
 {% block content %}
+{# Detect current language from page file path or config #}
+{% set is_french = config.theme.language == 'fr' or (page.canonical_url and '/fr/' in page.canonical_url) or (page.file.src_uri and page.file.src_uri.startswith('fr/')) %}
+
 <div class="page-shell">
   <div class="parallax">
     <div class="parallax__layer parallax__layer--back"></div>
@@ -132,14 +135,20 @@
 
   <section class="hero">
     <div class="hero__copy">
+      {% if is_french %}
+      <p class="eyebrow">Moteur de navigation intérieure pour Android</p>
+      <h1>Créez des expériences fiables de positionnement intérieur, d'itinéraires et de cartes 3D</h1>
+      <p class="lede">SDK prêt pour la production, basé sur Filament, avec cache hors-ligne et UI composable pour cartes, recherche et guidage étape par étape.</p>
+      {% else %}
       <p class="eyebrow">Indoor Navigation Engine for Android</p>
       <h1>Build reliable indoor positioning, routing, and 3D map experiences</h1>
       <p class="lede">Production-ready SDK backed by Filament rendering, offline-first caching, and composable UI for maps, search, and turn-by-turn guidance.</p>
+      {% endif %}
       <div class="hero__cta">
-        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">Get started</a>
-        <a class="md-button" href="{{ 'getting_started/installation/' | url }}">Install the SDK</a>
+        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">{% if is_french %}Bien démarrer{% else %}Get started{% endif %}</a>
+        <a class="md-button" href="{{ 'getting_started/installation/' | url }}">{% if is_french %}Installer le SDK{% else %}Install the SDK{% endif %}</a>
         {# Update API reference to local Dokka docs #}
-        <a class="ghost-link" href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">View API reference →</a>
+        <a class="ghost-link" href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">{% if is_french %}Voir la référence API{% else %}View API reference{% endif %} →</a>
       </div>
       <div class="hero__meta">
         <span class="chip">Android SDK 24+</span>
@@ -163,67 +172,67 @@
   <section class="metrics">
     <div class="metric-card">
       <div class="metric__icon"><i class="fa-solid fa-bolt"></i></div>
-      <p class="metric__label">Deploy faster</p>
+      <p class="metric__label">{% if is_french %}Déployez plus vite{% else %}Deploy faster{% endif %}</p>
       <p class="metric__value">&lt;15 min</p>
-      <p class="metric__desc">From SDK install to first rendered map.</p>
+      <p class="metric__desc">{% if is_french %}De l'installation du SDK à la première carte rendue.{% else %}From SDK install to first rendered map.{% endif %}</p>
     </div>
     <div class="metric-card">
       <div class="metric__icon"><i class="fa-solid fa-box-archive"></i></div>
-      <p class="metric__label">Offline ready</p>
+      <p class="metric__label">{% if is_french %}Prêt pour le hors-ligne{% else %}Offline ready{% endif %}</p>
       <p class="metric__value">100%</p>
-      <p class="metric__desc">Maps and routes cached for spotty venues.</p>
+      <p class="metric__desc">{% if is_french %}Cartes et itinéraires mis en cache pour les lieux à faible connectivité.{% else %}Maps and routes cached for spotty venues.{% endif %}</p>
     </div>
     <div class="metric-card">
       <div class="metric__icon"><i class="fa-solid fa-building"></i></div>
-      <p class="metric__label">Multi-floor</p>
+      <p class="metric__label">{% if is_french %}Multi-niveaux{% else %}Multi-floor{% endif %}</p>
       <p class="metric__value">10+</p>
-      <p class="metric__desc">Floor-aware navigation with camera controls.</p>
+      <p class="metric__desc">{% if is_french %}Navigation sensible aux étages avec contrôles caméra.{% else %}Floor-aware navigation with camera controls.{% endif %}</p>
     </div>
   </section>
 
   <section class="features">
     <header>
-      <p class="eyebrow">Why teams ship with MINE</p>
-      <h2>Product-grade building blocks</h2>
+      <p class="eyebrow">{% if is_french %}Pourquoi les équipes choisissent MINE{% else %}Why teams ship with MINE{% endif %}</p>
+      <h2>{% if is_french %}Des briques produit de niveau industriel{% else %}Product-grade building blocks{% endif %}</h2>
     </header>
     <div class="feature-grid">
       <article class="feature-card">
         <div class="feature-card__icon"><i class="fa-solid fa-palette"></i></div>
-        <h3>Filament 3D rendering</h3>
-        <p>Smooth indoor maps with light/dark/custom themes and floor-aware camera controls.</p>
+        <h3>{% if is_french %}Rendu 3D Filament{% else %}Filament 3D rendering{% endif %}</h3>
+        <p>{% if is_french %}Cartes intérieures fluides avec thèmes clair/sombre/personnalisés et caméra sensible aux étages.{% else %}Smooth indoor maps with light/dark/custom themes and floor-aware camera controls.{% endif %}</p>
         <a href="{{ 'api_reference/scene_view/' | url }}">SceneView API</a>
       </article>
       <article class="feature-card">
         <div class="feature-card__icon"><i class="fa-solid fa-compass"></i></div>
-        <h3>Navigation & path finding</h3>
-        <p>Turn-by-turn guidance, obstacle avoidance, and offline routes for reliability.</p>
-        <a href="{{ 'features/navigation/' | url }}">Navigation</a>
-        <a href="{{ 'features/path_finding/' | url }}">Path finding</a>
+        <h3>{% if is_french %}Navigation et recherche de chemin{% else %}Navigation & path finding{% endif %}</h3>
+        <p>{% if is_french %}Guidage étape par étape, évitement d'obstacles et itinéraires hors-ligne pour une fiabilité maximale.{% else %}Turn-by-turn guidance, obstacle avoidance, and offline routes for reliability.{% endif %}</p>
+        <a href="{{ 'features/navigation/' | url }}">{% if is_french %}Navigation{% else %}Navigation{% endif %}</a>
+        <a href="{{ 'features/path_finding/' | url }}">{% if is_french %}Recherche de chemin{% else %}Path finding{% endif %}</a>
       </article>
       <article class="feature-card">
         <div class="feature-card__icon"><i class="fa-solid fa-map"></i></div>
-        <h3>Map loading flexibility</h3>
-        <p>Load JSON map builds from assets or CDN; push venue updates without app releases.</p>
-        <a href="{{ 'features/map_loading/' | url }}">Map loading</a>
+        <h3>{% if is_french %}Chargement de cartes flexible{% else %}Map loading flexibility{% endif %}</h3>
+        <p>{% if is_french %}Chargez des cartes JSON depuis les ressources ou un CDN ; publiez des mises à jour de lieux sans nouvelle version d'app.{% else %}Load JSON map builds from assets or CDN; push venue updates without app releases.{% endif %}</p>
+        <a href="{{ 'features/map_loading/' | url }}">{% if is_french %}Chargement de la carte{% else %}Map loading{% endif %}</a>
       </article>
       <article class="feature-card">
         <div class="feature-card__icon"><i class="fa-solid fa-bullseye"></i></div>
-        <h3>Theming & UI components</h3>
-        <p>Composable widgets for search, floor picker, overlays, and brand-aligned themes.</p>
-        <a href="{{ 'features/theme_customization/' | url }}">Themes</a>
-        <a href="{{ 'features/ui_components/' | url }}">UI components</a>
+        <h3>{% if is_french %}Thèmes et composants UI{% else %}Theming & UI components{% endif %}</h3>
+        <p>{% if is_french %}Widgets composables pour la recherche, le sélecteur d'étage, les overlays et des thèmes alignés à votre marque.{% else %}Composable widgets for search, floor picker, overlays, and brand-aligned themes.{% endif %}</p>
+        <a href="{{ 'features/theme_customization/' | url }}">{% if is_french %}Thèmes{% else %}Themes{% endif %}</a>
+        <a href="{{ 'features/ui_components/' | url }}">{% if is_french %}Composants UI{% else %}UI components{% endif %}</a>
       </article>
     </div>
   </section>
 
   <section class="demo">
     <div class="demo__copy">
-      <p class="eyebrow">Live demo</p>
-      <h2>See navigation in action</h2>
-      <p>Simulate a visitor experience with multi-floor routing, IPS/beacon positioning, and branded UI — directly in your app shell.</p>
+      <p class="eyebrow">{% if is_french %}Démo en direct{% else %}Live demo{% endif %}</p>
+      <h2>{% if is_french %}Voyez la navigation en action{% else %}See navigation in action{% endif %}</h2>
+      <p>{% if is_french %}Simulez l'expérience d'un visiteur avec itinéraires multi-étages, positionnement IPS/balises et UI brandée — directement dans votre application.{% else %}Simulate a visitor experience with multi-floor routing, IPS/beacon positioning, and branded UI — directly in your app shell.{% endif %}</p>
       <div class="demo__cta">
-        <a class="md-button md-button--primary" href="{{ 'getting_started/usage/' | url }}">Embed the scene</a>
-        <a class="md-button" href="{{ 'release_notes/release_notes/' | url }}">Check latest release</a>
+        <a class="md-button md-button--primary" href="{{ 'getting_started/usage/' | url }}">{% if is_french %}Intégrer la scène{% else %}Embed the scene{% endif %}</a>
+        <a class="md-button" href="{{ 'release_notes/release_notes/' | url }}">{% if is_french %}Consulter la dernière version{% else %}Check latest release{% endif %}</a>
       </div>
     </div>
     <div class="demo__visual" aria-hidden="true">
@@ -252,12 +261,12 @@
 
   <section class="quickstart">
     <header>
-      <p class="eyebrow">Quickstart</p>
-      <h2>Install and render your first map</h2>
+      <p class="eyebrow">{% if is_french %}Démarrage rapide{% else %}Quickstart{% endif %}</p>
+      <h2>{% if is_french %}Installez et affichez votre première carte{% else %}Install and render your first map{% endif %}</h2>
     </header>
     <div class="code-grid">
       <div>
-        <p class="code-label">Add the SDK</p>
+        <p class="code-label">{% if is_french %}Ajouter le SDK{% else %}Add the SDK{% endif %}</p>
         <pre><code class="language-kotlin"><span style="color: #5c6370; font-style: italic;">// build.gradle.kts</span>
 <span style="color: #e06c75;">dependencies</span> {
     <span style="color: #61afef;">implementation</span>(<span style="color: #98c379;">"com.machinestalk:indoornavigationengine:1.0.0"</span>)
@@ -274,7 +283,7 @@
 </code></pre>
       </div>
       <div>
-        <p class="code-label">Render a map (Compose)</p>
+        <p class="code-label">{% if is_french %}Afficher une carte (Compose){% else %}Render a map (Compose){% endif %}</p>
         <pre><code class="language-kotlin"><span style="color: #c678dd;">@Composable</span>
 <span style="color: #c678dd;">fun</span> <span style="color: #61afef;">VenueMap</span>() {
     <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">context</span> = <span style="color: #61afef;">LocalContext</span>.current
@@ -289,7 +298,7 @@
 </code></pre>
       </div>
       <div>
-        <p class="code-label">Load maps remotely</p>
+        <p class="code-label">{% if is_french %}Charger des cartes à distance{% else %}Load maps remotely{% endif %}</p>
         <pre><code class="language-kotlin"><span style="color: #c678dd;">suspend</span> <span style="color: #c678dd;">fun</span> <span style="color: #61afef;">fetchMap</span>(): <span style="color: #e5c07b;">MapBuild</span> {
     <span style="color: #c678dd;">val</span> <span style="color: #e06c75;">loader</span> = <span style="color: #61afef;">MapLoader</span>()
     <span style="color: #c678dd;">return</span> loader.<span style="color: #61afef;">loadMapFromUrl</span>(<span style="color: #98c379;">"https://cdn.example.com/maps/venue-map.json"</span>)
@@ -298,26 +307,26 @@
       </div>
     </div>
     <div class="quick-links">
-      <a href="{{ 'getting_started/usage/' | url }}">Usage guide</a>
-      <a href="{{ 'features/features_overview/' | url }}">Feature overview</a>
-      <a href="{{ 'release_notes/release_notes/' | url }}">Release notes</a>
-      <a href="{{ 'support/faq/' | url }}">Support & FAQ</a>
+      <a href="{{ 'getting_started/usage/' | url }}">{% if is_french %}Guide d'utilisation{% else %}Usage guide{% endif %}</a>
+      <a href="{{ 'features/features_overview/' | url }}">{% if is_french %}Aperçu des fonctionnalités{% else %}Feature overview{% endif %}</a>
+      <a href="{{ 'release_notes/release_notes/' | url }}">{% if is_french %}Notes de version{% else %}Release notes{% endif %}</a>
+      <a href="{{ 'support/faq/' | url }}">{% if is_french %}Support & FAQ{% else %}Support & FAQ{% endif %}</a>
       {# Update API reference quick link to local Dokka docs #}
-      <a href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">API reference</a>
-      <a href="https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/" target="_blank" rel="noreferrer">Source</a>
+      <a href="{{ 'dokka/' | url }}" target="_blank" rel="noreferrer">{% if is_french %}Référence API{% else %}API reference{% endif %}</a>
+      <a href="https://bitbucket.org/machinestalkit/android-indoor-navigation-lib/src/develop/" target="_blank" rel="noreferrer">{% if is_french %}Source{% else %}Source{% endif %}</a>
     </div>
   </section>
 
   <section class="cta">
     <div class="cta__body">
       <div>
-        <p class="eyebrow">Ready to ship</p>
-        <h2>Launch branded indoor navigation faster</h2>
-        <p>Start with the SDK, tailor the theme, and deliver turn-by-turn guidance your users can trust.</p>
+        <p class="eyebrow">{% if is_french %}Prêt à déployer{% else %}Ready to ship{% endif %}</p>
+        <h2>{% if is_french %}Lancez plus vite une navigation intérieure à votre image{% else %}Launch branded indoor navigation faster{% endif %}</h2>
+        <p>{% if is_french %}Commencez avec le SDK, adaptez le thème et livrez un guidage fiable étape par étape.{% else %}Start with the SDK, tailor the theme, and deliver turn-by-turn guidance your users can trust.{% endif %}</p>
       </div>
       <div class="cta__actions">
-        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">Build now</a>
-        <a class="md-button" href="{{ 'support/contact_us/' | url }}">Talk to us</a>
+        <a class="md-button md-button--primary" href="{{ 'getting_started/quick_start/' | url }}">{% if is_french %}Construire maintenant{% else %}Build now{% endif %}</a>
+        <a class="md-button" href="{{ 'support/contact_us/' | url }}">{% if is_french %}Nous contacter{% else %}Talk to us{% endif %}</a>
       </div>
     </div>
   </section>

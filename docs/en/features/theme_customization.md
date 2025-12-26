@@ -843,9 +843,9 @@ val surface = Color.parseColor("#FAFAFA") // Not pure white
 
 ## Related Documentation
 
-- [UI Components](./ui_components.md) - Customize component appearance
-- [Features Overview](./features_overview.md) - All customization features
-- [Map Loading](./map_loading.md) - Map visualization options
+- [UI Components](ui_components.md) - Customize component appearance
+- [Features Overview](features_overview.md) - All customization features
+- [Map Loading](map_loading.md) - Map visualization options
 - [API Reference](../api_reference/module_overview.md) - Complete theming API
 
 ---
@@ -854,7 +854,7 @@ val surface = Color.parseColor("#FAFAFA") // Not pure white
 
 Now that you understand theme customization:
 
-1. **[Explore UI Components](./ui_components.md)** - Customize interactive elements
+1. **[Explore UI Components](ui_components.md)** - Customize interactive elements
 2. **[Review Design Guidelines](../support/faq.md)** - Best practices for theme design
 3. **[Test Accessibility](../support/troubleshooting.md)** - Ensure inclusive design
 

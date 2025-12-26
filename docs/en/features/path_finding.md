@@ -1051,9 +1051,9 @@ fun validateEdgeWeights(nodes: List<PathNode>) {
 
 ## Related Documentation
 
-- [Navigation Features](./navigation.md) - Real-time navigation implementation
-- [Map Loading](./map_loading.md) - Loading venue maps and path networks
-- [UI Components](./ui_components.md) - Route display components
+- [Navigation Features](navigation.md) - Real-time navigation implementation
+- [Map Loading](map_loading.md) - Loading venue maps and path networks
+- [UI Components](ui_components.md) - Route display components
 - [API Reference](../api_reference/module_overview.md) - Complete API documentation
 
 ---
@@ -1062,8 +1062,8 @@ fun validateEdgeWeights(nodes: List<PathNode>) {
 
 Now that you understand path finding:
 
-1. **[Implement Navigation](./navigation.md)** - Add turn-by-turn guidance
-2. **[Build UI Components](./ui_components.md)** - Create route visualization
+1. **[Implement Navigation](navigation.md)** - Add turn-by-turn guidance
+2. **[Build UI Components](ui_components.md)** - Create route visualization
 3. **[Optimize Performance](../support/troubleshooting.md)** - Fine-tune for your venue
 
 

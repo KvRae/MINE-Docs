@@ -374,8 +374,8 @@ val material = MaterialLoader.load(
 
 ### Related MINE Documentation
 
-- [Filament Engine](./filament.md) - Underlying rendering engine
-- [Module Overview](./module_overview.md) - MINE architecture overview
+- [Filament Engine](filament.md) - Underlying rendering engine
+- [Module Overview](module_overview.md) - MINE architecture overview
 - [3D Map Loading](../features/map_loading.md) - Map integration guide
 - [Theme Customization](../features/theme_customization.md) - Visual customization
 

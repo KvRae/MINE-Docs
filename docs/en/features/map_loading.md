@@ -794,9 +794,9 @@ val loadOptions = LoadOptions(
 
 ## Related Documentation
 
-- [Navigation Features](./navigation.md) - Using maps for navigation
-- [UI Components](./ui_components.md) - Map interaction components
-- [Path Finding](./path_finding.md) - Route calculation on maps
+- [Navigation Features](navigation.md) - Using maps for navigation
+- [UI Components](ui_components.md) - Map interaction components
+- [Path Finding](path_finding.md) - Route calculation on maps
 - [API Reference](../api_reference/module_overview.md) - Detailed API docs
 
 ---
@@ -805,8 +805,8 @@ val loadOptions = LoadOptions(
 
 Now that you understand map loading, explore:
 
-1. **[Configure Navigation](./navigation.md)** - Set up turn-by-turn navigation
-2. **[Customize UI](./ui_components.md)** - Add interactive map components
-3. **[Implement Pathfinding](./path_finding.md)** - Calculate routes on your map
+1. **[Configure Navigation](navigation.md)** - Set up turn-by-turn navigation
+2. **[Customize UI](ui_components.md)** - Add interactive map components
+3. **[Implement Pathfinding](path_finding.md)** - Calculate routes on your map
 
 

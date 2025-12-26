@@ -1007,9 +1007,9 @@ beaconSystem.apply {
 
 ## Related Documentation
 
-- [Path Finding](./path_finding.md) - Route calculation algorithms
-- [Map Loading](./map_loading.md) - Loading venue maps
-- [UI Components](./ui_components.md) - Navigation UI widgets
+- [Path Finding](path_finding.md) - Route calculation algorithms
+- [Map Loading](map_loading.md) - Loading venue maps
+- [UI Components](ui_components.md) - Navigation UI widgets
 - [API Reference](../api_reference/module_overview.md) - Complete API docs
 
 ---
@@ -1018,7 +1018,7 @@ beaconSystem.apply {
 
 Now that you understand navigation implementation:
 
-1. **[Implement Path Finding](./path_finding.md)** - Set up route calculation
-2. **[Add UI Components](./ui_components.md)** - Build navigation interface
-3. **[Customize Themes](./theme_customization.md)** - Brand your navigation experience
+1. **[Implement Path Finding](path_finding.md)** - Set up route calculation
+2. **[Add UI Components](ui_components.md)** - Build navigation interface
+3. **[Customize Themes](theme_customization.md)** - Brand your navigation experience
 
