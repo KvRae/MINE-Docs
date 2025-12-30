@@ -1616,7 +1616,7 @@ html[data-md_color-scheme="default"] .page-shell .md-tabs__list,
 html[data-md_color-scheme="default"] .page-shell .md-tabs__item {
   background: transparent !important;
 }
-html[data-md_color-scheme="default"] .page-shell .md-tabs__link--active {
+html[data-md_color_scheme="default"] .page-shell .md-tabs__link--active {
   color: var(--home-primary) !important;
 }
 
@@ -1625,10 +1625,410 @@ html[data-md-color-scheme="slate"] .page-shell {
   color: var(--home-text-dark);
   background: var(--home-bg-dark);
 }
-html[data-md_color-scheme="slate"] .page-shell .md-header {
+html[data-md_color_scheme="slate"] .page-shell .md-header {
   background: rgba(11, 18, 33, 0.7) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
-html[data-md_color-scheme="slate"] .page-shell .md-header__title,
-html[data-md_color_scheme="slate"] .page-shell .md-header__button
+html[data-md_color_scheme="slate"] .page-shell .md-header__title,
+html[data-md_color_scheme="slate"] .page-shell .md-header__button,
+html[data-md_color_scheme="slate"] .page-shell .md-tabs__link,
+html[data-md_color_scheme="slate"] .page-shell .md-search__icon,
+html[data-md_color_scheme="slate"] .page-shell .md-source,
+html[data-md_color_scheme="slate"] .page-shell .md-source__repository,
+html[data-md_color_scheme="slate"] .page-shell .md-source__icon {
+  color: #f8fafc !important; /* light text on dark */
+}
+html[data-md-color-scheme="slate"] .page-shell .md-search__input {
+  color: #f8fafc !important;
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+html[data-md_color_scheme="slate"] .page-shell .md-tabs,
+html[data-md_color_scheme="slate"] .page-shell .md-tabs__list,
+html[data-md_color_scheme="slate"] .page-shell .md-tabs__item {
+  background: transparent !important;
+}
+html[data-md_color_scheme="slate"] .page-shell .md-tabs__link--active {
+  color: var(--home-primary) !important;
+}
+
+/* ============================================
+   SCREENSHOTS SECTION
+   ============================================ */
+.screenshots {
+    padding: 64px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.screenshots header {
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.screenshots__grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+
+
+/* ============================================
+   SCREENSHOT PHONE MOCK - PIXEL PERFECT FOR 720x1600
+   ============================================ */
+
+/* Phone container - exact aspect ratio for screenshots */
+.phone-mock--shots {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    margin: -20px auto 0 auto; /* Negative top margin to align with header */
+    border-radius: 36px;
+    padding: 12px;
+    background: linear-gradient(145deg, #1a1f35, #0f1419);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.6),
+        0 0 0 1px rgba(255,255,255,0.1),
+        inset 0 1px 0 rgba(255,255,255,0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-mock--shots:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 35px 90px rgba(0,0,0,0.7),
+        0 0 0 1px rgba(255,255,255,0.15),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+/* Phone notch at top */
+.phone-mock--shots .phone-mock__notch {
+    width: 130px;
+    height: 24px;
+    background: linear-gradient(180deg, #0a0d14, #0f1419);
+    border-radius: 0 0 16px 16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+/* Phone screen container - EXACT 720x1600 aspect ratio */
+.phone-mock--shots .phone-mock__screen {
+    position: relative;
+    width: 100%;
+    padding-bottom: 222.22%; /* EXACT: 1600/720 * 100 = 222.22% */
+    border-radius: 26px;
+    background: #000000;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+/* Screenshot image wrapper - absolute positioning */
+.phone-mock--shots .phone-mock__screen > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Screenshot images - PERFECT FIT for 720x1600 */
+.shots__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed to contain - no cropping! */
+    object-position: center center;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+    border-radius: 26px;
+    background: #000;
+}
+
+/* Loading state */
+.shots__img[src=""],
+.shots__img:not([src]) {
+    opacity: 0;
+}
+
+/* Fade transition class for JS */
+.shots__img.fade-out {
+    opacity: 0;
+}
+
+.shots__img.fade-in {
+    opacity: 1;
+}
+
+/* Carousel overlay gradient at bottom */
+.phone-carousel__scrim {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 50%, transparent 100%);
+    pointer-events: none;
+    z-index: 5;
+    border-radius: 0 0 26px 26px;
+}
+
+/* Hide navigation buttons */
+.shots__controls {
+    display: none;
+}
+
+/* Dots navigation container - positioned at bottom */
+.phone-carousel__dots {
+    position: absolute;
+    bottom: 18px;  /* Increased from 14px for better spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    gap: 10px;  /* Increased from 8px */
+    z-index: 25;  /* Increased to be above scrim */
+}
+
+.shots__dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Dot indicators - clean and visible */
+.dot {
+    width: 10px !important;  /* Increased from 7px */
+    height: 10px !important;
+    background: rgba(255, 255, 255, 0.6) !important;  /* Brighter */
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;  /* Thicker border */
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    padding: 0 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.7) !important;  /* Stronger shadow */
+    display: block !important;
+    margin: 0 !important;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(255, 255, 255, 1) !important;
+    transform: scale(1.3) !important;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.5) !important;
+}
+
+.dot.is-active {
+    width: 12px !important;
+    height: 12px !important;
+    background: #60a5fa !important;
+    border-color: #93c5fd !important;
+    box-shadow: 0 0 18px rgba(96, 165, 250, 1), 0 3px 10px rgba(0,0,0,0.7) !important;
+    transform: scale(1.5) !important;
+}
+
+/* Copy section */
+.screenshots__copy {
+    max-width: 600px;
+}
+
+.screenshots__copy ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.screenshots__copy li {
+    padding: 20px 24px;
+    color: var(--text-2);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    line-height: 1.7;
+    font-size: 15px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.screenshots__copy li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.screenshots__copy li:hover {
+    border-color: rgba(96, 165, 250, 0.4);
+    box-shadow:
+        0 12px 32px rgba(59, 130, 246, 0.2),
+        0 0 0 1px rgba(96, 165, 250, 0.1);
+    transform: translateX(-8px);
+}
+
+.screenshots__copy li:hover::after {
+    opacity: 1;
+}
+
+.screenshots__copy li::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(139,92,246,0.15));
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    border-radius: 50%;
+    margin-right: 14px;
+    color: #60a5fa;
+    font-weight: bold;
+    font-size: 14px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.screenshots__copy li:hover::before {
+    background: linear-gradient(135deg, rgba(59,130,246,0.4), rgba(139,92,246,0.3));
+    border-color: rgba(96, 165, 250, 0.5);
+    transform: scale(1.1) rotate(360deg);
+}
+
+/* ============================================
+   SCREENSHOTS RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .screenshots__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .phone-mock--shots {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 720px) {
+    .screenshots {
+        padding: 48px 24px;
+    }
+
+    .screenshots header {
+        text-align: left;
+        margin-bottom: 36px;
+    }
+
+    .screenshots__grid {
+        gap: 36px;
+    }
+
+    .phone-mock--shots {
+        max-width: 220px;
+        padding: 10px;
+    }
+
+    .phone-mock--shots .phone-mock__notch {
+        width: 110px;
+        height: 20px;
+    }
+
+    .phone-mock--shots .phone-mock__screen {
+        border-radius: 22px;
+    }
+
+    .shots__img {
+        border-radius: 22px;
+    }
+
+    .phone-carousel__scrim {
+        border-radius: 0 0 22px 22px;
+    }
+
+    .phone-carousel__dots {
+        bottom: 12px;
+    }
+
+    .dot {
+        width: 9px !important;
+        height: 9px !important;
+    }
+
+    .dot.is-active {
+        width: 11px !important;
+        height: 11px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshots {
+        padding: 36px 16px;
+    }
+
+    .phone-mock--shots {
+        max-width: 200px;
+        padding: 10px;
+        border-radius: 32px;
+    }
+
+    .phone-mock--shots .phone-mock__notch {
+        width: 100px;
+        height: 18px;
+        border-radius: 0 0 14px 14px;
+    }
+
+    .phone-mock--shots .phone-mock__screen {
+        border-radius: 20px;
+    }
+
+    .shots__img {
+        border-radius: 20px;
+    }
+
+    .phone-carousel__scrim {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .screenshots__copy li {
+        padding: 16px 18px;
+        font-size: 14px;
+    }
+
+    .screenshots__copy li::before {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .phone-carousel__dots {
+        bottom: 10px;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 8px !important;
+        height: 8px !important;
+    }
+
+    .dot.is-active {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}

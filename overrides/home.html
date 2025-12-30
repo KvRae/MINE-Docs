@@ -119,12 +119,79 @@
       font-size: 14px;
       margin: 0;
     }
+
+    /* Screenshot section styles are in home.css - don't override here */
+
+    /* Loading screen animation */
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #0b1221 0%, #1a1f35 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    .loading-screen.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .loading-logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 30px;
+      animation: logoFloat 3s ease-in-out infinite;
+      filter: drop-shadow(0 10px 30px rgba(59, 130, 246, 0.4));
+    }
+
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .loading-text {
+      margin-top: 0;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    /* Ensure content doesn't show until loaded */
+    .page-shell {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+    }
+
+    .page-shell.loaded {
+      opacity: 1;
+    }
   </style>
 {% endblock %}
 
 {% block content %}
 {# Detect current language from page file path or config #}
 {% set is_french = config.theme.language == 'fr' or (page.canonical_url and '/fr/' in page.canonical_url) or (page.file.src_uri and page.file.src_uri.startswith('fr/')) %}
+
+<!-- Loading Screen -->
+<div class="loading-screen" id="loading-screen">
+  <img src="{{ 'assets/images/Logo.svg' | url }}" alt="MINE Logo" class="loading-logo" />
+  <p class="loading-text">{% if is_french %}Chargement...{% else %}Loading...{% endif %}</p>
+</div>
 
 <div class="page-shell">
   <div class="parallax">
@@ -259,6 +326,30 @@
     </div>
   </section>
 
+  <section class="screenshots">
+    <header>
+      <p class="eyebrow">{% if is_french %}Captures d'écran{% else %}Screenshots{% endif %}</p>
+      <h2>{% if is_french %}Aperçu de l'application démo{% else %}See the demo app up close{% endif %}</h2>
+      <p class="lede">{% if is_french %}Parcourez les écrans clés de la démo : carte 3D, recherche, sélection d'étage et guidage.{% else %}Browse the key demo screens: 3D map, search, floor picker, and turn-by-turn guidance.{% endif %}</p>
+    </header>
+    <div class="screenshots__grid">
+      <div class="screenshots__copy">
+        <ul>
+          <li>{% if is_french %}Rendu 3D fluide avec tuiles vectorielles et thèmes personnalisables.{% else %}Smooth 3D rendering with vector tiles and brandable themes.{% endif %}</li>
+          <li>{% if is_french %}Recherche et points d'intérêt avec surlignage contextualisé.{% else %}Search and points of interest with contextual highlighting.{% endif %}</li>
+          <li>{% if is_french %}Sélecteur d'étage sensible à la position et légende dynamique.{% else %}Floor picker aware of position plus dynamic legend overlays.{% endif %}</li>
+          <li>{% if is_french %}Guidage étape par étape et recalcul automatique des itinéraires.{% else %}Turn-by-turn guidance with automatic rerouting.{% endif %}</li>
+        </ul>
+      </div>
+      <div class="phone-mock phone-mock--shots" data-shots="{{ 'assets/images/demo/Screenshot_2024-09-10-15-28-29-340_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-10-15-28-47-279_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-10-15-29-21-810_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-10-16-31-00-471_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-10-16-31-41-224_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-16-18-01-29-694_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-16-18-46-51-230_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-16-18-48-35-914_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-16-18-50-51-406_com.machinestalk.indoornavigationenginedemo.jpg' | url }},{{ 'assets/images/demo/Screenshot_2024-09-16-18-57-56-482_com.machinestalk.indoornavigationenginedemo.jpg' | url }}">
+        <div class="phone-mock__notch"></div>
+        <div class="phone-mock__screen">
+          <img id="shots-slide" class="shots__img" src="{{ 'assets/images/demo/Screenshot_2024-09-10-15-28-29-340_com.machinestalk.indoornavigationenginedemo.jpg' | url }}" alt="Demo app screenshot" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="quickstart">
     <header>
       <p class="eyebrow">{% if is_french %}Démarrage rapide{% else %}Quickstart{% endif %}</p>
@@ -334,9 +425,42 @@
   <section class="brand">
     <div class="brand__inner">
       <!-- Use local logo asset with base-aware URL so it works under /MINE-Docs/ -->
-      <img src="{{ 'assets/images/Logo.svg' | url }}" alt="MINE Logo" class="brand__logo" />
+      <img src="{{ 'assets/images/long-logo.png' | url }}" alt="MINE Logo" class="brand__logo" />
       <p class="brand__tagline">MINE — Machinestalk Indoor Navigation Engine</p>
     </div>
   </section>
 </div>
+
+{# load home carousel behaviour #}
+<script src="{{ 'assets/js/home-carousel.js' | url }}"></script>
+
+<script>
+  // Hide loading screen and show content when page is fully loaded
+  window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    const pageShell = document.querySelector('.page-shell');
+
+    // Small delay to ensure smooth transition
+    setTimeout(function() {
+      if (loadingScreen) {
+        loadingScreen.classList.add('hidden');
+      }
+      if (pageShell) {
+        pageShell.classList.add('loaded');
+      }
+    }, 500); // 500ms delay for smooth experience
+  });
+
+  // Fallback: hide loading screen after 3 seconds regardless
+  setTimeout(function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    const pageShell = document.querySelector('.page-shell');
+    if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+      loadingScreen.classList.add('hidden');
+    }
+    if (pageShell && !pageShell.classList.contains('loaded')) {
+      pageShell.classList.add('loaded');
+    }
+  }, 3000);
+</script>
 {% endblock %}
