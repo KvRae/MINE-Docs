@@ -1,0 +1,2229 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MINE is a powerful and easy-to-use indoor navigation engine for Android.">
+      
+      
+        <meta name="author" content="Karam Mannai">
+      
+      
+        <link rel="canonical" href="https://kvrae.github.io/MINE-Docs/api_reference/filament/">
+      
+      
+        <link rel="prev" href="../scene_view/">
+      
+      
+        <link rel="next" href="../../release_notes/release_notes/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../fr/api_reference/filament/" hreflang="fr">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Filament Engine - MINE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/mine.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#filament-rendering-engine" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MINE" class="md-header__button md-logo" aria-label="MINE" data-md-component="logo">
+      
+  <img src="../../assets/images/Logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MINE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Filament Engine
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../fr/api_reference/filament/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/KvRae/MachInNav-Engine-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MINE Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting_started/installation/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../features/features_overview/" class="md-tabs__link">
+          
+  
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../module_overview/" class="md-tabs__link">
+          
+  
+  
+  API Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../release_notes/release_notes/" class="md-tabs__link">
+          
+  
+  
+  Release Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../support/faq/" class="md-tabs__link">
+          
+  
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MINE" class="md-nav__button md-logo" aria-label="MINE" data-md-component="logo">
+      
+  <img src="../../assets/images/Logo.svg" alt="logo">
+
+    </a>
+    MINE
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/KvRae/MachInNav-Engine-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MINE Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@kvrae8698/featured" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Youtube Tutorials 🡕
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Features
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/features_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/map_loading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map Loading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/ui_components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/theme_customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theme Customization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/path_finding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Path Finding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scene_view/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SceneView
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filament Engine
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filament Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-filament-for-indoor-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Filament for Indoor Navigation?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Filament for Indoor Navigation?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mobile-first-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Mobile-First Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-real-time-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Real-Time Rendering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-advanced-material-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Advanced Material System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-dynamic-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Dynamic Lighting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rendering-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mines-filament-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MINE's Filament Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-features-used-by-mine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features Used by MINE
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Features Used by MINE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#material-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Material System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-lighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dynamic Lighting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Camera Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Optimizations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Optimizations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-frustum-culling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Frustum Culling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-level-of-detail-lod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Level of Detail (LOD)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-texture-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Texture Compression
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendering Metrics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Topics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-shaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Shaders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadow-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shadow Mapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Post-Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-profiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debugging &amp; Profiling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging &amp; Profiling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#render-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Render Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-specific-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform-Specific Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Release Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/release_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.1.0_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.2.1_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.3.2_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.3.2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.4.0_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact Us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="filament-rendering-engine"><span class="emoji"> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.607 13.88c1.32 1.197 3.862 2.008 6.781 2.008 2.375 0 4.503-.481 5.923-1.325-1.555 1.413-4.328 2.41-7.495 2.41C3.947 16.972 0 14.745 0 11.999s3.948-4.973 8.818-4.972c3.179.001 5.96 1.001 7.511 2.425-1.421-.85-3.558-1.34-5.941-1.34-2.828 0-5.303.761-6.655 1.897l.028-.013a2.1 2.1 0 0 1 .885-.179q.504 0 .885.179.38.18.635.48.256.301.383.691.129.39.128.812 0 .423-.128.813-.127.39-.383.691-.255.3-.635.477a2.1 2.1 0 0 1-.885.176 2.1 2.1 0 0 1-.885-.176 2 2 0 0 1-.154-.08m-.347-1.283q.084.304.262.547c.178.243.271.292.458.391q.279.147.666.147t.666-.147q.28-.148.458-.391c.178-.243.206-.344.261-.547a2.3 2.3 0 0 0 0-1.232q-.082-.304-.261-.547c-.179-.243-.272-.293-.458-.391s-.408-.148-.666-.148-.48.05-.666.148q-.28.148-.458.391a1.3 1.3 0 0 0-.262.547 2.33 2.33 0 0 0 0 1.232m4.254-1.183v.356h.009a.65.65 0 0 1 .344-.318 1.3 1.3 0 0 1 .515-.099q.313 0 .544.112.232.111.385.302.154.191.232.441.078.249.078.529c0 .28-.025.363-.075.529a1.2 1.2 0 0 1-.229.435 1.1 1.1 0 0 1-.386.293 1.3 1.3 0 0 1-.539.107q-.099 0-.221-.02a1.3 1.3 0 0 1-.242-.067 1 1 0 0 1-.227-.125.7.7 0 0 1-.179-.196h-.009v1.359h-.446v-3.638zm1.585.936a1 1 0 0 0-.151-.313.7.7 0 0 0-.26-.219.8.8 0 0 0-.371-.081.77.77 0 0 0-.379.086.8.8 0 0 0-.255.226 1 1 0 0 0-.143.318 1.5 1.5 0 0 0 .003.735q.046.181.148.319a.76.76 0 0 0 .262.221q.162.084.39.084t.382-.087a.7.7 0 0 0 .246-.229 1 1 0 0 0 .135-.325q.042-.183.042-.377a1.3 1.3 0 0 0-.049-.358m2.799 1.527q-.302.224-.761.224-.324 0-.561-.102a1.1 1.1 0 0 1-.642-.723 2 2 0 0 1-.091-.554q0-.3.094-.55.093-.25.263-.433c.17-.183.248-.217.402-.285q.232-.1.51-.101.36 0 .598.145.237.145.381.37.144.224.198.489t.045.505h-2.018q-.006.172.041.328a.75.75 0 0 0 .151.274.75.75 0 0 0 .266.191.94.94 0 0 0 .38.071.8.8 0 0 0 .461-.128q.179-.127.237-.387h.438q-.089.442-.392.666m-.108-1.688a.7.7 0 0 0-.161-.237.8.8 0 0 0-.239-.157.8.8 0 0 0-.304-.059.8.8 0 0 0-.31.059.7.7 0 0 0-.237.16.8.8 0 0 0-.156.236.9.9 0 0 0-.067.287h1.545a.9.9 0 0 0-.071-.289m1.259-.775v.418h.009q.277-.48.88-.479.267 0 .445.071c.178.071.215.114.288.199a.7.7 0 0 1 .155.303q.044.176.044.39v1.733h-.446v-1.783q0-.244-.147-.387a.55.55 0 0 0-.402-.143.9.9 0 0 0-.353.062.65.65 0 0 0-.248.173.8.8 0 0 0-.149.262q-.05.15-.049.328v1.487h-.447v-2.634zm4.908 2.606a1.6 1.6 0 0 1-.611.125q-.486 0-.875-.166c-.389-.166-.477-.262-.655-.456a2 2 0 0 1-.409-.682 2.5 2.5 0 0 1-.142-.844q0-.465.142-.862a2.1 2.1 0 0 1 .408-.694q.266-.296.654-.464.388-.17.875-.169.325 0 .631.096.305.096.551.282.247.187.406.459.16.273.196.626h-.889q-.083-.347-.32-.521a.95.95 0 0 0-.575-.174q-.315 0-.534.119a.8.8 0 0 0-.356.319q-.136.201-.198.456-.063.255-.063.528 0 .262.063.508.062.247.199.444a1 1 0 0 0 .356.316q.219.12.534.119.463 0 .715-.228.253-.228.294-.661h-.936v-.681h1.776v2.237h-.591l-.095-.47a1.4 1.4 0 0 1-.551.438m2.746-4.107v3.368h2.063v.768h-2.992V9.913zM24 13.667q0 .104-.052.194a.39.39 0 0 1-.336.194.39.39 0 0 1-.336-.194.4.4 0 0 1-.052-.194.39.39 0 0 1 .194-.336.4.4 0 0 1 .194-.052.39.39 0 0 1 .336.194q.052.09.052.194m-.075 0a.3.3 0 0 0-.092-.221.3.3 0 0 0-.221-.092.3.3 0 0 0-.221.092.3.3 0 0 0-.092.221q0 .13.092.221c.092.091.135.092.221.092s.16-.031.221-.092a.3.3 0 0 0 .092-.221m-.489-.207h.186q.078 0 .114.032a.11.11 0 0 1 .035.085q0 .04-.027.072a.16.16 0 0 1-.085.044.1.1 0 0 1 .035.019q.017.015.033.042l.067.12h-.122a1 1 0 0 0-.079-.141q-.021-.023-.041-.023l-.013.001v.163h-.103zm.103.176h.045q.045 0 .063-.015a.05.05 0 0 0 .018-.037.05.05 0 0 0-.017-.038q-.018-.014-.06-.014h-.049z"/></svg></span> </span> Filament Rendering Engine<a class="headerlink" href="#filament-rendering-engine" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Filament is a real-time physically based rendering (PBR) engine designed for Android, iOS, Windows, Linux, macOS and WebGL. It is designed to be as small as possible and as efficient as possible.</p>
+<p><strong>MINE Indoor Navigation Engine</strong> leverages Filament to deliver high-performance 3D map rendering with realistic lighting, shadows, and material systems optimized for indoor navigation scenarios.</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16a3 3 0 0 1-3-3c0-1.12.61-2.1 1.5-2.61l9.71-5.62-5.53 9.58c-.5.98-1.51 1.65-2.68 1.65m0-13c1.81 0 3.5.5 4.97 1.32l-2.1 1.21C14 5.19 13 5 12 5a8 8 0 0 0-8 8c0 2.21.89 4.21 2.34 5.65h.01c.39.39.39 1.02 0 1.41s-1.03.39-1.42.01A9.97 9.97 0 0 1 2 13 10 10 0 0 1 12 3m10 10c0 2.76-1.12 5.26-2.93 7.07-.39.38-1.02.38-1.41-.01a.996.996 0 0 1 0-1.41A7.95 7.95 0 0 0 20 13c0-1-.19-2-.54-2.9L20.67 8C21.5 9.5 22 11.18 22 13"/></svg></span> <strong>High Performance</strong></p>
+<hr />
+<p>Optimized rendering pipeline with minimal overhead, achieving 60+ FPS on mid-range devices</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span> <strong>Physically Based</strong></p>
+<hr />
+<p>Industry-standard PBR workflow with accurate material representation and lighting</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"/></svg></span> <strong>Cross-Platform</strong></p>
+<hr />
+<p>Write once, deploy everywhere with consistent rendering across all platforms</p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 2s-7.64-.37-13.66 7.88C3.72 16.21 2 22 2 22l1.94-1c1.44-2.5 2.19-3.53 3.6-5 2.53.74 5.17.65 7.46-2-2-.56-3.6-.43-5.96-.19C11.69 12 13.5 11.6 16 12l1-2c-1.8-.34-3-.37-4.78.04C14.19 8.65 15.56 7.87 18 8l1.21-1.93c-1.56-.11-2.5.06-4.29.5 1.61-1.46 3.08-2.12 5.22-2.25 0 0 1.05-1.89 1.86-2.32"/></svg></span> <strong>Lightweight</strong></p>
+<hr />
+<p>Small binary footprint (~2MB) with minimal runtime memory overhead</p>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="why-filament-for-indoor-navigation">Why Filament for Indoor Navigation?<a class="headerlink" href="#why-filament-for-indoor-navigation" title="Permanent link">&para;</a></h2>
+<p>MINE chose Filament as its rendering foundation for several critical reasons:</p>
+<h3 id="1-mobile-first-architecture">1. <strong>Mobile-First Architecture</strong><a class="headerlink" href="#1-mobile-first-architecture" title="Permanent link">&para;</a></h3>
+<p>Filament is designed from the ground up for mobile constraints, ensuring smooth performance even on budget Android devices (API 24+).</p>
+<h3 id="2-real-time-rendering">2. <strong>Real-Time Rendering</strong><a class="headerlink" href="#2-real-time-rendering" title="Permanent link">&para;</a></h3>
+<p>Indoor navigation requires instant visual feedback. Filament's deferred rendering pipeline delivers consistent frame rates during camera transitions and floor changes.</p>
+<h3 id="3-advanced-material-system">3. <strong>Advanced Material System</strong><a class="headerlink" href="#3-advanced-material-system" title="Permanent link">&para;</a></h3>
+<p>Support for custom materials allows MINE to represent different venue surfaces (marble floors, carpet, glass, metal) with realistic visual properties.</p>
+<h3 id="4-dynamic-lighting">4. <strong>Dynamic Lighting</strong><a class="headerlink" href="#4-dynamic-lighting" title="Permanent link">&para;</a></h3>
+<p>Ambient occlusion and shadow mapping enhance spatial awareness, helping users identify landmarks and navigate complex multi-floor structures.</p>
+<hr />
+<h2 id="architecture-integration">Architecture Integration<a class="headerlink" href="#architecture-integration" title="Permanent link">&para;</a></h2>
+<h3 id="rendering-pipeline">Rendering Pipeline<a class="headerlink" href="#rendering-pipeline" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph LR
+    A[Map JSON] --&gt; B[Scene Builder]
+    B --&gt; C[Filament Engine]
+    C --&gt; D[GPU Renderer]
+    D --&gt; E[SceneView]
+    E --&gt; F[User Display]
+
+    G[Camera Controller] --&gt; C
+    H[Material Assets] --&gt; C
+    I[Light Sources] --&gt; C</code></pre>
+<h3 id="mines-filament-setup">MINE's Filament Setup<a class="headerlink" href="#mines-filament-setup" title="Permanent link">&para;</a></h3>
+<p>The MINE SDK initializes Filament with optimized defaults for indoor scenarios:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Engine initialization with custom configuration</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">engine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Engine</span><span class="p">.</span><span class="na">create</span><span class="p">(</span>
+<span class="w">    </span><span class="n">EngineBackend</span><span class="p">.</span><span class="na">DEFAULT</span><span class="p">,</span>
+<span class="w">    </span><span class="n">Config</span><span class="p">().</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">stereoscopicEyeCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<span class="w">        </span><span class="n">resourceAllocatorCacheSizeMB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">16</span>
+<span class="w">        </span><span class="n">resourceAllocatorCacheMaxAge</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="c1">// Scene setup for indoor navigation</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">scene</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">engine</span><span class="p">.</span><span class="na">createScene</span><span class="p">().</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">skybox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="c1">// Indoor scenes rarely need skybox</span>
+<span class="w">    </span><span class="n">indirectLight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iblBuilder</span><span class="p">.</span><span class="na">build</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// Camera configuration for top-down navigation view</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">camera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">engine</span><span class="p">.</span><span class="na">createCamera</span><span class="p">(</span><span class="n">engine</span><span class="p">.</span><span class="na">entityManager</span><span class="p">.</span><span class="na">create</span><span class="p">()).</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">setProjection</span><span class="p">(</span><span class="m">45.0</span><span class="p">,</span><span class="w"> </span><span class="n">aspect</span><span class="p">,</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="m">100.0</span><span class="p">,</span><span class="w"> </span><span class="n">Camera</span><span class="p">.</span><span class="na">Fov</span><span class="p">.</span><span class="na">VERTICAL</span><span class="p">)</span>
+<span class="w">    </span><span class="n">lookAt</span><span class="p">(</span>
+<span class="w">        </span><span class="n">eyeX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">position</span><span class="p">.</span><span class="na">x</span><span class="p">,</span><span class="w"> </span><span class="n">eyeY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">position</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">10.0</span><span class="p">,</span><span class="w"> </span><span class="n">eyeZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">position</span><span class="p">.</span><span class="na">z</span><span class="p">,</span>
+<span class="w">        </span><span class="n">centerX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">position</span><span class="p">.</span><span class="na">x</span><span class="p">,</span><span class="w"> </span><span class="n">centerY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="n">centerZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">position</span><span class="p">.</span><span class="na">z</span><span class="p">,</span>
+<span class="w">        </span><span class="n">upX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="n">upY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.0</span><span class="p">,</span><span class="w"> </span><span class="n">upZ</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">1.0</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="key-features-used-by-mine">Key Features Used by MINE<a class="headerlink" href="#key-features-used-by-mine" title="Permanent link">&para;</a></h2>
+<h3 id="material-system">Material System<a class="headerlink" href="#material-system" title="Permanent link">&para;</a></h3>
+<p>MINE leverages Filament's PBR materials to differentiate venue zones:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Floor material with custom properties</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">floorMaterial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MaterialInstance</span><span class="p">(</span><span class="n">materialAsset</span><span class="p">).</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;baseColor&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Color</span><span class="p">(</span><span class="m">0.9f</span><span class="p">,</span><span class="w"> </span><span class="m">0.9f</span><span class="p">,</span><span class="w"> </span><span class="m">0.95f</span><span class="p">,</span><span class="w"> </span><span class="m">1.0f</span><span class="p">))</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;metallic&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0.0f</span><span class="p">)</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;roughness&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0.6f</span><span class="p">)</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;reflectance&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0.5f</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// POI marker material with emissive glow</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">markerMaterial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MaterialInstance</span><span class="p">(</span><span class="n">markerAsset</span><span class="p">).</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;baseColor&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">themeColor</span><span class="p">)</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;emissive&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="na">RgbaType</span><span class="p">(</span><span class="n">themeColor</span><span class="p">,</span><span class="w"> </span><span class="m">2.0f</span><span class="p">))</span><span class="w"> </span><span class="c1">// Intensity</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;metallic&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0.8f</span><span class="p">)</span>
+<span class="w">    </span><span class="n">setParameter</span><span class="p">(</span><span class="s">&quot;roughness&quot;</span><span class="p">,</span><span class="w"> </span><span class="m">0.2f</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="dynamic-lighting">Dynamic Lighting<a class="headerlink" href="#dynamic-lighting" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Ambient light for general illumination</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">ambientLight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EntityManager</span><span class="p">.</span><span class="na">get</span><span class="p">().</span><span class="na">create</span><span class="p">()</span>
+<span class="n">LightManager</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">LightManager</span><span class="p">.</span><span class="na">Type</span><span class="p">.</span><span class="na">SUN</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="na">color</span><span class="p">(</span><span class="m">1.0f</span><span class="p">,</span><span class="w"> </span><span class="m">1.0f</span><span class="p">,</span><span class="w"> </span><span class="m">0.98f</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="na">intensity</span><span class="p">(</span><span class="m">50000.0f</span><span class="p">)</span><span class="w"> </span><span class="c1">// Lux</span>
+<span class="w">    </span><span class="p">.</span><span class="na">direction</span><span class="p">(</span><span class="m">0.0f</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="m">1.0f</span><span class="p">,</span><span class="w"> </span><span class="m">0.2f</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="na">castShadows</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="na">build</span><span class="p">(</span><span class="n">engine</span><span class="p">,</span><span class="w"> </span><span class="n">ambientLight</span><span class="p">)</span>
+
+<span class="n">scene</span><span class="p">.</span><span class="na">addEntity</span><span class="p">(</span><span class="n">ambientLight</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="camera-controls">Camera Controls<a class="headerlink" href="#camera-controls" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Smooth camera transitions for floor changes</span>
+<span class="kd">fun</span><span class="w"> </span><span class="nf">animateToFloor</span><span class="p">(</span><span class="n">targetFloor</span><span class="p">:</span><span class="w"> </span><span class="kt">Int</span><span class="p">,</span><span class="w"> </span><span class="n">duration</span><span class="p">:</span><span class="w"> </span><span class="kt">Long</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">500</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ValueAnimator</span><span class="p">.</span><span class="na">ofFloat</span><span class="p">(</span><span class="m">0f</span><span class="p">,</span><span class="w"> </span><span class="m">1f</span><span class="p">).</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="na">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">duration</span>
+<span class="w">        </span><span class="n">interpolator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DecelerateInterpolator</span><span class="p">()</span>
+<span class="w">        </span><span class="n">addUpdateListener</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">animator</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">            </span><span class="kd">val</span><span class="w"> </span><span class="nv">progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">animator</span><span class="p">.</span><span class="na">animatedValue</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">Float</span>
+<span class="w">            </span><span class="n">camera</span><span class="p">.</span><span class="na">setModelMatrix</span><span class="p">(</span>
+<span class="w">                </span><span class="n">lerp</span><span class="p">(</span><span class="n">currentTransform</span><span class="p">,</span><span class="w"> </span><span class="n">targetTransform</span><span class="p">,</span><span class="w"> </span><span class="n">progress</span><span class="p">)</span>
+<span class="w">            </span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">start</span><span class="p">()</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="performance-optimizations">Performance Optimizations<a class="headerlink" href="#performance-optimizations" title="Permanent link">&para;</a></h2>
+<h3 id="1-frustum-culling">1. <strong>Frustum Culling</strong><a class="headerlink" href="#1-frustum-culling" title="Permanent link">&para;</a></h3>
+<p>Only entities within the camera view are rendered, dramatically reducing draw calls in large venues.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Automatic culling by Filament</span>
+<span class="n">scene</span><span class="p">.</span><span class="na">setFrustumCullingEnabled</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="2-level-of-detail-lod">2. <strong>Level of Detail (LOD)</strong><a class="headerlink" href="#2-level-of-detail-lod" title="Permanent link">&para;</a></h3>
+<p>MINE implements distance-based LOD for complex 3D assets:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="nf">selectLOD</span><span class="p">(</span><span class="n">distanceToCamera</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="p">):</span><span class="w"> </span><span class="n">RenderableAsset</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">distanceToCamera</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">10f</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">highDetailModel</span>
+<span class="w">        </span><span class="n">distanceToCamera</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">30f</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">mediumDetailModel</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">lowDetailModel</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="3-texture-compression">3. <strong>Texture Compression</strong><a class="headerlink" href="#3-texture-compression" title="Permanent link">&para;</a></h3>
+<p>Using ETC2/ASTC formats reduces memory footprint by 4-6x:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">textureBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Texture</span><span class="p">.</span><span class="na">Builder</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="n">Texture</span><span class="p">.</span><span class="na">InternalFormat</span><span class="p">.</span><span class="na">ETC2_RGB8</span><span class="p">)</span><span class="w"> </span><span class="c1">// Compressed format</span>
+<span class="w">    </span><span class="p">.</span><span class="na">levels</span><span class="p">(</span><span class="n">mipLevels</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="na">sampler</span><span class="p">(</span><span class="n">Texture</span><span class="p">.</span><span class="na">Sampler</span><span class="p">.</span><span class="na">SAMPLER_2D</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="rendering-metrics">Rendering Metrics<a class="headerlink" href="#rendering-metrics" title="Permanent link">&para;</a></h2>
+<div class="annotate">
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Target</th>
+<th>Achieved on Pixel 4a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Frame Rate</strong></td>
+<td>60 FPS</td>
+<td>62 FPS (1)</td>
+</tr>
+<tr>
+<td><strong>Frame Time</strong></td>
+<td>&lt;16.67ms</td>
+<td>14ms avg</td>
+</tr>
+<tr>
+<td><strong>Draw Calls</strong></td>
+<td>&lt;500</td>
+<td>280 avg</td>
+</tr>
+<tr>
+<td><strong>GPU Memory</strong></td>
+<td>&lt;150MB</td>
+<td>120MB</td>
+</tr>
+<tr>
+<td><strong>Initialization Time</strong></td>
+<td>&lt;500ms</td>
+<td>380ms</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol>
+<li>Tested with a 5-floor venue, 200+ POIs, dynamic lighting enabled</li>
+</ol>
+<hr />
+<h2 id="advanced-topics">Advanced Topics<a class="headerlink" href="#advanced-topics" title="Permanent link">&para;</a></h2>
+<h3 id="custom-shaders">Custom Shaders<a class="headerlink" href="#custom-shaders" title="Permanent link">&para;</a></h3>
+<p>For specialized effects, MINE includes custom material definitions:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Custom gradient material for floor highlighting</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">material</span><span class="p">(</span><span class="k">inout</span><span class="w"> </span><span class="n">MaterialInputs</span><span class="w"> </span><span class="n">material</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">prepareMaterial</span><span class="p">(</span><span class="n">material</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kt">vec2</span><span class="w"> </span><span class="n">uv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getUV0</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">vec3</span><span class="w"> </span><span class="n">baseColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mix</span><span class="p">(</span><span class="n">uBottomColor</span><span class="p">,</span><span class="w"> </span><span class="n">uTopColor</span><span class="p">,</span><span class="w"> </span><span class="n">uv</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">material</span><span class="p">.</span><span class="n">baseColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">vec4</span><span class="p">(</span><span class="n">baseColor</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">material</span><span class="p">.</span><span class="n">metallic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uMetallic</span><span class="p">;</span>
+<span class="w">    </span><span class="n">material</span><span class="p">.</span><span class="n">roughness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">uRoughness</span><span class="p">;</span>
+<span class="w">    </span><span class="n">material</span><span class="p">.</span><span class="n">emissive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kt">vec4</span><span class="p">(</span><span class="n">baseColor</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">uEmissiveStrength</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="shadow-mapping">Shadow Mapping<a class="headerlink" href="#shadow-mapping" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Configure shadow rendering</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">shadowOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">View</span><span class="p">.</span><span class="na">ShadowOptions</span><span class="p">().</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">mapSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1024</span>
+<span class="w">    </span><span class="n">shadowCascades</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
+<span class="w">    </span><span class="n">shadowFarHint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50.0f</span>
+<span class="w">    </span><span class="n">screenSpaceContactShadows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+
+<span class="n">view</span><span class="p">.</span><span class="na">setShadowOptions</span><span class="p">(</span><span class="n">shadowOptions</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="post-processing">Post-Processing<a class="headerlink" href="#post-processing" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Bloom effect for glowing POI markers</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">bloomOptions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">View</span><span class="p">.</span><span class="na">BloomOptions</span><span class="p">().</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="n">threshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1.0f</span>
+<span class="w">    </span><span class="n">strength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.15f</span>
+<span class="w">    </span><span class="n">resolution</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">512</span>
+<span class="p">}</span>
+
+<span class="n">view</span><span class="p">.</span><span class="na">setBloomOptions</span><span class="p">(</span><span class="n">bloomOptions</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="debugging-profiling">Debugging &amp; Profiling<a class="headerlink" href="#debugging-profiling" title="Permanent link">&para;</a></h2>
+<h3 id="render-stats">Render Stats<a class="headerlink" href="#render-stats" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Enable debug overlay</span>
+<span class="n">view</span><span class="p">.</span><span class="na">setRenderTarget</span><span class="p">(</span><span class="n">View</span><span class="p">.</span><span class="na">RenderTarget</span><span class="p">.</span><span class="na">COLOR_AND_DEPTH</span><span class="p">)</span>
+<span class="n">view</span><span class="p">.</span><span class="na">setDebugOverlay</span><span class="p">(</span><span class="n">View</span><span class="p">.</span><span class="na">DebugOverlay</span><span class="p">.</span><span class="na">SHOW_OVERDRAW</span><span class="p">)</span>
+
+<span class="c1">// Query performance metrics</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">stats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">renderer</span><span class="p">.</span><span class="na">userTime</span>
+<span class="n">Log</span><span class="p">.</span><span class="na">d</span><span class="p">(</span><span class="s">&quot;Filament&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Render time: </span><span class="si">${</span><span class="n">stats</span><span class="si">}</span><span class="s">ms&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">GPU Compatibility</p>
+<p>Filament requires OpenGL ES 3.0+ or Vulkan. Devices older than 2014 may not support all features.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Memory Management</p>
+<p>Always destroy Filament resources explicitly to prevent leaks:
+<div class="highlight"><pre><span></span><code><span class="kd">override</span><span class="w"> </span><span class="kd">fun</span><span class="w"> </span><span class="nf">onDestroy</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">engine</span><span class="p">.</span><span class="na">destroyEntity</span><span class="p">(</span><span class="n">entity</span><span class="p">)</span>
+<span class="w">    </span><span class="n">engine</span><span class="p">.</span><span class="na">destroyScene</span><span class="p">(</span><span class="n">scene</span><span class="p">)</span>
+<span class="w">    </span><span class="n">engine</span><span class="p">.</span><span class="na">destroy</span><span class="p">()</span>
+<span class="w">    </span><span class="k">super</span><span class="p">.</span><span class="na">onDestroy</span><span class="p">()</span>
+<span class="p">}</span>
+</code></pre></div></p>
+</div>
+<hr />
+<h2 id="platform-specific-notes">Platform-Specific Notes<a class="headerlink" href="#platform-specific-notes" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Android</label><label for="__tabbed_1_2">JVM Desktop</label><label for="__tabbed_1_3">iOS/WebGL</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">// Initialize with SurfaceView</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">surfaceView</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SurfaceView</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">uiHelper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UiHelper</span><span class="p">(</span><span class="n">UiHelper</span><span class="p">.</span><span class="na">ContextErrorPolicy</span><span class="p">.</span><span class="na">DONT_CHECK</span><span class="p">).</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">renderCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SurfaceCallback</span><span class="p">()</span>
+<span class="w">    </span><span class="n">attachTo</span><span class="p">(</span><span class="n">surfaceView</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">// Using LWJGL backend</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">window</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">glfwCreateWindow</span><span class="p">(</span><span class="m">1280</span><span class="p">,</span><span class="w"> </span><span class="m">720</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;MINE Viewer&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">NULL</span><span class="p">,</span><span class="w"> </span><span class="n">NULL</span><span class="p">)</span>
+<span class="n">glfwMakeContextCurrent</span><span class="p">(</span><span class="n">window</span><span class="p">)</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">engine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Engine</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="n">Engine</span><span class="p">.</span><span class="na">Backend</span><span class="p">.</span><span class="na">OPENGL</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Currently, MINE focuses on Android. iOS support via Kotlin Multiplatform is planned for Q2 2025.</p>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg></span> <strong>Official Repository</strong></p>
+<hr />
+<p><a href="https://github.com/google/filament"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Google Filament on GitHub</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg></span> <strong>API Documentation</strong></p>
+<hr />
+<p><a href="https://google.github.io/filament/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Filament API Reference</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m9 16v-2H6v2zm3-4v-2H6v2z"/></svg></span> <strong>Material Guide</strong></p>
+<hr />
+<p><a href="https://google.github.io/filament/Materials.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> PBR Material Documentation</a></p>
+</li>
+<li>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg></span> <strong>Sample Projects</strong></p>
+<hr />
+<p><a href="https://github.com/google/filament/tree/main/android/samples"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Filament Samples</a></p>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../scene_view/">SceneView API</a></strong>: Learn how MINE wraps Filament in a Compose-friendly component</li>
+<li><strong><a href="../../features/theme_customization/">Theme Customization</a></strong>: Customize materials and lighting for your brand</li>
+<li><strong><a href="../../support/troubleshooting/#performance">Performance Tuning</a></strong>: Optimize rendering for your target devices</li>
+</ul>
+<hr />
+<p><small>Last updated: December 2024 | Filament version: 1.46.0</small></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../scene_view/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SceneView">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                SceneView
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../release_notes/release_notes/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://kvrae.github.io/"  target="_blank" rel="opener">Karam Mannai</a>
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/kvrae" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/karam-mannai/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCb_lwSmYhnGBD5JH6BXYkvQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@karammannai" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M369.4 32c43.4 0 78.6 35.2 78.6 78.6v83.8c-1.9-.1-3.8-.2-5.7-.2h-.4c-10 0-22.3 2.4-31.1 6.8-10 4.6-18.7 11.5-26 20.6-11.8 14.6-18.9 34.3-20.6 56.4-.1.7-.1 1.3-.2 2s-.1 1.2-.1 1.9c-.1 1.2-.1 2.4-.1 3.6 0 1.9-.1 3.8 0 5.8 1.2 50.1 28.2 90.2 76.3 90.2 2.7 0 5.3-.1 7.9-.4v20.4c0 43.4-35.2 78.6-78.6 78.6L78.6 480C35.2 480 0 444.8 0 401.4V110.6C0 67.2 35.2 32 78.6 32zM82.3 138.9l.3.1c13.2 3 19.8 7.4 19.8 23.4v187.2c0 16-6.7 20.4-19.9 23.4l-.3.1v2.8H135v-2.8l-.3-.1c-13.2-3-19.9-7.4-19.9-23.4V173.3l86.1 202.5h4.9l88.6-208.2v186.6c-1.1 12.6-7.8 16.5-19.7 19.2l-.3.1v2.7h91.9v-2.7l-.3-.1c-11.9-2.7-18.7-6.6-19.9-19.2l-.1-191.8h.1c0-16 6.7-20.4 19.9-23.4l.3-.1v-2.7h-72.2l-67 157.4-67-157.4H82.3zM448 340.3c-25.1-7.4-43-35.1-41.2-67.8h41.1v67.8zm-6.4-135.6c2.3 0 4.4.3 6.4.9V263h-40.2c1.5-33.6 13.6-57.9 33.8-58.3"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "toc.integrate", "header.title", "header.autohide", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.tracking", "navigation.scrollspy", "search.suggest", "search.highlight", "search.loader", "search.share", "content.tabs.link", "content.code.annotation", "content.code.copy", "footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

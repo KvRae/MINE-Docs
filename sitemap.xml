@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/api_reference/filament/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/api_reference/filament/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/api_reference/filament/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/api_reference/module_overview/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/api_reference/module_overview/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/api_reference/module_overview/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/api_reference/scene_view/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/api_reference/scene_view/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/api_reference/scene_view/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/features/features_overview/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/features_overview/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/features_overview/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/features/map_loading/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/map_loading/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/map_loading/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/features/navigation/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/navigation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/navigation/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/features/path_finding/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/path_finding/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/path_finding/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/features/theme_customization/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/theme_customization/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/theme_customization/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/features/ui_components/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/ui_components/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/ui_components/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/getting_started/installation/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/getting_started/installation/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/getting_started/installation/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/getting_started/quick_start/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/getting_started/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/getting_started/quick_start/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/getting_started/usage/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/getting_started/usage/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/getting_started/usage/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/release_notes/0.1.0_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.1.0_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.1.0_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/release_notes/0.2.1_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.2.1_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.2.1_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/release_notes/0.3.2_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.3.2_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.3.2_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/release_notes/0.4.0_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.4.0_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.4.0_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/release_notes/release_notes/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/release_notes/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/release_notes/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/support/contact_us/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/support/contact_us/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/support/contact_us/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/support/faq/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/support/faq/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/support/faq/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/support/troubleshooting/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/support/troubleshooting/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/support/troubleshooting/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/api_reference/filament/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/api_reference/filament/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/api_reference/filament/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/api_reference/module_overview/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/api_reference/module_overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/api_reference/module_overview/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/api_reference/scene_view/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/api_reference/scene_view/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/api_reference/scene_view/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/features/features_overview/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/features_overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/features_overview/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/features/map_loading/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/map_loading/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/map_loading/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/features/navigation/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/navigation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/navigation/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/features/path_finding/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/path_finding/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/path_finding/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/features/theme_customization/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/theme_customization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/theme_customization/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/features/ui_components/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/features/ui_components/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/features/ui_components/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/getting_started/installation/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/getting_started/installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/getting_started/installation/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/getting_started/quick_start/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/getting_started/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/getting_started/quick_start/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/getting_started/usage/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/getting_started/usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/getting_started/usage/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/release_notes/0.1.0_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.1.0_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.1.0_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/release_notes/0.2.1_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.2.1_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.2.1_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/release_notes/0.3.2_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.3.2_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.3.2_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/release_notes/0.4.0_alpha/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/0.4.0_alpha/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/0.4.0_alpha/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/release_notes/release_notes/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/release_notes/release_notes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/release_notes/release_notes/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/support/contact_us/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/support/contact_us/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/support/contact_us/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/support/faq/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/support/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/support/faq/"/>
+    </url>
+    <url>
+        <loc>https://kvrae.github.io/MINE-Docs/fr/support/troubleshooting/</loc>
+        <lastmod>2026-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://kvrae.github.io/MINE-Docs/fr/support/troubleshooting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kvrae.github.io/MINE-Docs/support/troubleshooting/"/>
+    </url>
+</urlset>

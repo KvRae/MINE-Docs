@@ -1,0 +1,2443 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MINE is a powerful and easy-to-use indoor navigation engine for Android.">
+      
+      
+        <meta name="author" content="Karam Mannai">
+      
+      
+        <link rel="canonical" href="https://kvrae.github.io/MINE-Docs/features/features_overview/">
+      
+      
+        <link rel="prev" href="../../getting_started/usage/">
+      
+      
+        <link rel="next" href="../map_loading/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../../fr/features/features_overview/" hreflang="fr">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Features Overview - MINE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/mine.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#features-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MINE" class="md-header__button md-logo" aria-label="MINE" data-md-component="logo">
+      
+  <img src="../../assets/images/Logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MINE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Features Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../fr/features/features_overview/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/KvRae/MachInNav-Engine-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MINE Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting_started/installation/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Features
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api_reference/module_overview/" class="md-tabs__link">
+          
+  
+  
+  API Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../release_notes/release_notes/" class="md-tabs__link">
+          
+  
+  
+  Release Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../support/faq/" class="md-tabs__link">
+          
+  
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MINE" class="md-nav__button md-logo" aria-label="MINE" data-md-component="logo">
+      
+  <img src="../../assets/images/Logo.svg" alt="logo">
+
+    </a>
+    MINE
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/KvRae/MachInNav-Engine-Docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MINE Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.youtube.com/@kvrae8698/featured" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Youtube Tutorials 🡕
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Features
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Deep Dive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feature Deep Dive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-3d2d-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ Dynamic 3D/2D Environment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗺️ Dynamic 3D/2D Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-view-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D View Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2d-view-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2D View Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme-customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Theme Customization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Theme Customization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customization-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customization Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-path-finding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 Advanced Path Finding
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧭 Advanced Path Finding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pathfinding-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pathfinding Algorithms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-criteria-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Criteria Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚶 Real-time Navigation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚶 Real-time Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positioning-technologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positioning Technologies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rich-ui-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Rich UI Components
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Rich UI Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Available Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-floor-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏢 Multi-floor Support
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏢 Multi-floor Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance &amp; Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration &amp; Compatibility
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration &amp; Compatibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-compatibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture Compatibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Roadmap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../map_loading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Map Loading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui_components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theme_customization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Theme Customization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Navigation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../path_finding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Path Finding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api_reference/module_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api_reference/scene_view/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SceneView
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api_reference/filament/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filament Engine
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Release Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/release_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.1.0_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.2.1_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.3.2_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.3.2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release_notes/0.4.0_alpha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact Us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="features-overview"><span class= "emoji"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M40 48c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24zm152 16c-17.7 0-32 14.3-32 32s14.3 32 32 32h288c17.7 0 32-14.3 32-32s-14.3-32-32-32zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32h288c17.7 0 32-14.3 32-32s-14.3-32-32-32zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32h288c17.7 0 32-14.3 32-32s-14.3-32-32-32zM16 232v48c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24m24 136c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24z"/></svg></span></span> Features Overview<a class="headerlink" href="#features-overview" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The <strong>MINE (MachInNav Engine)</strong> is a comprehensive indoor navigation solution designed to provide powerful, accurate, and user-friendly navigation experiences in complex indoor environments. Built with cutting-edge technologies and optimized for performance, MINE delivers enterprise-grade features for applications ranging from shopping malls to airports, hospitals, and corporate campuses.</p>
+<div class="admonition abstract">
+<p class="admonition-title">What Makes MINE Different?</p>
+<p>MINE combines advanced 3D rendering, intelligent pathfinding algorithms, real-time positioning, and intuitive UI components to create a seamless indoor navigation experience that works across various devices and deployment scenarios.</p>
+</div>
+<hr />
+<h2 id="core-features">Core Features<a class="headerlink" href="#core-features" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span> <strong>Dynamic 3D/2D Environments</strong></p>
+<hr />
+<p>Seamlessly switch between immersive 3D and efficient 2D map views based on user preferences and device capabilities.</p>
+<p><a href="../map_loading/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Learn more</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22A10 10 0 0 1 2 12 10 10 0 0 1 12 2c5.5 0 10 4 10 9a6 6 0 0 1-6 6h-1.8c-.3 0-.5.2-.5.5 0 .1.1.2.1.3.4.5.6 1.1.6 1.7.1 1.4-1 2.5-2.4 2.5m0-18a8 8 0 0 0-8 8 8 8 0 0 0 8 8c.3 0 .5-.2.5-.5 0-.2-.1-.3-.1-.4-.4-.5-.6-1-.6-1.6 0-1.4 1.1-2.5 2.5-2.5H16a4 4 0 0 0 4-4c0-3.9-3.6-7-8-7m-5.5 6c.8 0 1.5.7 1.5 1.5S7.3 13 6.5 13 5 12.3 5 11.5 5.7 10 6.5 10m3-4c.8 0 1.5.7 1.5 1.5S10.3 9 9.5 9 8 8.3 8 7.5 8.7 6 9.5 6m5 0c.8 0 1.5.7 1.5 1.5S15.3 9 14.5 9 13 8.3 13 7.5 13.7 6 14.5 6m3 4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5"/></svg></span> <strong>Theme Customization</strong></p>
+<hr />
+<p>Fully customizable themes and branding options to match your application's design language and corporate identity.</p>
+<p><a href="../theme_customization/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Customize themes</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m7 17 3.2-6.8L17 7l-3.2 6.8zm5-5.9a.9.9 0 0 0-.9.9.9.9 0 0 0 .9.9.9.9 0 0 0 .9-.9.9.9 0 0 0-.9-.9M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8"/></svg></span> <strong>Advanced Path Finding</strong></p>
+<hr />
+<p>Multi-criteria route optimization considering accessibility, distance, congestion, and user preferences.</p>
+<p><a href="../path_finding/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Explore pathfinding</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.27 6.73-4.24 10.13-1.32-3.42-.32-.83-.82-.32-3.43-1.33zM21 3 3 10.53v.97l6.84 2.66L12.5 21h.96z"/></svg></span> <strong>Real-time Navigation</strong></p>
+<hr />
+<p>Turn-by-turn guidance with visual and audio cues, supporting Bluetooth beacons, Wi-Fi, and sensor fusion.</p>
+<p><a href="../navigation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Navigation features</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 5v2h-4V5zM9 5v6H5V5zm10 8v6h-4v-6zM9 17v2H5v-2zM21 3h-8v6h8zM11 3H3v10h8zm10 8h-8v10h8zm-10 4H3v6h8z"/></svg></span> <strong>Rich UI Components</strong></p>
+<hr />
+<p>Pre-built, customizable UI components including search, floor selection, POI markers, and route preview.</p>
+<p><a href="../ui_components/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> UI components</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 18.54 7.37-5.74L21 14.07l-9 7-9-7 1.62-1.26zM12 16 3 9l9-7 9 7zm0-11.47L6.26 9 12 13.47 17.74 9z"/></svg></span> <strong>Multi-floor Support</strong></p>
+<hr />
+<p>Intelligent navigation across multiple building floors with automatic floor detection and transitions.</p>
+<p><a href="../map_loading/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Map loading</a></p>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="feature-deep-dive">Feature Deep Dive<a class="headerlink" href="#feature-deep-dive" title="Permanent link">&para;</a></h2>
+<h3 id="dynamic-3d2d-environment">🗺️ Dynamic 3D/2D Environment<a class="headerlink" href="#dynamic-3d2d-environment" title="Permanent link">&para;</a></h3>
+<p>MINE provides a flexible visualization system that adapts to your application's needs:</p>
+<h4 id="3d-view-capabilities">3D View Capabilities<a class="headerlink" href="#3d-view-capabilities" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Immersive Visualization</strong>: Photo-realistic 3D rendering powered by Google's Filament engine</li>
+<li><strong>Interactive Camera</strong>: Pan, zoom, rotate, and tilt controls for intuitive exploration</li>
+<li><strong>Real-time Shadows</strong>: Dynamic lighting and shadows for depth perception</li>
+<li><strong>Model Streaming</strong>: Progressive loading of 3D assets for optimal performance</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// Example: Switch between 3D and 2D modes</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">sceneView</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MineSceneView</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+
+<span class="c1">// Enable 3D mode</span>
+<span class="n">sceneView</span><span class="p">.</span><span class="na">setViewMode</span><span class="p">(</span><span class="n">ViewMode</span><span class="p">.</span><span class="na">MODE_3D</span><span class="p">)</span>
+<span class="n">sceneView</span><span class="p">.</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">enablePerspectiveCamera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="n">enableShadows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="n">ambientOcclusionEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+
+<span class="c1">// Switch to 2D mode for better performance</span>
+<span class="n">sceneView</span><span class="p">.</span><span class="na">setViewMode</span><span class="p">(</span><span class="n">ViewMode</span><span class="p">.</span><span class="na">MODE_2D</span><span class="p">)</span>
+<span class="n">sceneView</span><span class="p">.</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">enableOrthographicCamera</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="n">cameraAngle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">90f</span><span class="w"> </span><span class="c1">// Top-down view</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="2d-view-capabilities">2D View Capabilities<a class="headerlink" href="#2d-view-capabilities" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Vector Maps</strong>: Crisp, scalable vector rendering at any zoom level</li>
+<li><strong>Efficient Rendering</strong>: Optimized for lower-end devices and battery conservation</li>
+<li><strong>Clear Labeling</strong>: Enhanced text readability and POI visibility</li>
+<li><strong>Quick Load Times</strong>: Instant map rendering for responsive UX</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">When to Use Each Mode</p>
+<ul>
+<li><strong>3D Mode</strong>: Best for complex venues, wayfinding in large spaces, and creating "wow factor"</li>
+<li><strong>2D Mode</strong>: Ideal for simple layouts, quick navigation, and devices with limited resources</li>
+</ul>
+</div>
+<hr />
+<h3 id="theme-customization">🎨 Theme Customization<a class="headerlink" href="#theme-customization" title="Permanent link">&para;</a></h3>
+<p>Create a branded navigation experience that aligns with your visual identity:</p>
+<h4 id="customization-options">Customization Options<a class="headerlink" href="#customization-options" title="Permanent link">&para;</a></h4>
+<div class="grid">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Colors &amp; Branding</label><label for="__tabbed_1_2">Typography</label><label for="__tabbed_1_3">UI Elements</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">MineTheme</span><span class="p">.</span><span class="na">apply</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">primaryColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">(</span><span class="m">0</span><span class="n">xFF1976D2</span><span class="p">)</span>
+<span class="w">    </span><span class="n">accentColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">(</span><span class="m">0</span><span class="n">xFF4CAF50</span><span class="p">)</span>
+<span class="w">    </span><span class="n">backgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">(</span><span class="m">0</span><span class="n">xFFF5F5F5</span><span class="p">)</span>
+<span class="w">    </span><span class="n">pathColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">(</span><span class="m">0</span><span class="n">xFF2196F3</span><span class="p">)</span>
+<span class="w">    </span><span class="n">currentLocationColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">(</span><span class="m">0</span><span class="n">xFFFF5722</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">MineTheme</span><span class="p">.</span><span class="na">typography</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Typography</span><span class="p">(</span>
+<span class="w">    </span><span class="n">headingFont</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Typeface</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">&quot;Roboto&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Typeface</span><span class="p">.</span><span class="na">BOLD</span><span class="p">),</span>
+<span class="w">    </span><span class="n">bodyFont</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Typeface</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="s">&quot;Roboto&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Typeface</span><span class="p">.</span><span class="na">NORMAL</span><span class="p">),</span>
+<span class="w">    </span><span class="n">headingSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">18.</span><span class="n">sp</span><span class="p">,</span>
+<span class="w">    </span><span class="n">bodySize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">14.</span><span class="n">sp</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">MineTheme</span><span class="p">.</span><span class="na">uiConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UIConfig</span><span class="p">(</span>
+<span class="w">    </span><span class="n">markerStyle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MarkerStyle</span><span class="p">.</span><span class="na">MODERN</span><span class="p">,</span>
+<span class="w">    </span><span class="n">buttonShape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ButtonShape</span><span class="p">.</span><span class="na">ROUNDED</span><span class="p">,</span>
+<span class="w">    </span><span class="n">cardElevation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4.</span><span class="n">dp</span><span class="p">,</span>
+<span class="w">    </span><span class="n">borderRadius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">8.</span><span class="n">dp</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Supported Customizations:</strong></p>
+<ul>
+<li>Primary and accent colors</li>
+<li>Typography and fonts</li>
+<li>Icon sets and marker styles</li>
+<li>Button and card styles</li>
+<li>Dark/light theme variants</li>
+<li>Localization support</li>
+</ul>
+<hr />
+<h3 id="advanced-path-finding">🧭 Advanced Path Finding<a class="headerlink" href="#advanced-path-finding" title="Permanent link">&para;</a></h3>
+<p>MINE's intelligent pathfinding engine calculates optimal routes based on multiple criteria:</p>
+<h4 id="pathfinding-algorithms">Pathfinding Algorithms<a class="headerlink" href="#pathfinding-algorithms" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>A* Algorithm</strong>: Efficient shortest path calculation</li>
+<li><strong>Dijkstra's Algorithm</strong>: Multi-destination optimization</li>
+<li><strong>Dynamic Weights</strong>: Real-time route adjustment based on congestion</li>
+<li><strong>Accessibility Routes</strong>: Wheelchair-friendly and elevator-prioritized paths</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// Example: Calculate accessible route</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">navigationManager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MineNavigationManager</span><span class="p">()</span>
+
+<span class="kd">val</span><span class="w"> </span><span class="nv">routeRequest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RouteRequest</span><span class="p">(</span>
+<span class="w">    </span><span class="n">origin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">currentLocation</span><span class="p">,</span>
+<span class="w">    </span><span class="n">destination</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">targetPOI</span><span class="p">,</span>
+<span class="w">    </span><span class="n">preferences</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RoutePreferences</span><span class="p">(</span>
+<span class="w">        </span><span class="n">avoidStairs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="n">preferElevators</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="n">considerWheelchairAccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="n">optimizeFor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OptimizationCriteria</span><span class="p">.</span><span class="na">ACCESSIBILITY</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">navigationManager</span><span class="p">.</span><span class="na">calculateRoute</span><span class="p">(</span><span class="n">routeRequest</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">is</span><span class="w"> </span><span class="n">RouteResult</span><span class="p">.</span><span class="na">Success</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">displayRoute</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="na">route</span><span class="p">)</span>
+<span class="w">            </span><span class="n">startNavigation</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="na">route</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">is</span><span class="w"> </span><span class="n">RouteResult</span><span class="p">.</span><span class="na">Error</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">showError</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="na">message</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="multi-criteria-optimization">Multi-Criteria Optimization<a class="headerlink" href="#multi-criteria-optimization" title="Permanent link">&para;</a></h4>
+<p>Routes can be optimized for:</p>
+<table>
+<thead>
+<tr>
+<th>Criteria</th>
+<th>Description</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shortest Distance</strong></td>
+<td>Minimum walking distance</td>
+<td>Quick navigation</td>
+</tr>
+<tr>
+<td><strong>Fastest Route</strong></td>
+<td>Considers walking speed and congestion</td>
+<td>Time-sensitive scenarios</td>
+</tr>
+<tr>
+<td><strong>Accessibility</strong></td>
+<td>Elevator access, ramps, wide corridors</td>
+<td>Wheelchair users, strollers</td>
+</tr>
+<tr>
+<td><strong>Scenic Route</strong></td>
+<td>Passes by interesting POIs</td>
+<td>Tourist applications</td>
+</tr>
+<tr>
+<td><strong>Emergency Exit</strong></td>
+<td>Fastest evacuation path</td>
+<td>Safety and emergency</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="real-time-navigation">🚶 Real-time Navigation<a class="headerlink" href="#real-time-navigation" title="Permanent link">&para;</a></h3>
+<p>Provide users with accurate, real-time guidance throughout their journey:</p>
+<h4 id="positioning-technologies">Positioning Technologies<a class="headerlink" href="#positioning-technologies" title="Permanent link">&para;</a></h4>
+<p>MINE supports multiple positioning systems for maximum accuracy:</p>
+<div class="grid">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Bluetooth Beacons</label><label for="__tabbed_2_2">Wi-Fi RTT</label><label for="__tabbed_2_3">Sensor Fusion</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><strong>Accuracy</strong>: 1-3 meters</li>
+<li><strong>Setup</strong>: Requires beacon deployment</li>
+<li><strong>Best For</strong>: Retail, museums, airports</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">beaconPositioning</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BeaconPositioningProvider</span><span class="p">(</span>
+<span class="w">    </span><span class="n">scanInterval</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000L</span><span class="p">,</span>
+<span class="w">    </span><span class="n">rssiThreshold</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">80</span>
+<span class="p">)</span>
+<span class="n">navigationManager</span><span class="p">.</span><span class="na">setPositioningProvider</span><span class="p">(</span><span class="n">beaconPositioning</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Accuracy</strong>: 1-2 meters</li>
+<li><strong>Setup</strong>: Requires Wi-Fi RTT capable APs</li>
+<li><strong>Best For</strong>: Corporate offices, hospitals</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">wifiPositioning</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">WiFiRTTProvider</span><span class="p">(</span>
+<span class="w">    </span><span class="n">scanFrequency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2000L</span><span class="p">,</span>
+<span class="w">    </span><span class="n">minAccessPoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
+<span class="p">)</span>
+<span class="n">navigationManager</span><span class="p">.</span><span class="na">setPositioningProvider</span><span class="p">(</span><span class="n">wifiPositioning</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><strong>Accuracy</strong>: 2-5 meters</li>
+<li><strong>Setup</strong>: No infrastructure needed</li>
+<li><strong>Best For</strong>: Quick deployment, PDR</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">val</span><span class="w"> </span><span class="nv">sensorFusion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SensorFusionProvider</span><span class="p">(</span>
+<span class="w">    </span><span class="n">useAccelerometer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="n">useGyroscope</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="n">useMagnetometer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">)</span>
+<span class="n">navigationManager</span><span class="p">.</span><span class="na">setPositioningProvider</span><span class="p">(</span><span class="n">sensorFusion</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h4 id="navigation-features">Navigation Features<a class="headerlink" href="#navigation-features" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Turn-by-Turn Directions</strong>: Voice and visual instructions</li>
+<li><strong>Distance to Destination</strong>: Real-time updates</li>
+<li><strong>Floor Change Notifications</strong>: Automatic detection and guidance</li>
+<li><strong>Rerouting</strong>: Automatic recalculation when off-path</li>
+<li><strong>ETA Calculation</strong>: Estimated time of arrival</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// Example: Start turn-by-turn navigation</span>
+<span class="n">navigationManager</span><span class="p">.</span><span class="na">startNavigation</span><span class="p">(</span><span class="n">route</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">    </span><span class="k">when</span><span class="w"> </span><span class="p">(</span><span class="n">event</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">is</span><span class="w"> </span><span class="n">NavigationEvent</span><span class="p">.</span><span class="na">InstructionUpdate</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">showInstruction</span><span class="p">(</span><span class="n">event</span><span class="p">.</span><span class="na">instruction</span><span class="p">)</span>
+<span class="w">            </span><span class="n">playVoiceGuidance</span><span class="p">(</span><span class="n">event</span><span class="p">.</span><span class="na">instruction</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">is</span><span class="w"> </span><span class="n">NavigationEvent</span><span class="p">.</span><span class="na">FloorChange</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">showFloorChangeAlert</span><span class="p">(</span><span class="n">event</span><span class="p">.</span><span class="na">fromFloor</span><span class="p">,</span><span class="w"> </span><span class="n">event</span><span class="p">.</span><span class="na">toFloor</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">is</span><span class="w"> </span><span class="n">NavigationEvent</span><span class="p">.</span><span class="na">Rerouting</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">showReroutingIndicator</span><span class="p">()</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">is</span><span class="w"> </span><span class="n">NavigationEvent</span><span class="p">.</span><span class="na">DestinationReached</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">showArrivalDialog</span><span class="p">()</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="rich-ui-components">🎯 Rich UI Components<a class="headerlink" href="#rich-ui-components" title="Permanent link">&para;</a></h3>
+<p>Pre-built, production-ready UI components that accelerate development:</p>
+<h4 id="available-components">Available Components<a class="headerlink" href="#available-components" title="Permanent link">&para;</a></h4>
+<p><strong>Search &amp; Discovery</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Location search component</span>
+<span class="n">MineSearchBar</span><span class="p">(</span>
+<span class="w">    </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">fillMaxWidth</span><span class="p">(),</span>
+<span class="w">    </span><span class="n">onLocationSelected</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">poi</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">        </span><span class="n">navigateTo</span><span class="p">(</span><span class="n">poi</span><span class="p">)</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="n">placeholder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Search locations...&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">showRecentSearches</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="n">showCategories</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">)</span>
+</code></pre></div>
+<p><strong>Floor Selector</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Floor selection component</span>
+<span class="n">MineFloorSelector</span><span class="p">(</span>
+<span class="w">    </span><span class="n">floors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">buildingFloors</span><span class="p">,</span>
+<span class="w">    </span><span class="n">currentFloor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">activeFloor</span><span class="p">,</span>
+<span class="w">    </span><span class="n">onFloorSelected</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">floor</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">        </span><span class="n">sceneView</span><span class="p">.</span><span class="na">switchToFloor</span><span class="p">(</span><span class="n">floor</span><span class="p">)</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="n">orientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Orientation</span><span class="p">.</span><span class="na">VERTICAL</span>
+<span class="p">)</span>
+</code></pre></div>
+<p><strong>Route Preview Card</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Route information card</span>
+<span class="n">MineRouteCard</span><span class="p">(</span>
+<span class="w">    </span><span class="n">route</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculatedRoute</span><span class="p">,</span>
+<span class="w">    </span><span class="n">showDistance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="n">showDuration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="n">showAccessibilityInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="n">onStartNavigation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">startNavigation</span><span class="p">(</span><span class="n">route</span><span class="p">)</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="n">onAlternativeRoute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">showAlternatives</span><span class="p">()</span><span class="w"> </span><span class="p">}</span>
+<span class="p">)</span>
+</code></pre></div>
+<h4 id="component-features">Component Features<a class="headerlink" href="#component-features" title="Permanent link">&para;</a></h4>
+<ul>
+<li>🎨 Fully themeable and customizable</li>
+<li>📱 Responsive design for all screen sizes</li>
+<li>♿ Accessibility-compliant (WCAG 2.1)</li>
+<li>🌍 Multi-language support</li>
+<li>🔄 Real-time data updates</li>
+</ul>
+<hr />
+<h3 id="multi-floor-support">🏢 Multi-floor Support<a class="headerlink" href="#multi-floor-support" title="Permanent link">&para;</a></h3>
+<p>Navigate seamlessly across complex multi-level buildings:</p>
+<h4 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Automatic Floor Detection</strong>: Uses barometric pressure and beacons</li>
+<li><strong>Floor Transition Visualization</strong>: Clear indicators for stairs, elevators, escalators</li>
+<li><strong>Cross-Floor Routing</strong>: Intelligent path calculation across levels</li>
+<li><strong>Floor Plan Management</strong>: Support for hundreds of floors per venue</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// Example: Multi-floor navigation</span>
+<span class="kd">val</span><span class="w"> </span><span class="nv">multiFloorRoute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RouteRequest</span><span class="p">(</span>
+<span class="w">    </span><span class="n">origin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Location</span><span class="p">(</span><span class="n">floor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10.0</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">20.0</span><span class="p">),</span>
+<span class="w">    </span><span class="n">destination</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Location</span><span class="p">(</span><span class="n">floor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50.0</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">30.0</span><span class="p">),</span>
+<span class="w">    </span><span class="n">preferences</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RoutePreferences</span><span class="p">(</span>
+<span class="w">        </span><span class="n">preferElevators</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="n">maxStairFlights</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">navigationManager</span><span class="p">.</span><span class="na">calculateRoute</span><span class="p">(</span><span class="n">multiFloorRoute</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">    </span><span class="c1">// Route includes floor transitions</span>
+<span class="w">    </span><span class="n">result</span><span class="p">.</span><span class="na">route</span><span class="p">.</span><span class="na">segments</span><span class="p">.</span><span class="na">forEach</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">segment</span><span class="w"> </span><span class="o">-&gt;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">segment</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">FloorTransitionSegment</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Use </span><span class="si">${</span><span class="n">segment</span><span class="p">.</span><span class="na">transitionType</span><span class="si">}</span><span class="s"> to floor </span><span class="si">${</span><span class="n">segment</span><span class="p">.</span><span class="na">toFloor</span><span class="si">}</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="performance-optimization">Performance &amp; Optimization<a class="headerlink" href="#performance-optimization" title="Permanent link">&para;</a></h2>
+<p>MINE is built for performance across all device types:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Optimization</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>3D Rendering</strong></td>
+<td>LOD, Frustum culling, Occlusion</td>
+<td>60 FPS on mid-range devices</td>
+</tr>
+<tr>
+<td><strong>Map Loading</strong></td>
+<td>Progressive loading, Caching</td>
+<td>&lt; 2s initial load time</td>
+</tr>
+<tr>
+<td><strong>Pathfinding</strong></td>
+<td>Spatial indexing, A* optimization</td>
+<td>&lt; 100ms route calculation</td>
+</tr>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Texture compression, Asset streaming</td>
+<td>&lt; 150MB RAM usage</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td>GPU throttling, Smart positioning</td>
+<td>Minimal battery impact</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="integration-compatibility">Integration &amp; Compatibility<a class="headerlink" href="#integration-compatibility" title="Permanent link">&para;</a></h2>
+<h3 id="platform-support">Platform Support<a class="headerlink" href="#platform-support" title="Permanent link">&para;</a></h3>
+<ul>
+<li>✅ <strong>Android</strong>: 7.0 (API 24) and above</li>
+<li>✅ <strong>Kotlin</strong>: 1.8.0+</li>
+<li>✅ <strong>Jetpack Compose</strong>: Modern UI toolkit support</li>
+<li>✅ <strong>ARCore</strong>: Optional AR features</li>
+</ul>
+<h3 id="architecture-compatibility">Architecture Compatibility<a class="headerlink" href="#architecture-compatibility" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>MVVM</strong>: Model-View-ViewModel pattern</li>
+<li><strong>Clean Architecture</strong>: Separation of concerns</li>
+<li><strong>Dependency Injection</strong>: Dagger/Hilt support</li>
+<li><strong>Reactive Programming</strong>: Coroutines and Flow</li>
+</ul>
+<hr />
+<h2 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
+<p>MINE powers indoor navigation in diverse environments:</p>
+<div class="grid">
+<div class="admonition example">
+<p class="admonition-title">🏬 Shopping Malls</p>
+<ul>
+<li>Store locator and navigation</li>
+<li>Promotional POI highlighting</li>
+<li>Parking spot finder</li>
+<li>Event navigation</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">🏥 Hospitals</p>
+<ul>
+<li>Department and room finding</li>
+<li>Accessible route guidance</li>
+<li>Emergency evacuation</li>
+<li>Visitor navigation</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">✈️ Airports</p>
+<ul>
+<li>Gate finding</li>
+<li>Amenity locator</li>
+<li>Multi-terminal navigation</li>
+<li>Time-sensitive routing</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">🏢 Corporate Offices</p>
+<ul>
+<li>Meeting room finder</li>
+<li>Desk navigation</li>
+<li>Visitor guidance</li>
+<li>Evacuation planning</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">🎓 Universities</p>
+<ul>
+<li>Classroom finder</li>
+<li>Campus navigation</li>
+<li>Building directory</li>
+<li>Event locations</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">🏛️ Museums &amp; Venues</p>
+<ul>
+<li>Exhibit navigation</li>
+<li>Audio tour integration</li>
+<li>Accessibility support</li>
+<li>Interactive maps</li>
+</ul>
+</div>
+</div>
+<hr />
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>Ready to implement MINE features in your application?</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.13 22.19-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27zM5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M19.22 4c.28 0 .53 0 .74.05.17 1.39-.02 4.25-3.3 7.53-1.7 1.71-3.73 3.02-6.01 3.89l-2.15-2.1c.92-2.31 2.23-4.34 3.92-6.03C15.18 4.58 17.64 4 19.22 4m0-2c-1.98 0-4.98.69-8.22 3.93-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.12c.38.38.89.61 1.42.61.23 0 .47-.06.7-.15A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61S20.7 2 19.22 2m-4.68 7.46c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83s-2.05.78-2.83 0m-5.66 7.07-1.41-1.41zM6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22zM2 22h1.41l4.77-4.76-1.42-1.41L2 20.59zm0-2.83 4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76z"/></svg></span> <strong>Quick Start</strong></p>
+<hr />
+<p>Get up and running in minutes with our quick start guide</p>
+<p><a href="../../getting_started/quick_start/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Quick Start</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 4H3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2M3 19V6h8v13zm18 0h-8V6h8zm-7-9.5h6V11h-6zm0 2.5h6v1.5h-6zm0 2.5h6V16h-6z"/></svg></span> <strong>Installation</strong></p>
+<hr />
+<p>Detailed installation and setup instructions</p>
+<p><a href="../../getting_started/installation/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Installation Guide</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3z"/></svg></span> <strong>API Reference</strong></p>
+<hr />
+<p>Complete API documentation and code examples</p>
+<p><a href="../../api_reference/module_overview/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> API Docs</a></p>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2zm1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14a4 4 0 0 0-4 4h2a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5a4 4 0 0 0-4-4"/></svg></span> <strong>Support</strong></p>
+<hr />
+<p>Get help from our team and community</p>
+<p><a href="../../support/contact_us/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Get Support</a></p>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="feature-roadmap">Feature Roadmap<a class="headerlink" href="#feature-roadmap" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Coming Soon</p>
+<p>We're continuously improving MINE with new features:</p>
+<ul>
+<li>🔄 <strong>AR Navigation</strong> - Augmented reality wayfinding overlays</li>
+<li>🤖 <strong>AI Route Prediction</strong> - Machine learning-based route suggestions</li>
+<li>🌐 <strong>Web SDK</strong> - Browser-based navigation experiences</li>
+<li>📊 <strong>Analytics Dashboard</strong> - Usage insights and heatmaps</li>
+<li>🔗 <strong>IoT Integration</strong> - Smart building and sensor integration</li>
+</ul>
+</div>
+<hr />
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<p>Explore detailed documentation for each feature:</p>
+<ul>
+<li><a href="../map_loading/">Map Loading &amp; Visualization</a> - Learn about 3D/2D map integration</li>
+<li><a href="../path_finding/">Path Finding Algorithms</a> - Deep dive into routing engine</li>
+<li><a href="../navigation/">Navigation Features</a> - Real-time navigation implementation</li>
+<li><a href="../ui_components/">UI Components</a> - Pre-built UI component library</li>
+<li><a href="../theme_customization/">Theme Customization</a> - Branding and styling guide</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../getting_started/usage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Usage">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Usage
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../map_loading/" class="md-footer__link md-footer__link--next" aria-label="Next: Map Loading">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Map Loading
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://kvrae.github.io/"  target="_blank" rel="opener">Karam Mannai</a>
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/kvrae" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/karam-mannai/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCb_lwSmYhnGBD5JH6BXYkvQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://medium.com/@karammannai" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M369.4 32c43.4 0 78.6 35.2 78.6 78.6v83.8c-1.9-.1-3.8-.2-5.7-.2h-.4c-10 0-22.3 2.4-31.1 6.8-10 4.6-18.7 11.5-26 20.6-11.8 14.6-18.9 34.3-20.6 56.4-.1.7-.1 1.3-.2 2s-.1 1.2-.1 1.9c-.1 1.2-.1 2.4-.1 3.6 0 1.9-.1 3.8 0 5.8 1.2 50.1 28.2 90.2 76.3 90.2 2.7 0 5.3-.1 7.9-.4v20.4c0 43.4-35.2 78.6-78.6 78.6L78.6 480C35.2 480 0 444.8 0 401.4V110.6C0 67.2 35.2 32 78.6 32zM82.3 138.9l.3.1c13.2 3 19.8 7.4 19.8 23.4v187.2c0 16-6.7 20.4-19.9 23.4l-.3.1v2.8H135v-2.8l-.3-.1c-13.2-3-19.9-7.4-19.9-23.4V173.3l86.1 202.5h4.9l88.6-208.2v186.6c-1.1 12.6-7.8 16.5-19.7 19.2l-.3.1v2.7h91.9v-2.7l-.3-.1c-11.9-2.7-18.7-6.6-19.9-19.2l-.1-191.8h.1c0-16 6.7-20.4 19.9-23.4l.3-.1v-2.7h-72.2l-67 157.4-67-157.4H82.3zM448 340.3c-25.1-7.4-43-35.1-41.2-67.8h41.1v67.8zm-6.4-135.6c2.3 0 4.4.3 6.4.9V263h-40.2c1.5-33.6 13.6-57.9 33.8-58.3"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "toc.integrate", "header.title", "header.autohide", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.tracking", "navigation.scrollspy", "search.suggest", "search.highlight", "search.loader", "search.share", "content.tabs.link", "content.code.annotation", "content.code.copy", "footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
